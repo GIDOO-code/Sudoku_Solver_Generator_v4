@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sudoku ALS DeathBlossom</title>
+	
+	<link href="google-code-prettify/prettify.css" rel="stylesheet" type="text/css" >
+	<script src="google-code-prettify/prettify.js" type="text/javascript"> </script>
+	
+	<script type="text/javascript" src="lib/jquery.js" ></script>
+	<script type="text/javascript" src="lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.treeview.js"></script>
+	<script type="text/javascript" src="js/treeView.js"></script>
+	
+	<script type="text/javascript" src="js/naviHeader.js"> </script>
+	<script type="text/javascript" src="js/naviAlgorithm.js"> </script>
+	
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	<link rel="stylesheet" href="css/screen.css">
+
+	<link rel="stylesheet" href="css/style_StandardEng.css">
+    <link rel="stylesheet" href='css/style_Header.css'>
+	<style type="text/css">
+		.ulNone{ list-style-type:none; }
+	</style>
+</head>
+
+<body id="page" onload="prettyPrint()">
+	<header> <strong><i>Sudoku Algorithm 4</i></strong>	</header>
+    <script type="text/javascript"> writeNaviHeader(); </script>
+	
+<!-- ========================================================================== -->
+<section id="menuList">
+	<aside>	<script type="text/javascript"> writeNaviAlgorithm(); </script>	</aside>
+</section>
+
+<!-- -------------------------------------------------------------------------- -->
+<section id="main">
+	<article>
+	<h2>ALS Death Blossom(Enhanced)</h2>
+	<p>DeathBlossom is an analysis algorithm based on the arrangement of <a href="page26.html">ALS</a> with a mysterious name.<br>   
+	i explain ALS DeathBlossom's evolutionary algorithm. In the explanation, <a href="page44.html">XYZ-Wing</a>,
+	<a href="page53.html">ALS DeathBlossom(basic)</a> are assumed.<br></p>
+	
+	<ol style="font-size:medium">
+	<li>XYZ-Wing consists of an axis cell and multiple BivalueCells.
+		There are weak links in excluded candidate cells and axis cells.
+		Bivalue Cell is a 1-cell ALS, which can be replaced with general ALS and extended to XYZ-WingALS algorithm.
+		It is assumed that ALS group replacing Bivalue Cell has no overlap.<br><br></li>
+	
+	<li>ALS DeathBlossom(basic) is composed of one axis cell and ALS group.
+		There is no weak link between the excluded candidate cell and the axis cell.
+		In ALS DeathBlossom (basic form), the ALS group may or may not overlap.<br><br></li>
+	
+	<li>The composition of XYZ - Wing and ALS DeathBlossom is very similar. The logic here is almost the same.
+		However, "ALS group overlap" and "exclusion candidate and weak link between axis cells" are different.
+		Therefore, defining the Enhanced type of DeathBlossom combining these. <br>
+		If there is a weak link between the exclusion candidate and the axis cell,
+		ALS will be one less than the number of digits in the axis cell.
+		There is also a DeathBlossom whose axis cell is Bivaluse and a combination with one ALS.<br><br></li>
+	</ol>
+	
+	<p>
+		<img src="images/img53a/img53aa.png" alt="Death Blossom" width="450">
+	</p>
+	
+	<p>Sample of ALS DeathBlossom(Enhanced)</p>
+    
+	<img src="images/img53a/img53a_10.png" width="250" style="float:left;  margin-right:8px;">
+	<strong>ALS Death Blossom<br></strong>
+		Stem : r2c3 #69<br>
+		-#6-ALS1 : r27c7 #567<br>
+		-#9-ALS2 : r12368c2 #345679<br>
+	  eliminated : r7c2 #7<br>
+	<p style="clear: both" ><br>
+		
+	<img src="images/img53a/img53a_11.png" width="250" style="float:left;  margin-right:8px;">
+		<strong>ALS Death Blossom [overlap]<br></strong>
+            Stem : r1c7 #37<br>
+        -#7-ALS1 : r2c459 #1347<br>
+        -#3-ALS2 : r234c9 #1347<br>
+      eliminated : r4c5 #4<br>
+		<p style="clear: both" ><br>
+		
+    <img src="images/img53a/img53a_12.png" width="250" style="float:left;  margin-right:8px;">
+    <strong>ALS Death BlossomEx [Connected]<br></strong>
+        Stem : r6c4 #236<br>
+    -#2-ALS1 : r16c8 #236<br>
+    -#3-ALS2 : r2c45 r3c4 #3568<br>
+    eliminated : r1c4 #6<br>
+	<p style="clear: both" ><br>
+		
+	<img src="images/img53a/img53a_13.png" width="250" style="float:left;  margin-right:8px;">
+		<strong> ALS Death BlossomEx [Connected,overlap]<br></strong>
+            Stem : r9c6 #356<br>
+        -#5-ALS1 : r7c4 r8c56 #1567<br>
+        -#3-ALS2 : r458c6 #3567<br>
+      eliminated : r9c4 #6<br>
+		<p style="clear: both" ><br>
+	<p class="newLine"><br>
+	...8...4....21...7...7.5981315..9..8.8....4....41.83.5..1.82.646.8...1...236.18..<br>
+	285..91.47.3..1...16..24.7........8...2.4.6.7597..84..4...92..3..84....29...8.74.<br>
+	..2956.485.6....9.4...7.5...538...1.2.......6.1...582...1.8...2.9....1.582.4316..<br>
+	417..35.62.5..7...93..56.7........6...3.9.7.1691..58..3...71..9..98....77...3.21.<br><br></p>
+
+    </article>
+	
+</section>
+	<footer>
+		<p id="copyright">Copyright &copy; 2014- GNPX. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>

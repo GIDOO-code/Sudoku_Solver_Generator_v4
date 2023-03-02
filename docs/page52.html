@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sudoku ALS Chain</title>
+
+	<link href="google-code-prettify/prettify.css" rel="stylesheet" type="text/css" >
+	<script src="google-code-prettify/prettify.js" type="text/javascript"> </script>
+	
+	<script type="text/javascript" src="lib/jquery.js" ></script>
+	<script type="text/javascript" src="lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.treeview.js"></script>
+	<script type="text/javascript" src="js/treeView.js"></script>
+	
+	<script type="text/javascript" src="js/naviHeader.js"> </script>
+	<script type="text/javascript" src="js/naviAlgorithm.js"> </script>
+	
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	<link rel="stylesheet" href="css/screen.css">
+
+	<link rel="stylesheet" href="css/style_StandardEng.css">
+    <link rel="stylesheet" href='css/style_Header.css'>
+	<style type="text/css">
+		.ulNone{ list-style-type:none; }
+	</style>
+</head>
+
+<body id="page" onload="prettyPrint()">
+	<header> <strong><i>Sudoku Algorithm 4</i></strong>	</header>
+    <script type="text/javascript"> writeNaviHeader(); </script>
+	
+<!-- ========================================================================== -->
+<section id="menuList">
+	<aside>	<script type="text/javascript"> writeNaviAlgorithm(); </script>	</aside>
+</section>
+
+<!-- -------------------------------------------------------------------------- -->
+<section id="main">
+	<article>
+	
+	<h2>ALS Chain</h2>		   
+	<p>ALS Chain is an analysis algorithm that connects ALS into a loop in <a href="page26.html">RCC</a>.<br>
+	As shown in the diagram of ALS Chain, ALS forms a chain of links through the RCC link,
+	and Locked occurs when this sequence has the following properties.</p>
+	<ul style="font-size:medium">
+		<li>First and last ALS has a digit z different from RCC.</li>
+		<li>Outside of ALS, there are cells covering all z in the first and last ALS.</li>
+	</ul>
+	<p>
+	The digit z can be excluded from the cell covering all z of the first ALS and the last ALS.
+	If the digit z is true, this cell is a connection of ALS-RCC-ALS,
+	ALSs becomes LockedSet in order, and the last ALS lacks candidate digits.<br></p>
+	<p style="text-align:center">
+		<img src="images/img52/img52a.png" style="float:left;  margin-right:8px;">
+		<p style="clear: both" ><br>
+	</p>
+	
+	<h3><strong></strong>Sample of ALS Chain.</strong></h3><br>
+
+	<img src="images/img52/img52_10.png" width="250" style="float:left;  margin-right:8px;">
+	<strong>ALS Chain<br></strong>
+		Stem : r5c8 #4 -><br>
+		ALS 1: r6c7 #45 -> #5<br>
+		ALS 2: r4c379 #2457 -> #4<br>
+		ALS 3: r4c5 #45 -> #5<br>
+		ALS 4: r5c5 #45 -> #5<br>
+		Excluded cells#no : r5c8 #4<br>
+	<p style="clear: both" ><br>
+		
+	<img src="images/img52/img52_11.png" width="250" style="float:left;  margin-right:8px;">
+		<strong>ALS Chain<br></strong>
+			Stem : r6c7 #3 -><br>
+			ALS 1: r1c7 #13 -> #1<br>
+			ALS 2: r1c56 #148 -> #4<br>
+			ALS 3: r3c4 #14 -> #1<br>
+			ALS 4: r5c4 #14 -> #4<br>
+			ALS 5: r5c9 #34 -> #4<br>
+			Excluded cells#no : r6c7 #3<br>
+		<p style="clear: both" ><br>
+			
+	Paste the next 81 digits onto the GNPX/grid and solve with /Solve/MultiSolve/<br>
+	7....5..9.9.4.7.8...8.3.7..81.3.9.6...6...9...3.7.2.18..3.7.1...4.5.1.2.1..6....4<br>
+    6..9....5.4.5.6.7...5.3.2...6.8.3.91..8...6..91.7.2.5...6.7.4...7.3.5.6.2....4..7<br><br></p>
+	
+	</article>
+	
+</section>
+	<footer>
+		<p id="copyright">Copyright &copy; 2014- GNPX. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>
