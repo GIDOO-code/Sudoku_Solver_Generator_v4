@@ -1,11 +1,12 @@
-# Sudoku_Solver_Generator_v4 beta
-  in preparation(30/Feb/2023)
+# Sudoku_Solver_Generator_v4 beta (3/May/2023)
+  This is a beta version. Please download again around May.
 
 
-# Contents of Updated
-1) Added comments to the source code.
-2) Create a version of the basic algorithm. This is good for learning Sudoku programs.
-   Easy to convert from Simple to Regular version.
+# Reconfigured
+1) The GNPX project/C# code has been reconfigured.
+2) Added and corrected HP.
+
+
 
 # Sudoku_Solver_Generator
 ![GNPX](/images/GNPX_start.png)
