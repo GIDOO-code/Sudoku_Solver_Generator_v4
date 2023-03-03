@@ -180,8 +180,25 @@
 	<article>
 	<br><br>
 	<h2><strong>LockedSet program</strong></h2>
-	<p>The determination of naked is "diigit of cells = diigit of candidate digits".<br>
-	Hidden lockedset is calculated using complementary relationship.
+	<p>LockedSet is a method of excluding candidate digits of cells in House. The analysis program is shown below. <br>
+		This parsing routine leaves most of the details to subcontracted functions.<br>
+		The sub-function has two arguments, degree and naked/hidden, and solves a naked LockedSet when the second argument is false. 
+		Solves hidden when true. The sub-function qualifies and excludes candidate digits in the following steps.
+		
+		<il>
+			<li>[22]Decide which house to analyze.</li>
+			<li>[23]Find undecided cells belonging to house.</li>
+			<li>[24]Let ncF be the number of undecided cells belonging to house.</li>
+			<li>[27-29]Select cells of specified order(sz) from cells belonging to house.<br>
+				Let the remaining cells be unselected cells.</li>
+			<li>[32-36]Candidate number groups for each of the selected cell group and non-selected cell group are obtained.<br>
+				 (noBSel: candidate number for selected cell group, noBNon: candidate number for non-selected cell group).</li>
+			<li>[37]If there is no common number in the candidate numbers of the selected cell group and the unselected cell group, 
+				go to the next house.</li><br>
+			<li>[naked LockedSet]<br>[41]The determination of naked is "selected cells digit = candidate digit".</li><br>
+			<li>[hidden LockedSet]<br>[58]The determination of hidden is "unselected cells digit = candidate digit"
+			    (complementary relationship).</li><br>
+		</il>
 	</p>
 
 		<pre class="prettyprint linenums lang-C"><small>public class LockedSetGen: AnalyzerBaseV2{
