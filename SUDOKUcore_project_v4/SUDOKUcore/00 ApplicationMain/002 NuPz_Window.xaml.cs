@@ -139,12 +139,12 @@ namespace GNPXcore{
                 lblCurrentnDifficultyLevel.Visibility=Visibility.Hidden;
                 lblShortMessage.Visibility = Visibility.Hidden;
                 LblGeneralLogic.Visibility = Visibility.Hidden;
-                GNPXGNPX.Content = "GNPXb "+DateTime.Now.Year;
+                GNPXGNPX.Content = "GNPXbv4 "+DateTime.Now.Year;
 #if RegularVersion       
                 LblGeneralLogic.Visibility = Visibility.Visible;
                 devWin = new DevelopWin(this);
 			    GroupedLinkGen.devWin = devWin;
-                GNPXGNPX.Content = "GNPX "+DateTime.Now.Year;
+                GNPXGNPX.Content = "GNPXv4 "+DateTime.Now.Year;
 #endif
                 cmbLanguageLst.ItemsSource = GNPX_000.LanguageLst;  
            
@@ -402,25 +402,13 @@ namespace GNPXcore{
             if(e.Inner(tabCtrlMode))  return;
             this.DragMove();
         }
-        private void btnHomePage_Click( object sender, RoutedEventArgs e ){
-            string cul=Thread.CurrentThread.CurrentCulture.Name;
-            Debug.WriteLine("The current culture is {0}", cul);
-            string urlHP="";
-            if(cul=="ja-JP") urlHP = "http://csdenp.web.fc2.com";
-            else             urlHP = "http://csdenpe.web.fc2.com"; 
-          //Process.Start(urlHP);        //? in development
-            HP_address.Text = urlHP;
-            Clipboard.SetData(DataFormats.Text, urlHP);
-            CopiedHP.Visibility = Visibility.Visible;
-            GNPZExtender.ProcessExe(urlHP);
-        }  
         
         private void btnHomePageGitHub_Click( object sender, RoutedEventArgs e ){
             string cul=Thread.CurrentThread.CurrentCulture.Name;
             Debug.WriteLine("The current culture is {0}", cul);
             string urlHP="";
-            if(cul=="ja-JP") urlHP = "https://gidoo-code.github.io/Sudoku_Solver_Generator_jp/";
-            else             urlHP = "https://gidoo-code.github.io/Sudoku_Solver_Generator/"; 
+            if(cul=="ja-JP") urlHP = "https://gidoo-code.github.io/Sudoku_Solver_Generator_v4_jp/";
+            else             urlHP = "https://gidoo-code.github.io/Sudoku_Solver_Generator_v4/"; 
           //Process.Start(urlHP);        //? in development
             HP_address.Text = urlHP;
             Clipboard.SetData(DataFormats.Text, urlHP);

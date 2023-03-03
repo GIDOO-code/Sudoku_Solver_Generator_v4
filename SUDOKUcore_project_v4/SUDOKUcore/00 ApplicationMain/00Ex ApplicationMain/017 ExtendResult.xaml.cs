@@ -11,7 +11,7 @@ namespace GNPXcore{
 			this.pGNP00win=pGNP00win;
             InitializeComponent();		
             devWin.Width = pGNP00win.Width;
-            GNPXGNPX.Content = "GNPX "+DateTime.Now.Year;
+            GNPXGNPX.Content = "GNPXv4 "+DateTime.Now.Year;
             this.MouseLeftButtonDown += (sender, e) => this.DragMove();
         }
 

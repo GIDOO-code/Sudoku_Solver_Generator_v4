@@ -34,7 +34,7 @@ namespace GNPXcore{
         public UPuzzleMan( UPuzzle GParg, GNPZ_Engin pGNPX_Eng=null ): this( ){
             if( pGNPX_Eng != null )  this.pGNPX_Eng = pGNPX_Eng;
             this.pGP = GParg?? new UPuzzle();;
-            this.pGP.pMethod = null;
+        //    this.pGP.pMethod = null;      20230303
         }
 
 
@@ -183,7 +183,7 @@ namespace GNPXcore{
             this.AnsNum     = null;     // used in PuzzleTrans
          // this.DifLevel   = -1;       // -1:InitialState　0:Manual
             this.improper   = false;    // No solution (depending on the method used)
-            this.pMethod    = null;     // Analytical method
+            this.pMethod    = null;     // Analytical method      20230303
             this.solMessage = "";       // Message of how to solve
             this.Sol_Result = "";       // Solution description
             this.Sol_ResultLong = "";   // Solution description(Long)

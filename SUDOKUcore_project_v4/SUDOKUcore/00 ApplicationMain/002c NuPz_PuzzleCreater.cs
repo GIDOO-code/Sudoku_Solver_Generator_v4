@@ -217,15 +217,6 @@ namespace GNPXcore{
         
             GNPX_000.AnalyzerMode = "CreatePuzzle" ;
 
-#if RegularVersion
-#if !DEBUG 
-            bool GL = (bool)GNPX_App.GMthdOption["GeneralLogic_on"];
-            if( GL {
-                shortMessage("GeneralLogic is unenable.", new sysWin.Point(450,150), Colors.Red,3000);
-                return;
-            }
-#endif
-#endif
             if( (string)btnCreateProblemMlt.Content == pRes.btnCreateProblemMlt ){
                 __DispMode=null;
                 pSDKCntrl.LoopCC = 0;

@@ -502,6 +502,15 @@ namespace GNPXcore.Properties {
         }
         
         /// <summary>
+        ///   Analyzing に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Lbl_onAnalyzing {
+            get {
+                return ResourceManager.GetString("Lbl_onAnalyzing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Algorithm に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string lblAlgorithmM {
@@ -543,15 +552,6 @@ namespace GNPXcore.Properties {
         public static string lblAnalysisLevel {
             get {
                 return ResourceManager.GetString("lblAnalysisLevel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Analyzing に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string Lbl_onAnalyzing {
-            get {
-                return ResourceManager.GetString("Lbl_onAnalyzing", resourceCulture);
             }
         }
         

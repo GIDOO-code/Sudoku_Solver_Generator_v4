@@ -58,8 +58,8 @@
                 <GradientStop Color="#BE141225" Offset="0.432"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="GNPXGNPX" Content="GNPX 2021" FontFamily="MS Mincho" FontSize="36" Foreground="#FFFEFFFF" HorizontalAlignment="Left" 
-               Margin="18,10,0,0" VerticalAlignment="Top" Height="41" FontWeight="Bold" MouseDoubleClick="GNPXGNPX_MouseDoubleClick" />
+        <Label x:Name="GNPXGNPX" Content="GNPXv4 2023" FontFamily="MS Mincho" FontSize="36" Foreground="#FFFEFFFF" HorizontalAlignment="Left" 
+               Margin="2,14,0,0" VerticalAlignment="Top" Height="41" FontWeight="Bold" MouseDoubleClick="GNPXGNPX_MouseDoubleClick" />
         <Button Content="Exit" FontFamily="MS Gothic" FontSize="12" Foreground="White" Height="29" HorizontalAlignment="Left" Margin="841,474,0,0" x:Name="appExit" VerticalAlignment="Top" Width="56" Click="appExit_Click" Style="{Binding}">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -1584,27 +1584,10 @@
                      Style="{DynamicResource ResourceKey=styleTabItemTop}" 
                      FontFamily="Microsoft NeoGothic" FontSize="11" Background="White" TabIndex="6" >
                 <Grid Width="515" Margin="0,-1,0,10">
-                    <Label BorderBrush="#FF5C62A0" 
-                        Content="In development" 
-                        FontFamily="MS Mincho" FontSize="12" Foreground="#FFEC1818" HorizontalAlignment="Left" Margin="27,6,0,0" VerticalAlignment="Top" Background="{x:Null}" />
-                    <Button x:Name="btnHomePage"
-                            Content="{Binding Resources.btnHomePage, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                            FontSize="12" Height="28" HorizontalAlignment="Left" 
-                            Margin="165,24,0,0" VerticalAlignment="Top" Width="100" Click="btnHomePage_Click" Foreground="White" >
-                        <Button.Background>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FFC1B5B5" Offset="0" />
-                                <GradientStop Color="#FF161D6C" Offset="0.472" />
-                                <GradientStop Color="Black" Offset="1" />
-                            </LinearGradientBrush>
-                        </Button.Background>
-                    </Button>
-                    <Label x:Name="lblPuzzle_Copy" Content="or" Margin="0,31,355,0"  FontSize="12"
-                           FontFamily="MS Gothic" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" />
                     <Button x:Name="btnHomePageGitHub"
                         Content="GitHub HomePage"
                         FontSize="12" Height="28" HorizontalAlignment="Left" 
-                        Margin="19,24,0,0" VerticalAlignment="Top" Width="110" Click="btnHomePageGitHub_Click" Foreground="White" >
+                        Margin="37,27,0,0" VerticalAlignment="Top" Width="110" Click="btnHomePageGitHub_Click" Foreground="White" >
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FFC1B5B5" Offset="0" />
@@ -1617,10 +1600,7 @@
                                Text="TextBlock" VerticalAlignment="Top" Height="300" Width="505" Foreground="#FFF7FCFD" 
                                Background="#FF080808" FontFamily="MS Gothic" FontSize="12"/>
                     <TextBlock x:Name="HP_address" HorizontalAlignment="Left" Margin="27,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF8EBAB9" Text="HP address"/>
-                    <TextBlock x:Name="CopiedHP" HorizontalAlignment="Left" Margin="284,35,0,0" Text="copied hp to the clipboard" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Background="{x:Null}" Foreground="#FF93DBDA" />
-                    <Label BorderBrush="#FF5C62A0" 
-                        Content="Under test." 
-                        FontFamily="MS Mincho" FontSize="10" Foreground="#FFEC1818" HorizontalAlignment="Left" Margin="338,24,0,0" VerticalAlignment="Top" Background="{x:Null}" />
+                    <TextBlock x:Name="CopiedHP" HorizontalAlignment="Left" Margin="180,34,0,0" Text="copied hp to the clipboard" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Background="{x:Null}" Foreground="#FF93DBDA" />
                 </Grid>
             </TabItem>
 

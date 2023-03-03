@@ -167,7 +167,7 @@
         </member>
         <member name="P:GNPXcore.Properties.Resources.btnTransLRg">
             <summary>
-              horizontal に類似しているローカライズされた文字列を検索します。
+              Horizontal に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:GNPXcore.Properties.Resources.btnTransRes">
@@ -295,6 +295,11 @@
               Omit multiple candidates に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
+        <member name="P:GNPXcore.Properties.Resources.Lbl_onAnalyzing">
+            <summary>
+              Analyzing に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
         <member name="P:GNPXcore.Properties.Resources.lblAlgorithmM">
             <summary>
               Algorithm に類似しているローカライズされた文字列を検索します。
@@ -303,6 +308,11 @@
         <member name="P:GNPXcore.Properties.Resources.lblAllSearchOption">
             <summary>
               All Search Option に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:GNPXcore.Properties.Resources.lblALSChainSizeMax">
+            <summary>
+              Chain Max. Size に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:GNPXcore.Properties.Resources.lblALSSizeMax">
@@ -390,29 +400,9 @@
               Type に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
-        <member name="P:GNPXcore.Properties.Resources.lblMaxAlgorithm">
-            <summary>
-              Algorithm に類似しているローカライズされた文字列を検索します。
-            </summary>
-        </member>
-        <member name="P:GNPXcore.Properties.Resources.lblMaxAllAlgorithm">
-            <summary>
-              All Algorithm に類似しているローカライズされた文字列を検索します。
-            </summary>
-        </member>
         <member name="P:GNPXcore.Properties.Resources.LblMaximum">
             <summary>
               Maximum に類似しているローカライズされた文字列を検索します。
-            </summary>
-        </member>
-        <member name="P:GNPXcore.Properties.Resources.LblMaxLevel">
-            <summary>
-              Level に類似しているローカライズされた文字列を検索します。
-            </summary>
-        </member>
-        <member name="P:GNPXcore.Properties.Resources.lblMaxTime">
-            <summary>
-              Time に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:GNPXcore.Properties.Resources.LblMethod">
@@ -433,6 +423,26 @@
         <member name="P:GNPXcore.Properties.Resources.lblMinimum">
             <summary>
               Minimum に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:GNPXcore.Properties.Resources.lblMSlvrMaxAlgorithm">
+            <summary>
+              Algorithm に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:GNPXcore.Properties.Resources.lblMSlvrMaxAllAlgorithm">
+            <summary>
+              All Algorithm に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:GNPXcore.Properties.Resources.lblMSlvrMaxLevel">
+            <summary>
+              Level に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:GNPXcore.Properties.Resources.lblMSlvrMaxTime">
+            <summary>
+              Time に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:GNPXcore.Properties.Resources.lblNLMaxSize">
@@ -528,11 +538,6 @@
         <member name="P:GNPXcore.Properties.Resources.lblTransSymetric">
             <summary>
               Transformation(Symmetric) に類似しているローカライズされた文字列を検索します。
-            </summary>
-        </member>
-        <member name="P:GNPXcore.Properties.Resources.lblUnderAnalysis">
-            <summary>
-              under Analysis に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:GNPXcore.Properties.Resources.lvlCellsUnsolved">

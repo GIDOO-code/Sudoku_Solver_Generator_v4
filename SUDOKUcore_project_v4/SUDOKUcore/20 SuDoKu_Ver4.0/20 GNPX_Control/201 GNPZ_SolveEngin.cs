@@ -79,33 +79,23 @@ namespace GNPXcore{
             this.pGP_Initial = GParg.Copy();
         }
 
-        public bool Set_NextStage(  ){                  // Generate next stage(UPuzzleMan,UPuzzle).
-            
-            int stageNoP1 = GPMan.stageNo+1;
-            UPuzzleMan GPManNext=null;
-            UPuzzle    GPnext=null, GPtmp=null;
-
-            if( GPMan.stageNo == 0 )  GPtmp = pGP_Initial;
+        public bool Set_NextStage(  ){      // update the state and create the next stage.
+            if( GPMan.stageNo == 0 ){
+                GPMan = GPMan.Create_NextStage(null);
+            }
             else{
                 int selectedIX = GPMan.selectedIX;
                 int NumChildren = GPMan.child_GPs.Count;
                 if( selectedIX<0 || NumChildren<=0 || selectedIX>=NumChildren ) return false;   
-                GPtmp = GPMan.child_GPs[selectedIX]; 
+                UPuzzle GPtmp = GPMan.child_GPs[selectedIX]; 
+
+                GPMan = GPMan.Create_NextStage(GPtmp);
+
+                var (codeX,_) = AnMan.Execute_Fix_Eliminate( pGP.BDL );
+                    // codeX  0:Complete. Go to next stage.  1:Solved.   -1:Error. Conditions are broken.
+                if( codeX<0 ){  eng_retCode = -998; return false; }
             }
 
-            GPnext = GPtmp.Copy();
-            GPManNext = new UPuzzleMan( GPnext );
-            GPManNext.GPManPre = GPMan;
-
-            var (codeX,_) = AnMan.Execute_Fix_Eliminate( GPnext.BDL );
-                 // codeX = 0:Complete. Go to next stage.  1:Solved.  -1:Error. Conditions are broken.
-            if( codeX != 0 ){ return false; }
-
-
-          // =========== next stage ===========
-            GPMan = GPManNext;
-            GPMan.stageNo = stageNoP1;
-            //pGP = GPnext;
             return true;            //check_pGP(GPx,"Set_NextStage");   
         }
 
@@ -135,7 +125,9 @@ namespace GNPXcore{
 
 
         public void ReturnToInitial(){
+            if( pGP_Initial is null )  pGP_Initial = pGP;
             this.GPMan = new UPuzzleMan( pGP_Initial, this );
+            
             this.pGP = pGP_Initial.Copy();
             this.GPMan.stageNo = 0;
             this.GPMan.pGP.ToInitial();

@@ -151,8 +151,8 @@ namespace GNPXcore{
             GNPX_000.AnalyzerMode = "Solve";
             GNPZ_Engin.SolverBusy = true;
   
-            bool nextStageB = pGNPX_Eng.Set_NextStage( );   
-            if( nextStageB ){
+            bool tryNextStageB = pGNPX_Eng.Set_NextStage( );   
+            if( tryNextStageB ){ // in the process of solving.
               //======================
                 SuDoKuSolver();  
               //----------------------
@@ -183,7 +183,7 @@ namespace GNPXcore{
 
         private void btnMultiSolve_Click( object sender, RoutedEventArgs e ){
 #if !DEBUG
-            int GL = (bool)GNPX_App.GMthdOption["GeneralLogic_on"];
+            int GL = (int)GNPX_App.GMthdOption["GeneralLogic_on"];
             if( GL>0 ){
                 shortMessage("GeneralLogic is unenable.", new sysWin.Point(750,60), Colors.Red,3000);
                 return;
@@ -357,7 +357,7 @@ namespace GNPXcore{
                     _SetScreenProblem();
                     goto AnalyzerEnd;
                 }
-                if( pBDL.Any(p=>(p.No==0 && p.FreeB==0)) ){  // No Solution
+                if( pBDL.Any(p=>(p.No==0 && p.FreeB==0)) ){   // No Solution
                     lblAnalyzerResult.Text = pRes.msgNoSolution;
                     goto AnalyzerEnd;
                 }

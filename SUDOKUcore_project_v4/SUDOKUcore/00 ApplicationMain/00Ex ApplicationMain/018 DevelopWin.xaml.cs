@@ -15,7 +15,7 @@ namespace GNPXcore{
 
         public DevelopWin( NuPz_Win pGNP00win ){
             InitializeComponent();
-            GNPXGNPX.Content = "GNPXb "+DateTime.Now.Year;
+            GNPXGNPX.Content = "GNPXv4 "+DateTime.Now.Year;
             this.MouseLeftButtonDown += (sender, e) => this.DragMove();
             
             SuperLinkMan.devWin = this;

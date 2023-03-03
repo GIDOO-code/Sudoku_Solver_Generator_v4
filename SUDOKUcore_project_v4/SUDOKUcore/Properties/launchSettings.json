@@ -7,9 +7,6 @@
       "sqlDebugging": false,
       "nativeDebugging": false,
       "jsWebView2Debugging": false
-    },
-    "プロファイル 1": {
-      "commandName": "Executable"
     }
   }
 }

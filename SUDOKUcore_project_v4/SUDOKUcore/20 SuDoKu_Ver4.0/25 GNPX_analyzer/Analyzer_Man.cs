@@ -303,7 +303,7 @@ namespace GNPXcore{
 
 
         public (int,int[]) Execute_Fix_Eliminate( List<UCell> argBDL ){//Confirmation process
-            // return code = 0 : Complete. Go to next stage.
+            // return code = 0 : Complete. Go to the next stage.
             //               1 : Solved. 
             //              -1 : Error. Conditions are broken.
 
