@@ -1,5 +1,5 @@
 # Sudoku_Solver_Generator_v4 beta
-  in preparation(30/Feb/2023)
+  This is a beta version. Please download again around May.
 
 
 # Contents of Updated
