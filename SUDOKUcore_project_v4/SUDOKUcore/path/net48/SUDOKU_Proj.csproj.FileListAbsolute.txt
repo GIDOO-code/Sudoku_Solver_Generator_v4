@@ -47,8 +47,3 @@ E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDO
 E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
 E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
 E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
-E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\net48\SUDOKU_Regular.exe.config
-E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\net48\SUDOKU_Regular.exe
-E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\net48\SUDOKU_Regular.pdb
-E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\net48\SUDOKU_Regular.xml
-E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\net48\ja-JP\SUDOKU_Regular.resources.dll

@@ -183,8 +183,8 @@ namespace GNPXcore{
 
         private void btnMultiSolve_Click( object sender, RoutedEventArgs e ){
 #if !DEBUG
-            int GL = (int)GNPX_App.GMthdOption["GeneralLogic_on"];
-            if( GL>0 ){
+            bool GL = (bool)GNPX_App.GMthdOption["GeneralLogic_on"];
+            if( GL ){
                 shortMessage("GeneralLogic is unenable.", new sysWin.Point(750,60), Colors.Red,3000);
                 return;
             }

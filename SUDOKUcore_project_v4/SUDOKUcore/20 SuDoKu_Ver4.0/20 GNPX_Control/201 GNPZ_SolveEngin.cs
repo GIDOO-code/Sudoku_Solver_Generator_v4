@@ -16,6 +16,7 @@ using GIDOOCV;
 using System.Reflection;
 using System.Windows.Documents;
 using System.Reflection.Emit;
+using SUDOKUcore;
 
 namespace GNPXcore{
     public partial class GNPZ_Engin{                        // This class-object is unique in the system.
@@ -231,7 +232,7 @@ namespace GNPXcore{
                  // -------------------------------------------------
 
                     SdkExecTime = AnalyzerLap.Elapsed;
-                    if(eng_retCode<0)  return;
+                    if( eng_retCode<0 )  return;
                     GPMan.stageNo++;
                 }
                 AnalyzerLap.Stop();        
@@ -252,7 +253,7 @@ namespace GNPXcore{
             try{
                 eng_retCode=0;
                 GPMan = GPMan.Create_NextStage(null);
-                    // WriteLine( "@@@@@@@@@@@@@@@@@@@@@@@@ sudokAnalyzerAuto ++++" );  // 203203-beta fordebug
+                    // WriteLine( "@@@@@@@@@@@ sudokAnalyzerAuto ++++" );  // 203203-beta fordebug
 
                 AnMan.Update_CellsState( pBDL);
                 Stopwatch AnalyzerLap = new Stopwatch();
@@ -268,21 +269,17 @@ namespace GNPXcore{
                     if( GPMan.stageNo == 0 ){
                         GPMan = GPMan.Create_NextStage(null);
                     }
-                    else if( GPMan.child_GPs==null || GPMan.child_GPs.Count==0 ){
-                        eng_retCode = -998; return;
-                    }
-                    else{
+                    else{       
+                        if( GPMan.child_GPs==null || GPMan.child_GPs.Count==0 ){ eng_retCode = -998; return; }
                         UPuzzle GPx2 = GPMan.child_GPs[0];
                         GPMan = GPMan.Create_NextStage(GPx2);
-                    }
 
-                    if( GPMan.stageNo > 0 ){
+                        // Apply the result of the previous stage.
+                        // codeX = 0:Complete. Go to next stage.  1:Solved.    -1:Error. Conditions are broken.
                         var (codeX,_) = AnMan.Execute_Fix_Eliminate( pGP.BDL );
-                            // codeX = 0:Complete. Go to next stage.  1:Solved.    -1:Error. Conditions are broken.
                         if( codeX<0 ){  eng_retCode = -998; return; }
                         if( codeX==1 )  break;
                     }
-
 
                   // ================================================
                     var (ret,ret2) = AnalyzerControl( ct, false ); // <-- 1-step solver

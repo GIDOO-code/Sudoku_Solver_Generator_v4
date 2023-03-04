@@ -45,9 +45,9 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutputPath>..\..\</OutputPath>
-    <DefineConstants>TRACE;RegularVersion</DefineConstants>
-    <DocumentationFile>..\..\SUDOKU_App\SUDOKU_Regular.xml</DocumentationFile>
+	<OutputPath>..\..\SUDOKU_App\</OutputPath>
+	<PlatformTarget>x64</PlatformTarget>
+	<DefineConstants>TRACE;RegularVersion</DefineConstants>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
