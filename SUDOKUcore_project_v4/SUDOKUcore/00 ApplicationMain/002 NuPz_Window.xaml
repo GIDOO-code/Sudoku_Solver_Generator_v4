@@ -284,7 +284,8 @@
                                           SelectionMode="Single" >
 
                                     <DataGrid.Columns>
-                                        <DataGridTextColumn FontFamily="MS Gothic" Foreground="White" Binding="{Binding methodName}" Width="5*" />
+                                        <DataGridTextColumn FontFamily="MS Gothic" Foreground="White" Binding="{Binding methodName}" Width="5*"/>
+                                        <DataGridTextColumn FontFamily="MS Gothic" Foreground="White" Binding="{Binding difficulty}" Width="1*"/>
                                         <DataGridTextColumn FontFamily="MS Gothic" Foreground="White" Binding="{Binding count}" Width="1*"/>
                                     </DataGrid.Columns>
                                     <DataGrid.RowStyle>
@@ -332,7 +333,7 @@
                                         Content="{Binding Resources.btnSolveUp, Mode=OneWay, Source={x:Static app:ResourceService.Current}}" 
                                         FontSize="12" Foreground="White" Height="24" 
                                         HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" 
-                                        Width="90" Click="btnSDKAnalyzerAuto_Click" Grid.Column="2">
+                                        Width="90" Click="btnSolveUp_Click" Grid.Column="2">
                                     <Button.Background>
                                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                             <GradientStop Color="#FFC1B5B5" Offset="0" />
@@ -388,7 +389,8 @@
                                 </Grid>
                                 <Label x:Name="lblAppliedCount"
                                        Content="{Binding Resources.lblAppliedCount, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                                              
-                                       FontSize="12" Foreground="White" Height="23" HorizontalAlignment="Right" Margin="0,135,21,0" VerticalAlignment="Top" Grid.Column="1" Background="#00000000" OpacityMask="White" Width="58" />
+                                       FontSize="12" Foreground="White" Height="23" HorizontalAlignment="Right" Margin="0,135,16,0" VerticalAlignment="Top" Grid.Column="1" Background="#00000000" OpacityMask="White" Width="58" />
+                                <Label x:Name="diffLevel" Grid.Column="1" Content="Level" HorizontalAlignment="Left" Margin="265,135,0,0" VerticalAlignment="Top" Foreground="White"/>
 
                             </Grid>
                         </TabItem>
@@ -411,8 +413,8 @@
                                 <Button x:Name="btnMultiSolve" 
                                         Content="{Binding Resources.btnMultiSolve, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                                              
                                         FontSize="12" Foreground="White" 
-                        			Margin="396,27,0,0" VerticalAlignment="Top" Width="109" Height="24" HorizontalAlignment="Left"
-                        			Click="btnMultiSolve_Click">
+                        			    Margin="396,27,0,0" VerticalAlignment="Top" Width="109" Height="24" HorizontalAlignment="Left"
+                        			    Click="btnMultiSolve_Click">
                                     <Button.Background>
                                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                             <GradientStop Color="#FFC1B5B5" Offset="0" />
@@ -461,7 +463,7 @@
                                     </Grid>
                                 </GroupBox>
 
-                                <Button x:Name="btnMTop" Content="|&lt;" Margin="415,56,0,0" Width="32" Height="24" 
+                                <Button x:Name="btnMTop" Content="|&lt;" Margin="396,59,0,0" Width="32" Height="24" 
                                         FontSize="12" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" 
                                 	    Click="btnAnalyzerResetAll_Click">
                                     <Button.Background>
@@ -474,7 +476,7 @@
                                 </Button>
 
                                 <Button x:Name="btnMPre" Content="&lt;" FontSize="12" Width="32" Height="24" 
-                                        Foreground="White" Margin="453,56,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                                        Foreground="White" Margin="434,59,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" 
                                         Click="btnMPre_Click">
                                     <Button.Background>
                                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -484,6 +486,19 @@
                                         </LinearGradientBrush>
                                     </Button.Background>
                                 </Button>
+                                <!--
+                                <Button x:Name="btnMNxt" Content="&gt;" FontSize="12" Width="32" Height="24" 
+                                    Foreground="White" Margin="472,59,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                                    Click="btnMNxt_Click">
+                                    <Button.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFC1B5B5" Offset="0" />
+                                            <GradientStop Color="#FF363E9C" Offset="0.472" />
+                                            <GradientStop Color="#FF434559" Offset="1" />
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            -->
 
                                 <!--
 
@@ -504,7 +519,7 @@
                                                     <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
 
-                                                <TextBlock Grid.Column="0" Text="{Binding IDmp1}" HorizontalAlignment="Center"/>
+                                                <TextBlock Grid.Column="0" Text="{Binding __ID}" HorizontalAlignment="Center"/>
                                                 <TextBlock Grid.Column="1" Text="{Binding DifLevel}" HorizontalAlignment="Center"/>
                                                 <TextBlock Grid.Column="2" Text="{Binding Sol_Result}" HorizontalAlignment="Center"/>
                                             </Grid>
@@ -701,114 +716,118 @@
                                  Header="{Binding Resources.tabAuto, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                                  Style="{DynamicResource ResourceKey=styleTabItemTopSmall}" Width="40" FontSize="12">
                             <Grid Width="549" HorizontalAlignment="Right">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="94*"/>
-                                    <ColumnDefinition Width="455*"/>
-                                </Grid.ColumnDefinitions>
+
                                 <Grid.Background>
                                     <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
                                         <GradientStop Color="#FF2A2D38" Offset="1" />
                                         <GradientStop Color="#FF1E1C38" Offset="0" />
                                     </LinearGradientBrush>
                                 </Grid.Background>
-                                <Label x:Name="lblNoOfPuzzles" 
+                                <Grid Width="240" HorizontalAlignment="Left">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100*"/>
+                                        <ColumnDefinition Width="140*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label x:Name="lblNoOfPuzzles" 
                                        Content="{Binding Resources.lblNoOfPuzzles, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                                
-                                       FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" HorizontalAlignment="Right" Margin="0,27,440,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" />
-                                <Label x:Name="lblNoOfProblems1" 
+                                       FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" Margin="0,27,0,0" VerticalAlignment="Top" Height="22" HorizontalAlignment="Right" Width="52" />
+                                    <Label x:Name="lblNoOfProblems1" 
                                        Content="____" 
-                                       FontFamily="MS Gothic" Foreground="White" HorizontalAlignment="Right" Margin="0,29,412,0" VerticalAlignment="Top" Grid.Column="1" Height="22" />
-                                <Label 
-                                    Content="/" Grid.Column="1" Height="22" Width="16"
+                                       FontFamily="MS Gothic" Foreground="White" HorizontalAlignment="Right" Margin="0,28,105,0" VerticalAlignment="Top" Height="22" HorizontalContentAlignment="Right" Grid.ColumnSpan="2" />
+                                    <Label 
+                                    Content="/" Height="22" Width="16"
                                     FontFamily="MS Gothic" FontWeight="Normal" Foreground="White"
-                                    HorizontalAlignment="Left" Margin="41,28,0,0" VerticalAlignment="Top" />
-                                <TextBox x:Name="gamGen05" Width="52" Height="18" HorizontalAlignment="Left" Margin="57,31,0,0"
+                                    HorizontalAlignment="Right" Margin="0,29,89,0" VerticalAlignment="Top" Grid.Column="1" />
+                                    <TextBox x:Name="gamGen05" Width="52" Height="18" HorizontalAlignment="Right" Margin="0,29,35,0"
                                          Background="#FF37378F" FontFamily="MS Gothic" FontSize="12" Foreground="White"
-                                          Text="5" TextAlignment="Center" Grid.Column="1" 
-                                         VerticalAlignment="Top" DataContext="{Binding}" VerticalContentAlignment="Center"/>
-                                <Label x:Name="lblPuzzleLevel" Margin="0,54,426,0" Height="28" 
+                                          Text="5" TextAlignment="Center" 
+                                         VerticalAlignment="Top" DataContext="{Binding}" VerticalContentAlignment="Center" Grid.Column="1"/>
+                                    <Label x:Name="lblPuzzleLevel" Margin="0,54,0,0" Height="28" 
                                        Content="{Binding Resources.lblPuzzleLevel, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                                        FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" 
-                                       HorizontalAlignment="Right"  VerticalAlignment="Top" Grid.ColumnSpan="2" />
-                                <GIDOO_space:NumericUpDown x:Name="gamGen01" Background="#FF202040" FontFamily="MS Gothic" FontSize="14" 
+                                       HorizontalAlignment="Right"  VerticalAlignment="Top" />
+                                    <GIDOO_space:NumericUpDown x:Name="gamGen01" Background="#FF202040" FontFamily="MS Gothic" FontSize="14" 
                                                            Foreground="White" Height="21" HorizontalAlignment="Left" MaxValue="20" MinValue="1"
-                                                           Value="1" VerticalAlignment="Top" Width="40" Margin="29,54,0,0" NumUDValueChanged="gamGen01_NumUDValueChanged" Grid.Column="1" />
-                                <Label Content="～" FontFamily="MS Gothic" FontSize="12" FontWeight="Bold" Foreground="White" 
-                                       HorizontalAlignment="Left" Margin="69,54,0,0" x:Name="label32" VerticalAlignment="Top" Grid.Column="1" Height="22" Width="22" />
-                                <GIDOO_space:NumericUpDown Background="#FF202040" FontFamily="MS Gothic" FontSize="14" Foreground="White" Height="21" HorizontalAlignment="Left" Margin="92,54,0,0" MaxValue="20" MinValue="1" x:Name="gamGen02" Value="3" VerticalAlignment="Top" Width="40" NumUDValueChanged="gamGen02_NumUDValueChanged" Grid.Column="1" />
-                                <Button x:Name="btnCreateProblemMlt" Margin="76,82,0,0" Width="115"
+                                                           Value="1" VerticalAlignment="Top" Width="40" Margin="5,54,0,0" NumUDValueChanged="gamGen01_NumUDValueChanged" Grid.Column="1" />
+                                    <Label Content="～" FontFamily="MS Gothic" FontSize="12" FontWeight="Bold" Foreground="White" 
+                                       HorizontalAlignment="Left" Margin="45,54,0,0" x:Name="label32" VerticalAlignment="Top" Height="22" Width="22" Grid.Column="1" />
+                                    <GIDOO_space:NumericUpDown Background="#FF202040" FontFamily="MS Gothic" FontSize="14" Foreground="White" Height="21" HorizontalAlignment="Left" Margin="68,54,0,0" MaxValue="20" MinValue="1" x:Name="gamGen02" Value="3" VerticalAlignment="Top" Width="40" NumUDValueChanged="gamGen02_NumUDValueChanged" Grid.Column="1" />
+                                    <Button x:Name="btnCreateProblemMlt" Margin="70,82,0,0" Width="115"
                                         Content="{Binding Resources.btnCreateProblemMlt, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                                         FontFamily="MS Gothic" FontSize="12" Foreground="White" HorizontalAlignment="Left" 
                                         Click="btnP13Start_Click" Height="25" VerticalAlignment="Top" Grid.ColumnSpan="2">
-                                    <Button.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                            <GradientStop Color="Black" Offset="0.8" />
-                                            <GradientStop Color="#FF7F7E85" Offset="0.05" />
-                                            <GradientStop Color="#EA575757" Offset="0.55" />
-                                        </LinearGradientBrush>
-                                    </Button.Background>
-                                </Button>
+                                        <Button.Background>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="Black" Offset="0.8" />
+                                                <GradientStop Color="#FF7F7E85" Offset="0.05" />
+                                                <GradientStop Color="#EA575757" Offset="0.55" />
+                                            </LinearGradientBrush>
+                                        </Button.Background>
+                                    </Button>
 
-                                <CheckBox x:Name="chbChangeBasicPattenOnSuccess"
+                                    <CheckBox x:Name="chbChangeBasicPattenOnSuccess"
                                           Content="{Binding Resources.chbChangeBasicPattenOnSuccess, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                                           FontFamily="MS Gothic" Foreground="White" HorizontalAlignment="Left" Margin="47,122,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" IsChecked="True" Height="17" Grid.ColumnSpan="2" />
-                                <CheckBox x:Name="chbRandomizingNumbers"     
+                                    <CheckBox x:Name="chbRandomizingNumbers"     
                                           Content="{Binding Resources.chbRandomizingNumbers, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                          BorderBrush="#FF5C62A0" Foreground="White" IsChecked="True" VerticalAlignment="Top" Margin="47,139,0,0" HorizontalAlignment="Left" FontFamily="MS Gothic" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Height="15" />
-                                <Label x:Name="lblNoOfTrials"
+                                          BorderBrush="#FF5C62A0" Foreground="White" IsChecked="True" VerticalAlignment="Top" Margin="47,139,0,0" HorizontalAlignment="Left" FontFamily="MS Gothic" VerticalContentAlignment="Center" Height="15" Grid.ColumnSpan="2" />
+                                    <Label x:Name="lblNoOfTrials"
                                        Content="{Binding Resources.lblNoOfTrials, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                       FontFamily="MS Gothic" FontSize="12" Foreground="White" Height="22" Margin="0,158,439,0" VerticalAlignment="Top" DataContext="{Binding SDtrial}" HorizontalAlignment="Right" Grid.ColumnSpan="2"/>
-                                <TextBlock x:Name="txbNoOfTrials" HorizontalAlignment="Left" Margin="23,164,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
-                                <Label x:Name="lblNoOfTrialsCum" 
+                                       FontFamily="MS Gothic" FontSize="12" Foreground="White" Height="22" Margin="0,158,0,0" VerticalAlignment="Top" DataContext="{Binding SDtrial}" HorizontalAlignment="Right"/>
+                                    <TextBlock x:Name="txbNoOfTrials" HorizontalAlignment="Left" Margin="10,164,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
+                                    <Label x:Name="lblNoOfTrialsCum" 
                                        Content="{Binding Resources.lblNoOfTrialsCum, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                       FontFamily="MS Gothic" FontSize="12" Foreground="White" HorizontalAlignment="Right" Margin="0,177,439,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" />
-                                <TextBlock x:Name="txbNoOfTrialsCum" HorizontalAlignment="Left" Margin="23,182,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
-                                <Label x:Name="lblBasicPattern"
+                                       FontFamily="MS Gothic" FontSize="12" Foreground="White" HorizontalAlignment="Right" Margin="0,177,0,0" VerticalAlignment="Top" Height="22" />
+                                    <TextBlock x:Name="txbNoOfTrialsCum" HorizontalAlignment="Left" Margin="10,183,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
+                                    <Label x:Name="lblBasicPattern"
                                        Content="{Binding Resources.lblBasicPattern, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                       FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" HorizontalAlignment="Right" Margin="0,196,439,0" VerticalAlignment="Top" DataContext="{Binding SDtrial}" Height="22" Grid.ColumnSpan="2"/>
-                                <TextBlock x:Name="txbBasicPattern" HorizontalAlignment="Left" Margin="23,202,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
-                                <Label x:Name="lblEpapsedTimeTS3"
+                                       FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" HorizontalAlignment="Right" Margin="0,196,0,0" VerticalAlignment="Top" DataContext="{Binding SDtrial}" Height="22"/>
+                                    <TextBlock x:Name="txbBasicPattern" HorizontalAlignment="Left" Margin="10,202,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
+                                    <Label x:Name="lblEpapsedTimeTS3"
                                        Content="{Binding Resources.lblEpapsedTimeTS3, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                       FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" Height="22" HorizontalAlignment="Right" Margin="0,214,439,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
-                                <TextBlock x:Name="txbEpapsedTimeTS3" HorizontalAlignment="Left" Margin="3,220,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
+                                       FontFamily="MS Gothic" FontSize="12" FontWeight="Normal" Foreground="White" Height="22" HorizontalAlignment="Right" Margin="0,214,0,0" VerticalAlignment="Top" />
+                                    <TextBlock x:Name="txbEpapsedTimeTS3" HorizontalAlignment="Left" Margin="10,220,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="16" FontSize="12" Foreground="White" FontFamily="MS Gothic" Grid.Column="1"/>
+                                    <Label x:Name="lblMethodSetting" 
+                                       Content="{Binding Resources.lblMethodSetting, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
+                                       FontFamily="MS Mincho" FontSize="12" Foreground="White" HorizontalAlignment="Left" Margin="20,291,0,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" />
+                                    <Label x:Name="lblResourceMemory"
+                                       Content="＿＿＿" 
+                                       FontFamily="MS Mincho" FontSize="12" Foreground="#FFAAAAC0" HorizontalAlignment="Left" Margin="40,309,0,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" />
+                                    <Label x:Name="lblSolutionLevel"
+                                    Content="＿＿＿" 
+                                    FontFamily="MS Mincho" FontSize="12" Foreground="#FFAAAAC0" HorizontalAlignment="Left" Margin="40,326,0,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" />
+                                </Grid>
                                 <!--
                                 <CheckBox x:Name="chbFileOutputOnSuccess"
                                           Content="{Binding Resources.chbFileOutputOnSuccess, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                                           FontFamily="MS Mincho" Foreground="White" HorizontalAlignment="Left" Margin="27,128,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="204" d:IsHidden="True" />
            -->
-                                <Label x:Name="lblMethodSetting" 
-                                       Content="{Binding Resources.lblMethodSetting, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                       FontFamily="MS Mincho" FontSize="12" Foreground="White" HorizontalAlignment="Left" Margin="20,291,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="22" />
-                                <Label x:Name="lblResourceMemory"
-                                       Content="＿＿＿" 
-                                       FontFamily="MS Mincho" FontSize="12" Foreground="#FFAAAAC0" HorizontalAlignment="Left" Margin="40,309,0,0" VerticalAlignment="Top" Height="22" />
-                                <Label x:Name="lblSolutionLevel"
-                                    Content="＿＿＿" 
-                                    FontFamily="MS Mincho" FontSize="12" Foreground="#FFAAAAC0" HorizontalAlignment="Left" Margin="40,326,0,0" VerticalAlignment="Top" Height="22" />
-                                <Grid Margin="164,5,-12,0" Width="303" HorizontalAlignment="Left" Grid.Column="1">
+                                <Grid Margin="0,5,0,0" Width="303" HorizontalAlignment="Right">
+                                    <Rectangle Fill="#FFB4BACB" HorizontalAlignment="Left" Height="321" Margin="0,27,0,0" Stroke="#FFB4BACB" VerticalAlignment="Top" Width="2"/>
                                     <Label x:Name="lblPattern" Background="{x:Null}" FontFamily="MS Gothic" FontSize="12" Foreground="White" HorizontalAlignment="Left" Margin="7,8,0,0" VerticalAlignment="Top" Width="64" Height="22" 
                                            Content="{Binding Resources.lblPattern, Mode=OneWay, Source={x:Static app:ResourceService.Current}}" />
                                     <RadioButton x:Name="patSel01" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,11,0,0" VerticalAlignment="Top" Foreground="White" IsChecked="True" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic" 
                                                  Content="{Binding Resources.patSel01, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
-                                    <RadioButton x:Name="patSel02" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,26,0,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
+                                    <RadioButton x:Name="patSel02" GroupName="PatSel" Height="18" HorizontalAlignment="Right" Margin="0,26,10,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
                                                  Content="{Binding Resources.patSel02, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
-                                    <RadioButton x:Name="patSel03" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,41,0,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
+                                    <RadioButton x:Name="patSel03" GroupName="PatSel" Height="18" HorizontalAlignment="Right" Margin="0,41,10,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
                                                  Content="{Binding Resources.patSel03, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
-                                    <RadioButton x:Name="patSel04" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,56,0,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
+                                    <RadioButton x:Name="patSel04" GroupName="PatSel" Height="18" HorizontalAlignment="Right" Margin="0,56,10,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
                                                  Content="{Binding Resources.patSel04, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
-                                    <RadioButton x:Name="patSel05" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,71,0,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
+                                    <RadioButton x:Name="patSel05" GroupName="PatSel" Height="18" HorizontalAlignment="Right" Margin="0,71,10,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
                                                  Content="{Binding Resources.patSel05, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
-                                    <RadioButton x:Name="patSel06" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,86,0,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
+                                    <RadioButton x:Name="patSel06" GroupName="PatSel" Height="18" HorizontalAlignment="Right" Margin="0,86,10,0" VerticalAlignment="Top" Foreground="White" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
                                                  Content="{Binding Resources.patSel06, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
-                                    <RadioButton x:Name="patSel00" GroupName="PatSel" Height="18" HorizontalAlignment="Left" Margin="74,101,0,0" VerticalAlignment="Top" Foreground="White" IsChecked="False" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
+                                    <RadioButton x:Name="patSel00" GroupName="PatSel" Height="18" HorizontalAlignment="Right" Margin="0,101,10,0" VerticalAlignment="Top" Foreground="White" IsChecked="False" Width="219" VerticalContentAlignment="Center" FontFamily="MS Gothic"
                                                  Content="{Binding Resources.patSel00, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"/>
                                     <Label x:Name="lblMinimum"
                                            Content="{Binding Resources.lblMinimum, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                                            FontFamily="MS Gothic" Foreground="White" Margin="0,122,216,0"  VerticalAlignment="Top" HorizontalAlignment="Right" />
-                                    <GIDOO_space:NumericUpDown Background="#FF202040" Foreground="White" Height="21" HorizontalAlignment="Left" Margin="87,122,0,0" MaxValue="50" MinValue="1" x:Name="CellNumMax" Value="25" VerticalAlignment="Top" Width="47" FontFamily="MS Gothic" FontSize="12" />
-                                    <Label Content="...." FontFamily="MS Gothic" Foreground="White" Height="26" HorizontalAlignment="Left" Margin="145,122,0,0" x:Name="labelPattern" VerticalAlignment="Top" Width="109" />
+                                    <GIDOO_space:NumericUpDown Background="#FF202040" Foreground="White" Height="21" HorizontalAlignment="Right" Margin="0,122,169,0" MaxValue="50" MinValue="1" x:Name="CellNumMax" Value="25" VerticalAlignment="Top" Width="47" FontFamily="MS Gothic" FontSize="12" />
+                                    <Label Content="...." FontFamily="MS Gothic" Foreground="White" Height="26" HorizontalAlignment="Right" Margin="0,122,49,0" x:Name="labelPattern" VerticalAlignment="Top" Width="109" />
                                     <Button x:Name="btnPatternAutoGen"
                                             Content="{Binding Resources.btnPatternAutoGen, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                            FontFamily="MS Gothic" FontSize="10" Foreground="White" Height="22" HorizontalAlignment="Left" Margin="210,165,0,0" VerticalAlignment="Top" Click="btnPatternAutoGen_Click" Width="55" ToolTip="Automatic pattern setting">
+                                            FontFamily="MS Gothic" FontSize="10" Foreground="White" Height="22" HorizontalAlignment="Right" Margin="0,165,38,0" VerticalAlignment="Top" Click="btnPatternAutoGen_Click" Width="55" ToolTip="Automatic pattern setting">
                                         <Button.Background>
                                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                                 <GradientStop Color="Black" Offset="0.8" />
@@ -819,7 +838,7 @@
                                     </Button>
                                     <Button x:Name="btnPatternClear"
                                             Content="{Binding Resources.btnPatternClear, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                            FontFamily="MS Gothic" FontSize="10" Foreground="White" Height="22" HorizontalAlignment="Left" Margin="210,218,0,0" VerticalAlignment="Top" Width="55" Click="btnPatternClear_Click">
+                                            FontFamily="MS Gothic" FontSize="10" Foreground="White" Height="22" HorizontalAlignment="Right" Margin="0,218,38,0" VerticalAlignment="Top" Width="55" Click="btnPatternClear_Click">
                                         <Button.Background>
                                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                                 <GradientStop Color="Black" Offset="0.8" />
@@ -834,7 +853,7 @@
                                 		MouseDown="PB_pattern_MouseDown" Background="#FF406F40" ToolTip="Click to set pattern" />
                                     <Button x:Name="btnPatternCapture"
                                             Content="{Binding Resources.btnPatternCapture, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                                            FontFamily="MS Gothic" FontSize="10" Foreground="White" Height="22" HorizontalAlignment="Left" Margin="20,326,0,0" VerticalAlignment="Top" Width="100" Click="btnPatternCapture_Click">
+                                            FontFamily="MS Gothic" FontSize="10" Foreground="White" Height="22" HorizontalAlignment="Right" Margin="0,326,183,0" VerticalAlignment="Top" Width="100" Click="btnPatternCapture_Click">
                                         <Button.Background>
                                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                                 <GradientStop Color="Black" Offset="0.8" />
@@ -844,14 +863,13 @@
                                         </Button.Background>
                                     </Button>
                                     <CheckBox x:Name="chbCreateProblemEx2"     
-                                    Content="basic pattern"
-                                    BorderBrush="#FF5C62A0" Foreground="White" VerticalAlignment="Top" Margin="130,329,0,0" HorizontalAlignment="Left" FontFamily="MS Gothic" VerticalContentAlignment="Center" Checked="chbCreateProblemEx2_Checked" Unchecked="chbCreateProblemEx2_Unchecked" />
+                                    Content="base pattern"
+                                    BorderBrush="#FF5C62A0" Foreground="White" VerticalAlignment="Top" Margin="0,329,75,0" HorizontalAlignment="Right" FontFamily="MS Gothic" VerticalContentAlignment="Center" Checked="chbCreateProblemEx2_Checked" Unchecked="chbCreateProblemEx2_Unchecked" />
                                     <Image x:Name="PB_BasePatDig" 
-                                        Width="176" Height="176"  Margin="21,145,0,0" OpacityMask="#FF73ACE1" 
-                                        HorizontalAlignment="Left" VerticalAlignment="Top" Panel.ZIndex="2"
+                                        Width="176" Height="176"  Margin="0,145,106,0" OpacityMask="#FF73ACE1" 
+                                        HorizontalAlignment="Right" VerticalAlignment="Top" Panel.ZIndex="2"
                                         MouseDown="PB_pattern_MouseDown" />
                                 </Grid>
-                                <Rectangle Fill="#FFB4BACB" HorizontalAlignment="Left" Height="321" Margin="157,21,0,0" Stroke="#FFB4BACB" VerticalAlignment="Top" Width="2" Grid.Column="1"/>
                                 <Grid x:Name="gridExhaustiveSearch" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="214" Margin="20,241,0,0" Grid.ColumnSpan="2">
                                     <Label x:Name="lblAllSearchOption" 
                                            Content="{Binding Resources.lblAllSearchOption, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
@@ -868,6 +886,7 @@
                                             </LinearGradientBrush>
                                         </Button.Background>
                                     </Button>
+
                                     <Label Content="In development" FontFamily="MS Mincho" Foreground="#FFE62626" HorizontalAlignment="Left" Margin="109,1,-4,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="10.667" />
                                 </Grid>
                             </Grid>
@@ -1584,10 +1603,9 @@
                      Style="{DynamicResource ResourceKey=styleTabItemTop}" 
                      FontFamily="Microsoft NeoGothic" FontSize="11" Background="White" TabIndex="6" >
                 <Grid Width="515" Margin="0,-1,0,10">
-                    <Button x:Name="btnHomePageGitHub"
-                        Content="GitHub HomePage"
-                        FontSize="12" Height="28" HorizontalAlignment="Left" 
-                        Margin="37,27,0,0" VerticalAlignment="Top" Width="110" Click="btnHomePageGitHub_Click" Foreground="White" >
+                    <Button x:Name="btnHomePageGitHub" Content="GitHub HomePage" FontSize="12"  Foreground="White"
+                            Height="28" Width="110"  Margin="37,27,0,0"  VerticalAlignment="Top" HorizontalAlignment="Left"
+                            Click="btnHomePageGitHub_Click">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FFC1B5B5" Offset="0" />

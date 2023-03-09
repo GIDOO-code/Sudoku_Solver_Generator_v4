@@ -173,7 +173,7 @@ namespace GNPXcore{
             UP.BDL=UCL; UP.AnsNum=AnsN2;
             if(ID>=0) pGNP.SDKProbLst[ID] = UP;
             else{
-                UP.ID=pGP.ID=0;
+                UP.ID = pGP.ID = 0;
                 pGNP.SDKProbLst.Add(UP);
             }
             if(!DspSolB) UP.BDL.ForEach(P=>{P.No=Max(P.No,0);});

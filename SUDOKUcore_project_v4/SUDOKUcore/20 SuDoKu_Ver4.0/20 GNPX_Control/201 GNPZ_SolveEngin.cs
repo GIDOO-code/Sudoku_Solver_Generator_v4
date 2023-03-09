@@ -17,6 +17,7 @@ using System.Reflection;
 using System.Windows.Documents;
 using System.Reflection.Emit;
 using SUDOKUcore;
+using System.Windows.Interop;
 
 namespace GNPXcore{
     public partial class GNPZ_Engin{                        // This class-object is unique in the system.
@@ -33,11 +34,17 @@ namespace GNPXcore{
 
 
 
-        public UPuzzle           pGP_Initial;
+
+        // 1) Set_NewPuzzle : Register the analysis Puzzle with the engine -> pGP_Initial.
+        // 2) 
+        public UPuzzle           pGP_Initial{ get; set; }
+
+
+
 #if DEBUG
         public  UPuzzleMan       GPMan{ get; set; }         // property to find out where set is executed
 #else
-        public  UPuzzleMan       GPMan;                     // {TBD] 202303
+        public  UPuzzleMan       GPMan;
 #endif
         public  UPuzzle          pGP{   get=>GPMan.pGP; set=>GPMan.pGP=value; }// =null;                  // Problem to analyze
         public List<UCell>       pBDL{  get=>pGP.BDL; }
@@ -59,72 +66,75 @@ namespace GNPXcore{
             AnMan = new GNPX_AnalyzerMan(this);
         }
 
-        public void Clear_0(){
-            pGP.ToInitial();
+
+      #region Puzzle management
+        public void Clear_0() => pGP.ToInitial();
+        public bool IsSolved() => pBDL.All(p=> p.No!=0);
+        // Set_NewPuzzle : Set the analysis Puzzle to the engine -> pGP_Initial.        
+        public void Set_NewPuzzle( UPuzzle GParg ){   
+            this.pGP_Initial = GParg;
+
+            UPuzzle pGP000 = GParg.Copy();
+            this.GPMan = new UPuzzleMan( pGP000, this );                // Create the UPuzzleMan for Analize.
+            GPMan.selectedIX = -1;
+            this.GPMan.stageNo = 0;                                     // set stageNo=0.
+            this.GPMan.method_maxDif = (MethodLst_Run.Count>0)? MethodLst_Run.First(): null;
         }
 
         public void Set_selectedChild( int selX ){
             int cnt = GPMan.child_GPs.Count;
-            if( selX<0  || cnt<=0 || selX>=GPMan.child_GPs.Count ) return;
+            if( selX<0  || cnt<=0 || selX>=cnt ) return;
             pGP = GPMan.child_GPs[selX];
             GPMan.pGP = pGP;                            //Set the chosen GP.
             GPMan.selectedIX = selX;
         }
 
-        public void Set_NewPuzzle( UPuzzle GParg ){       // Select one Puzzle from the list
-            this.GPMan = new UPuzzleMan( GParg, this );
-            this.GPMan.stageNo = 0;
+        public bool Set_NextStage( int _stageNo=-1 ){      // update the state and create the next stage.
+            UPuzzle GPtmp = null;
+            if( _stageNo == 0 )  GPMan.stageNo = 0;
 
-            this.pGP = GParg;
-            AnMan.Update_CellsState( pBDL );            
-            this.pGP_Initial = GParg.Copy();
-        }
-
-        public bool Set_NextStage(  ){      // update the state and create the next stage.
             if( GPMan.stageNo == 0 ){
-                GPMan = GPMan.Create_NextStage(null);
+                GPtmp = pGP_Initial;
+                AnMan.Update_CellsState( GPtmp.BDL, setAllCandidates:true );
             }
             else{
                 int selectedIX = GPMan.selectedIX;
-                int NumChildren = GPMan.child_GPs.Count;
-                if( selectedIX<0 || NumChildren<=0 || selectedIX>=NumChildren ) return false;   
-                UPuzzle GPtmp = GPMan.child_GPs[selectedIX]; 
-
-                GPMan = GPMan.Create_NextStage(GPtmp);
-
-                var (codeX,_) = AnMan.Execute_Fix_Eliminate( pGP.BDL );
-                    // codeX  0:Complete. Go to next stage.  1:Solved.   -1:Error. Conditions are broken.
-                if( codeX<0 ){  eng_retCode = -998; return false; }
+                if( selectedIX < 0 )  return false; 
+                GPtmp = GPMan.child_GPs[selectedIX]; 
             }
+            
+            if( GPtmp.BDL.All(p=>p.No!=0) )  return false; //solved
 
+            UPuzzleMan GPMan_next = new UPuzzleMan();
+
+         // GPMan.GPManNxt        = GPMan_next; //202303X
+            GPMan_next.GPManPre   = GPMan;
+            GPMan_next.pGP        = GPtmp.Copy();
+            GPMan_next.stageNo    = GPMan.stageNo+1;
+
+                    //  GPMan_next.UPuzzleMan_stack_history(GPMan_next,"Before running PExecute_Fix_Eliminate ----");
+            var (codeX,_) = AnMan.Execute_Fix_Eliminate( GPMan_next.pGP.BDL );
+                // codeX  0:Complete. Go to next stage.  1:Solved.   -1:Error. Conditions are broken.
+                    //  GPMan_next.UPuzzleMan_stack_history(GPMan_next,"After running PExecute_Fix_Eliminate +++++");
+            if( codeX<0 ){  eng_retCode = -998; return false; }
+
+            GPMan = GPMan_next;
+            GPMan.child_GPs.Clear();
             return true;            //check_pGP(GPx,"Set_NextStage");   
         }
 
-
-
-
-
-
-
         public bool Restore_PreStage( ){
-            if( stageNo == 0 )  return false;
-            var (tGPManPre,IXpre) = GPMan.Restore_PreStage( pGP );
-            if( tGPManPre is null ){ ReturnToInitial(); }
-            else{ this.GPMan = tGPManPre; }
-
-            if( GPMan.stageNo == 0 ){
-                var BDLx = GPMan.pGP.BDL;
-                BDLx.ForEach( p=>p.Reset_result() );
-            }
-            else{
-               // int selectedX = GPMan.selectedIX;     // no need to do this
-               // pGP = GPMan.child_GPs[selectedX];
-            }
-            pGP = this.GPMan.pGP;
+            if( GPMan.GPManPre is null )  return false;
+            GPMan = GPMan.GPManPre;
             return true;
         }
-
-
+/*  //202303X
+        public bool Restore_NxtStage( ){
+            if( GPMan.GPManNxt is null )  return false;
+            GPMan = GPMan.GPManNxt;
+            return true;
+        }
+*/
         public void ReturnToInitial(){
             if( pGP_Initial is null )  pGP_Initial = pGP;
             this.GPMan = new UPuzzleMan( pGP_Initial, this );
@@ -133,24 +143,10 @@ namespace GNPXcore{
             this.GPMan.stageNo = 0;
             this.GPMan.pGP.ToInitial();
         }
-
-        private string check_pGP( UPuzzle X, string name ){
-            string st = $"{name}  ID:{X.ID}  IDm:{X.IDm}  ";
-            foreach( var P in X.BDL ){
-                if( P.rc%9==0 ) st += " ";
-                int n = P.No;
-                st += ((n>=0)? $" {n}": $"{n}"); 
-            }
-
-            st += "  FixedNo:";
-            foreach( var P in X.BDL.Where(p=>p.FixedNo>0) )   st += $" , {P.rc.ToRCString()}#{P.FixedNo }";
-            
-            WriteLine(st);
-            return st;
-        }
+      #endregion Puzzle management
 
 
-
+      #region Methods_for_Solving functions
         // Listing of analysis methods
         public int Set_Methods_for_Solving( bool AllMthd=false, bool GenLogUse=true ){ 
 
@@ -166,17 +162,18 @@ namespace GNPXcore{
             return MethodLst_Run.Count;
         }
 
-
-
-
         public void MethodLst_Run_Reset(){
             MethodLst_Run.ForEach(P=>P.UsedCC=0);
             var Q = GPMan.GPManPre;
             while( Q != null ){ GPMan=Q; Q=Q.GPManPre; Thread.Sleep(5); }
         } 
 
+        public string DGViewMethodCounterToString(){
+            var Q = MethodLst_Run.Where(p=>p.UsedCC>0).ToList();
+            return Q.Aggregate("",(a,q) => a+$" {q.MethodName}[{q.UsedCC}]" );
+        }
 
-
+        public void AnalyzerCounterReset(){ MethodLst_Run.ForEach(P=>P.UsedCC=0); } //Clear the algorithm counter. 
 
         public int  Get_DifficultyLevel( out string prbMessage ){
             int DifL=0;
@@ -188,24 +185,15 @@ namespace GNPXcore{
             }
             return DifL;
         }
-
-        public string DGViewMethodCounterToString(){
-            var Q = MethodLst_Run.Where(p=>p.UsedCC>0).ToList();
-            return Q.Aggregate("",(a,q) => a+$" {q.MethodName}[{q.UsedCC}]" );
-        }
-        public void AnalyzerCounterReset(){ MethodLst_Run.ForEach(P=>P.UsedCC=0); } //Clear the algorithm counter. 
-
-        //-------------------------------------------------------------------------------------------------------
+      #endregion Methods_for_Solving functions
 
 
-
-        // Solve up
-
+      #region Analyzer
         // simply solve puzzles
-        public void sudokAnalyzerAuto_simple( CancellationToken ct ){  //202303-beta
+        public void sudokAnalyzer_Simple( CancellationToken ct ){
             try{
                 eng_retCode=0;
-                    // WriteLine( "@@@@@@@@@@@@@@@@@@@@@@@@ sudokAnalyzerAuto_simple  ----" );  202303-beta
+                    // WriteLine( "@@@@@@@@@@@@@@@@@@@@@@@@ sudokAnalyzer_Simple  ----" );  202303-beta
 
                 AnMan.Update_CellsState( pBDL, setAllCandidates:true );  // allFlag:true : set all candidates
                 Stopwatch AnalyzerLap = new Stopwatch();
@@ -217,19 +205,16 @@ namespace GNPXcore{
                 while(true){
                     if( ct.IsCancellationRequested ){ ct.ThrowIfCancellationRequested(); return; }
 
-
                     if( GPMan.stageNo > 0 ){
                         var (codeX,_) = AnMan.Execute_Fix_Eliminate( pGP.BDL );
-                            // codeX = 0:Complete. Go to next stage.  1:Solved.    -1:Error. Conditions are broken.
-                        if( codeX<0 ){  eng_retCode=-998; return; }
-                        if( codeX==1 )  break;
+                        if( codeX<0 ){  eng_retCode=-998; return; }  //codeX=-1:Error. Conditions are broken.
+                        if( codeX==1 )  break;                       //codeX=0 :Solved. 
+                        // codeX=0 : Complete. Go to next stage.
                     }
 
-
-                  // ================================================
-                    var (ret,ret2) = AnalyzerControl( ct, false );  // <-- 1-step solver
+                    // ================================================
+                    var (ret,ret2) = sudokAnalyzer_SolveStage( ct, false );  // <-- 1-step solver
                     if( !ret ){ eng_retCode=-999; break; }
-                 // -------------------------------------------------
 
                     SdkExecTime = AnalyzerLap.Elapsed;
                     if( eng_retCode<0 )  return;
@@ -248,43 +233,27 @@ namespace GNPXcore{
                 }
             }
         }
-
-        public void sudokAnalyzerAuto( CancellationToken ct ){  //202303-beta
+       
+        // Solve up
+        public void sudokAnalyzer_SolveAll( CancellationToken ct ){  //202303-beta
             try{
                 eng_retCode=0;
-                GPMan = GPMan.Create_NextStage(null);
-                    // WriteLine( "@@@@@@@@@@@ sudokAnalyzerAuto ++++" );  // 203203-beta fordebug
 
-                AnMan.Update_CellsState( pBDL);
                 Stopwatch AnalyzerLap = new Stopwatch();
-                AnalyzerLap.Start();
-
-                Set_NewPuzzle( pGP );        
+                AnalyzerLap.Start();    
 
                 UPuzzleMan GPManNext=null;
+                GPMan.stageNo = 0;
                 while(true){
                     if( ct.IsCancellationRequested ){ ct.ThrowIfCancellationRequested(); return; }
 
-                    // go to the next stage
-                    if( GPMan.stageNo == 0 ){
-                        GPMan = GPMan.Create_NextStage(null);
-                    }
-                    else{       
-                        if( GPMan.child_GPs==null || GPMan.child_GPs.Count==0 ){ eng_retCode = -998; return; }
-                        UPuzzle GPx2 = GPMan.child_GPs[0];
-                        GPMan = GPMan.Create_NextStage(GPx2);
+                    bool retB = Set_NextStage(GPMan.stageNo);
+                    if( !retB )  return;                    // go to the next stage
 
-                        // Apply the result of the previous stage.
-                        // codeX = 0:Complete. Go to next stage.  1:Solved.    -1:Error. Conditions are broken.
-                        var (codeX,_) = AnMan.Execute_Fix_Eliminate( pGP.BDL );
-                        if( codeX<0 ){  eng_retCode = -998; return; }
-                        if( codeX==1 )  break;
-                    }
-
-                  // ================================================
-                    var (ret,ret2) = AnalyzerControl( ct, false ); // <-- 1-step solver
+                    // ================================================
+                    var (ret,ret2) = sudokAnalyzer_SolveStage( ct, false ); // <-- 1-step solver
                     if( !ret ){ eng_retCode=-999; break; }
-                  // -------------------------------------------------
+                    // -------------------------------------------------
 
                     SdkExecTime = AnalyzerLap.Elapsed;
                     if(eng_retCode<0)  return;
@@ -303,10 +272,8 @@ namespace GNPXcore{
             }
         }
 
-
-
         // 1-step solver
-        public (bool,string) AnalyzerControl( CancellationToken ct, /*ref int ret2,*/ bool SolInfoB ){
+        public (bool,string) sudokAnalyzer_SolveStage( CancellationToken ct, /*ref int ret2,*/ bool SolInfoB ){
             if(__ChkPrint__) WriteLine( $"\n### stageNo:{stageNo}" );
         
             Stopwatch AnalyzerLap = new Stopwatch();
@@ -318,6 +285,7 @@ namespace GNPXcore{
             pGP.Sol_ResultLong = "";
             var (lvlLow,lvlHgh) = Set_AcceptableLevel( );
             AnMan.Initialize_Solvers();
+            if( GPMan.method_maxDif is null )  GPMan.method_maxDif = MethodLst_Run.First();
 
             do{
                 try{
@@ -338,8 +306,6 @@ namespace GNPXcore{
                     foreach( var P in MethodLst_Run ){                                  // Sequentially execute analysis algorithms
                         if( ct.IsCancellationRequested ){ return (false,"canceled"); }   // Was the task canceled?
 
-
-
                         #region Execution/interruption of analysis method by difficulty 
                         if( L1SolFound && P.DifLevel>=2 )  goto LBreak_Analyzing;       //Stop if there is a solution with a difficulty level of 2 or less.
 
@@ -348,9 +314,6 @@ namespace GNPXcore{
                         if( lvlAbs > lvlHgh )  continue;                                // Exclude methods with difficulty above the limit
                         if( !mltAnsSearcB && lvl<0 )  continue;  // The negative level algorithm is used only with multiple soluving.
                         #endregion Execution/interruption of analysis method by difficulty 
-
-
-
 
                         #region Algorithm execution
                         try{
@@ -362,6 +325,7 @@ namespace GNPXcore{
 
                             if( AnalysisResult ){ // Solvrd
                                 if(__ChkPrint__) WriteLine( $"========================> solved {P.MethodName}" );
+                                if( P.DifLevel >= GPMan.method_maxDif.DifLevel )  GPMan.method_maxDif = P;
 
                                 // --- analysis is successful!  save the method and difficulty.
                                 if( P.DifLevel<=2 )  L1SolFound=true;
@@ -386,7 +350,6 @@ namespace GNPXcore{
                             break;
                         }
                         #endregion  Algorithm execution
-
                     } 
                     //----------------------------------------------------------------------------
 
@@ -426,6 +389,7 @@ namespace GNPXcore{
           LBreak_Analyzing:  //found
             SdkExecTime = AnalyzerLap.Elapsed;
 
+            GPMan.selectedIX = (child_GPs!=null && child_GPs.Count>0 )? 0: -1;
             return (AnalysisResult,"");  // "": "solved"  
 
 
@@ -440,7 +404,7 @@ namespace GNPXcore{
                     _lvlLow = SDK_Ctrl.lvlLow;
                     _lvlHgh = SDK_Ctrl.lvlHgh;
                 }
-                else if( AnalyzerMode == "Solve" ){     // ... ?
+                else if( AnalyzerMode=="Solve" || AnalyzerMode=="SolveUp" ){     // ... ?
                     _lvlLow = 1;
                     _lvlHgh = 20;
                 }
@@ -452,7 +416,7 @@ namespace GNPXcore{
             }
 
         }
-
+      #endregion Analyzer
 
     }
 }

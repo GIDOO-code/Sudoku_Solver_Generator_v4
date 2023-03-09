@@ -282,12 +282,17 @@ namespace GNPXcore{
         }
 
         //Progress display
-        public void BWGenPrb_ProgressChanged( object sender, SDKEventArgs e ){ _ProgressPer=e.ProgressPer; }
+        public void BWGenPrb_ProgressChanged( object sender, SDKEventArgs e ){ 
+            _ProgressPer = e.ProgressPer; 
+            int solCC = e.eCode - _ProgressPer;
+            this.Dispatcher.Invoke(() => {
+                shortMessage( $"{solCC} found", new sysWin.Point(500,90), Colors.Navy, 1000 ); } );
+        }
         //Done
         private void btnP13Start2Complated( ){
             __DispMode="Complated"; 
             AnalyzerBaseV2.__SimpleAnalyzerB__ = false;
-            this.Dispatcher.Invoke(() => { chbCreateProblemEx2.IsEnabled=true; } );
+            this.Dispatcher.Invoke(() => { chbCreateProblemEx2.IsEnabled=true; });
 
             GNPX_000.CurrentPrbNo = 999999999;  // Set to last Puzzle in list.
 

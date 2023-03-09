@@ -36,7 +36,7 @@ namespace GNPXcore{
 
     #region analysis
       //[Note] task,ProgressChanged,Completed,Canceled threadSafe（Prohibition of control operation）  
-      #region analysis[Step] 
+    #region analysis[Step] 
         private int  OnWork = 0;
         private bool ErrorStopB;
         private int  _objectKeyMemo=0;
@@ -59,7 +59,6 @@ namespace GNPXcore{
             else{                           // ---------------- multi
                 __MultiSolve_ButtonSet();
             }
-            __task_SDKsolver_Completed();  // Solver task完了時に
         }
 
 
@@ -71,6 +70,7 @@ namespace GNPXcore{
             else{
                 btnMTop.IsEnabled = true;
                 btnMPre.IsEnabled = (pGPMan.GPManPre!=null);
+             // btnMNxt.IsEnabled = (pGPMan.GPManNxt!=null);  //202303X
             }
         }
 
@@ -78,8 +78,8 @@ namespace GNPXcore{
             __DispMode = "Complated";
             taskSDK = null;
             GNPZ_Engin.SolverBusy = false;
-            
-            displayTimer.Start();           //  Conflict-free display start
+                  //  pGPMan.UPuzzleMan_stack_history( pGPMan, msg:"Solved, not executed." );           
+            displayTimer.Start();  //  Conflict-free display start
         }
 
         private void _Set_DGViewMethodCounter(){  // Aggregation of methods used
@@ -97,7 +97,7 @@ namespace GNPXcore{
 
             if( Q.stageNo == 0 ){ DGViewMethodCounter.ItemsSource=null; return; }            
 
-            while( Q!=null && Q.pGP!=null ){
+            while( Q!=null && Q.pGP!=null && Q.stageNo>0 ){
                 if( Q.pGP.pMethod!=null ){
                     string keyString = Q.pGP.pMethod.MethodKey;     //"ID"+MethodName
                     if( !_MethodCounter.ContainsKey(keyString) )  _MethodCounter[keyString] = 0;
@@ -117,8 +117,9 @@ namespace GNPXcore{
 
                 if(GNPX_000.GSmode=="tabASolve" && methodCounters.Count>0 && DGViewMethodCounter.Columns.Count>1){
                     Style style = new Style(typeof(DataGridCell));
-                    style.Setters.Add(new Setter(DataGrid.HorizontalAlignmentProperty, HorizontalAlignment.Right));
+                    style.Setters.Add( new Setter(DataGrid.HorizontalAlignmentProperty, HorizontalAlignment.Right) );
                     DGViewMethodCounter.Columns[1].CellStyle = style;
+                    DGViewMethodCounter.Columns[2].CellStyle = style;
                 }
             }   
         }
@@ -126,11 +127,14 @@ namespace GNPXcore{
         private class _MethodCounter{
             public int    ID; 
             public string methodName{ get; set; }
+
+            public string difficulty{  get; set; }
             public string count{ get; set; }
             public _MethodCounter( string nm, int cc ){
                 ID = nm.Substring(0,7).ToInt();
-                methodName = " "+nm.Substring(7);//.PadRight(30);
-                count = cc.ToString()+" ";
+                methodName = " "+nm.Substring(9);//.PadRight(30);
+                difficulty = nm.Substring(7,2)+"  ";//.PadRight(30);
+                count      = cc.ToString()+"  ";
             }
 
             public _MethodCounter( (string,int) Q ){
@@ -148,14 +152,15 @@ namespace GNPXcore{
             if( OnWork==2 )   return;
             if( GNPZ_Engin.SolverBusy )  return;
 
-            GNPX_000.AnalyzerMode = "Solve";
-            GNPZ_Engin.SolverBusy = true;
-  
-            bool tryNextStageB = pGNPX_Eng.Set_NextStage( );   
-            if( tryNextStageB ){ // in the process of solving.
-              //======================
-                SuDoKuSolver();  
-              //----------------------
+            if( pGNPX_Eng.IsSolved() ){ lblAnalyzerResult.Text = "\r solved."; }
+            else{
+
+
+                GNPX_000.AnalyzerMode = "Solve";
+                GNPZ_Engin.SolverBusy = true;
+
+                pGNPX_Eng.Set_NextStage( );
+                SuDoKuSolver(); 
             }
             GNPZ_Engin.SolverBusy = false;
         }
@@ -167,17 +172,25 @@ namespace GNPXcore{
                 return;  //not run with stage=0
             }
 
-            //"btnMPre"
-
             __MultiSolve_ButtonSet();
             __task_SDKsolver_Completed();
-
             
             displayTimer.Start();           //  Conflict-free display start
         }
 
+/* //202303X
+        private void btnMNxt_Click( object sender, RoutedEventArgs e ){
+            if( !pGNPX_Eng.Restore_NxtStage( ) ){
+                LstBxMltSolutions.ItemsSource = null;
+                return;  //not run with stage=0
+            }
 
-
+            __MultiSolve_ButtonSet();
+            __task_SDKsolver_Completed();
+            
+            displayTimer.Start();           //  Conflict-free display start
+        }
+*/        
 
 
 
@@ -189,31 +202,29 @@ namespace GNPXcore{
                 return;
             }
 #endif 
+            if( pGNPX_Eng.IsSolved() ){ lblAnalyzerResult.Text = "\r solved."; return;}
 
-            GNPX_000.AnalyzerMode = "MultiSolve";
-            pGNPX_Eng.Set_NextStage( );   
-
+            //-----------------------------------------------------------------------------
             lblAnalyzerResultM.Text="";
-
-            GNPX_App.GMthdOption["MSlvrMaxLevel"]        = (int)MSlvrMaxLevel.Value;
-            GNPX_App.GMthdOption["MSlvrMaxAlgorithm"]    = (int)MSlvrMaxAlgorithm.Value;
-            GNPX_App.GMthdOption["MSlvrMaxAllAlgorithm"] = (int)MSlvrMaxAllAlgorithm.Value;
-            GNPX_App.GMthdOption["MSlvrMaxTime"]         = (int)MSlvrMaxTime.Value;
-            GNPX_App.GMthdOption["abortResult"]          = "";
-            GNPX_App.MultiSolve_StartTime                = DateTime.Now;
-
+            GNPX_000.AnalyzerMode = "MultiSolve";
+            __MultiSolve_ButtonSet();    
+            GNPZ_Engin.SolverBusy = true;
             SDK_Ctrl.Clear();
 
-          //===========================
-            SuDoKuSolver();
-            __MultiSolve_ButtonSet();
-          //---------------------------
+            { //---- Solve up -----
+                GNPX_App.GMthdOption["MSlvrMaxLevel"]        = (int)MSlvrMaxLevel.Value;
+                GNPX_App.GMthdOption["MSlvrMaxAlgorithm"]    = (int)MSlvrMaxAlgorithm.Value;
+                GNPX_App.GMthdOption["MSlvrMaxAllAlgorithm"] = (int)MSlvrMaxAllAlgorithm.Value;
+                GNPX_App.GMthdOption["MSlvrMaxTime"]         = (int)MSlvrMaxTime.Value;
+                GNPX_App.GMthdOption["abortResult"]          = "";
+                GNPX_App.MultiSolve_StartTime                = DateTime.Now;
+
+                pGNPX_Eng.Set_NextStage( );
+
+                SuDoKuSolver(); 
+            }
         }
-
-                
-
-
-
+            
 
 
         private void SuDoKuSolver(){        // 202303-beta
@@ -221,7 +232,7 @@ namespace GNPXcore{
                 Lbl_onAnalyzing.Foreground = Brushes.LightGreen;
                 Lbl_onAnalyzingM.Foreground  = Brushes.LightGreen;
 
-                if( (string)btnSolve.Content!=pRes.msgSuspend){
+                if( (string)btnSolve.Content != pRes.msgSuspend){
                  //   int mc=pGNPX_Eng.Set_Methods_for_Solving( );  //already setted
                  //   if(mc<=0) GNPX_000.ResetMethodList();
                     Lbl_onAnalyzing.Visibility = Visibility.Visible;
@@ -274,12 +285,12 @@ namespace GNPXcore{
 
                         //==============================================================
                         {//  Solve the problem (solver_task start)
-                            if(!ErrorStopB){
+                            if( !ErrorStopB ){
                                 __DispMode="";                
                                 AnalyzerLap.Start();
                                 //==============================================================
                                 tokSrc = new CancellationTokenSource();　//for Cancellation 
-                                taskSDK = new Task( ()=> GNPX_000.SDKCntrl.AnalyzerReal(tokSrc.Token), tokSrc.Token );
+                                taskSDK = new Task( ()=> GNPX_000.SDKCntrl.Analyzer_Real(tokSrc.Token), tokSrc.Token );
                                 taskSDK.ContinueWith( t=> __task_SDKsolver_Completed() ); //procedures used on completion
                                 taskSDK.Start();
                             }
@@ -317,7 +328,7 @@ namespace GNPXcore{
 
       #endregion  analysis[Step] 
     
-      #region analysis[All] 
+    #region analysis[All] 
         private void task_SDKsolverAuto_ProgressChanged( object sender, ProgressChangedEventArgs e ){
             lblNoOfTrials.Content = pRes.lblNoOfTrials + GNPX_000.SDKCntrl.LoopCC;
             txbBasicPattern.Text  = GNPX_000.SDKCntrl.PatternCC.ToString();
@@ -330,13 +341,10 @@ namespace GNPXcore{
             displayTimer.Start();
         }
 
-#if true
-        private void btnSDKAnalyzerAuto_Click( object sender, RoutedEventArgs e ){
+        private void btnSolveUp_Click( object sender, RoutedEventArgs e ){
             if( OnWork==1 ) return;
             GNPX_000.AnalyzerMode = "SolveUp";
             pGNPX_Eng.MethodLst_Run_Reset();
-
-
 
             // Suspend
             if( (string)btnSolveUp.Content==pRes.msgSuspend ){  
@@ -348,23 +356,24 @@ namespace GNPXcore{
                 return;
             }
 
-
-
             // Full analysis 
             else{
-                List<UCell> pBDL = pGP.BDL;
-                if( pBDL.Count(p=>p.No==0) == 0 ){             // Complate (All cells are confirmed.)
-                    _SetScreenProblem();
+                pAnMan.Update_CellsState( pGP.BDL, setAllCandidates:true );  // allFlag:true : set all candidates
+
+                // Complate (All cells are confirmed.)
+                if( pGP.BDL.All(p=> p.No!=0) ){
+                    _SetScreenProblem(); 
                     goto AnalyzerEnd;
                 }
-                if( pBDL.Any(p=>(p.No==0 && p.FreeB==0)) ){   // No Solution
+                
+                // No Solution
+                if( pGP.BDL.Any(p=>(p.No==0 && p.FreeB==0)) ){
                     lblAnalyzerResult.Text = pRes.msgNoSolution;
                     goto AnalyzerEnd;
                 }
 
-
-
-                {   // Preparation
+                // Preparation
+                {   
                     OnWork = 2;
                     btnSolveUp.Content = null;
                     btnSolveUp.Content = pRes.msgSuspend;          
@@ -378,33 +387,29 @@ namespace GNPXcore{
                     SDK_Ctrl.lvlLow = 0;
                     SDK_Ctrl.lvlHgh = 999;
                     this.Cursor = Cursors.Wait;
+
+                    displayTimer.Start();
                 }
 
 
-                    displayTimer.Start();
-                    
-                //==============================================================
-                {   //Solve the problem (solver_task start)
+                // solver_task start
+                {
                     tokSrc = new CancellationTokenSource();
                     CancellationToken ct = tokSrc.Token;   
-                    taskSDK = new Task( ()=> GNPX_000.SDKCntrl.AnalyzerRealAuto(ct), ct );
+                    taskSDK = new Task( ()=> GNPX_000.SDKCntrl.Analyzer_RealAuto(ct), ct );
                     taskSDK.ContinueWith( t=> task_SDKsolverAuto_Completed() );
                     AnalyzerLap.Reset(); 
                     taskSDK.Start();
                 }
-                //--------------------------------------------------------------
 
                 AnalyzerLap.Start();
                 __DispMode="";     
                 
               AnalyzerEnd:
-
                 displayTimer.Start();                
                 return;
             }
         }
-#endif
-
 
         private void btnAnalyzerResetAll_Click( object sender, RoutedEventArgs e ){
             __bruMoveSub();
@@ -465,7 +470,7 @@ namespace GNPXcore{
 
                 var Q = (UProbS)LstBxMltSolutions.SelectedItem;
                 if( Q is null )  return;
-                lblAnalyzerResultM.Text= $"[{Q.IDmp1}] {Q.Sol_ResultLong}"; 
+                lblAnalyzerResultM.Text= $"[{Q.__ID+1}] {Q.Sol_ResultLong}"; 
 
                 int selX = LstBxMltSolutions.SelectedIndex;
                 if( selX>=0 )  pGNPX_Eng.Set_selectedChild(selX);

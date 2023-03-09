@@ -5,6 +5,7 @@ using static System.Diagnostics.Debug;
 using static System.Math;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Reflection.Metadata.Ecma335;
 
 namespace GNPXcore{
 
@@ -57,7 +58,7 @@ namespace GNPXcore{
             CellNumMax = FirstCellNum; 
 
             PatGen = new patternGenerator( this );
-            LSP    = new LatinSqureGen( );
+            LSP    = new LatinSquareGen( );
         }
 
         static public void Clear(){
@@ -130,49 +131,48 @@ namespace GNPXcore{
         public void SDK_PuzzleMaker_Real( CancellationToken ct ){ //Creating problems[Automatic]
             // ①メインでタスク実行　　②ここはタスク上　　③LS生成　　④エンジン上に GPMan+pGP 生成　　⑤Auto_simpleで解く
 
+            int solCC=0;
             try{
                 int mlt = MltProblem;                   // Number of puzzles to solve
                 pGNPX_Eng.Set_Methods_for_Solving();    // Prepare the method for analysis
 
+
+
+
+
                 do{
                     if(ct.IsCancellationRequested){ ct.ThrowIfCancellationRequested(); return; }
-
 
                     // =================================================== Generate problem candidate.
                     LoopCC++; TLoopCC++;
                     List<UCell>   BDL = GeneratePuzzleCandidate( ); // 
                     UPuzzle qGP = new UPuzzle( BDL );               // new UPuzzle
                     pGNPX_Eng.Set_NewPuzzle( qGP );                 // new UPuzzleMan
-                    //----------------------------------------------------
-
 
                     // =================================================== Solving
                     if( !__SimpleAnalyzerB__ )  pGNPX_Eng.AnalyzerCounterReset();
-                    pGNPX_Eng.sudokAnalyzerAuto_simple(ct);         // Apply algorithms to candidate and try to solve them.
+                    pGNPX_Eng.sudokAnalyzer_Simple(ct);         // Apply algorithms to candidate and try to solve them.
                     // ---------------------------------------------------    
 
-
                     if( GNPZ_Engin.eng_retCode==0 ){
-#if DEBUG 
-                        __ret000=true;  //for debug...Generating Puzzle Candidates(Latin Square)
-#endif
-                        string prbMessage;
-                        int DifLevel = pGNPX_Eng.Get_DifficultyLevel(out prbMessage);
-                        if( DifLevel<lvlLow || lvlHgh<DifLevel ) continue; //Difficulty check
-#if DEBUG 
-                        __ret001=true;  ////for debug...Generating Puzzle Candidates(Latin Square)
-#endif         
+                        var UP = pGNPX_Eng.GPMan.method_maxDif;
+                        int DifLevel = UP.DifLevel;
+                        if( DifLevel<SDK_Ctrl.lvlLow || SDK_Ctrl.lvlHgh<DifLevel )  continue;
+#if DEBUG
+                        __ret001=true;  ////for debug...Generating Puzzle Candidates(Latin Square)   
+#endif                  
+                        
                         qGP.DifLevel = DifLevel;
-                        qGP.Name = prbMessage;
+                        qGP.Name = UP.MethodName;
                         qGP.TimeStamp = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
                         qGP.solMessage = pGNPX_Eng.DGViewMethodCounterToString();
-                        pGNP00.SDK_ProblemListSet(qGP);
-                    
-                        SDKEventArgs se = new SDKEventArgs(ProgressPer:(--mlt));
-                        Send_Progress(this,se);             //(can send information in the same way as LoopCC.)
-                        if(CbxNextLSpattern) rxCTRL=0;      //Change LS pattern at next problem generation
+                        pGNP00.save_created_PUZZLE(qGP);
+
+                        SDKEventArgs se = new SDKEventArgs( eCode:MltProblem, ProgressPer:(--mlt));
+                        Send_Progress( this, se );             //(can send information in the same way as LoopCC.)
+                        if( CbxNextLSpattern ) rxCTRL=0;      //Change LS pattern at next problem generation
                     }
-                }while(mlt>0); 
+                }while( mlt>0 ); 
                 // ... Reached target number of puzzles
             }
             catch(TaskCanceledException){ WriteLine("...Canceled by user."); }
@@ -181,29 +181,37 @@ namespace GNPXcore{
     #endregion Create Puzzle
 
     #region Analizer
-        public void AnalyzerReal( CancellationToken ct ){      //Analysis[step]
+        public void Analyzer_Real( CancellationToken ct ){      //Analysis[step]
             try{
                 retNZ=-1; LoopCC++; TLoopCC++;
                 if( pGNPX_Eng.Set_Methods_for_Solving(false) < 0 )  return;      // Run every analysis
-                pGNPX_Eng.AnalyzerControl( ct, true );
-                SDKEventArgs se = new SDKEventArgs(ProgressPer:retNZ);
-                Send_Progress(this,se);
+                pGNPX_Eng.sudokAnalyzer_SolveStage( ct, true );
+              //  SDKEventArgs se = new SDKEventArgs(ProgressPer:retNZ);
+              //  Send_Progress(this,se);
             }
             catch(TaskCanceledException){ WriteLine("...Canceled by user."); }
             catch(Exception ex){ WriteLine(ex.Message+"\r"+ex.StackTrace); }   
         }
-        public void AnalyzerRealAuto( CancellationToken ct ){   //Analysis[solveUp]
+
+
+
+
+
+        public void Analyzer_RealAuto( CancellationToken ct ){   //Analysis[solveUp]
             try{
                 LoopCC++; TLoopCC++;
                 bool chbConfirmMultipleCells = GNPX_App.chbConfirmMultipleCells;
                 if( pGNPX_Eng.Set_Methods_for_Solving(false) < 0 )  return;      // Run every analysis
-                pGNPX_Eng.sudokAnalyzerAuto(ct);
-                SDKEventArgs se = new SDKEventArgs(ProgressPer:(GNPZ_Engin.eng_retCode));
-                Send_Progress(this,se);
+                pGNPX_Eng.sudokAnalyzer_SolveAll(ct);
+              //  SDKEventArgs se = new SDKEventArgs(ProgressPer:(GNPZ_Engin.eng_retCode));
+              //  Send_Progress(this,se);
             }
             catch(TaskCanceledException){ WriteLine("...Canceled by user."); }
             catch(Exception ex){ WriteLine(ex.Message+"\r"+ex.StackTrace); }   
         }
+
+
+
     #endregion Analizer
  
         private void __DBUGprint2( int[,] pSol99, string st="" ){

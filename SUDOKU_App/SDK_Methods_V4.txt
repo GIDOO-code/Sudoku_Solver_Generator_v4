@@ -35,10 +35,10 @@ RemotePair
 XChain
 XYChain
 SueDeCoq
--Color-Trap
--Color-Wrap
--MultiColor-Type1
--MultiColor-Type2
+Color-Trap
+Color-Wrap
+MultiColor-Type1
+MultiColor-Type2
 XYZ-WingALS
 ALS_Wing
 ALS-XZ

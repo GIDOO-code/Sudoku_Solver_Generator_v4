@@ -7,6 +7,7 @@ using System.Threading;
 using static System.Diagnostics.Debug;
 using static System.Math;
 using System.Security.Cryptography;
+using System.Windows.Interop;
 
 namespace GNPXcore{
     using pRes=Properties.Resources;
@@ -18,7 +19,7 @@ namespace GNPXcore{
         static private int ID0=0;
         public int        ID;               // System default order.
         public string     MethodName;
-        public string     MethodKey => ID.ToString().PadLeft(7)+MethodName;
+        public string     MethodKey => ID.ToString().PadLeft(7) +DifLevel.ToString().PadLeft(2) +MethodName;
 
         // For algorithms with negative levels, there are simpler conjugate algorithms.
         // If you just solve Sudoku, you don't need it. For example, the 5D-LockedSet is conjugate with the 4D-LockedSet.
@@ -49,7 +50,7 @@ namespace GNPXcore{
     // Analyzer Manager
     public class GNPX_AnalyzerMan{
         private Bit81[]     pConnectedCells{ get{ return AnalyzerBaseV2.ConnectedCells; } }
-        static public event SDKSolutionEventHandler Send_Solved; 
+      //  static public event SDKSolutionEventHandler Send_Solved;  20230307
         static private Color _Black_=Colors.Black;
 
 
@@ -224,18 +225,15 @@ namespace GNPXcore{
             try{
                 // ***** not SDK_Ctrl.MltAnsSearch *****
                 if( !SDK_Ctrl.MltAnsSearch ){           
-                    int IDm = pChild_GPs.Count;
-                    UPuzzle GPXnext = GPX0.Copy_0(IDm);
-                    GPXnext.__SolResultKey = __SolResultKey;
-                    pChild_GPs.Add( GPXnext );         
+                    //In one-solution search, save the same Puzzle-object without copying
+                    pChild_GPs.Add( GPX0 );
+                    pGNPX_Eng.GPMan.selectedIX = 0;
+                        //GPMan.UPuzzleMan_stack_history(pGNPX_Eng.GPMan, "one-solution search. SnapSaveGP" );
                     return false;
                 }
 
-
-
         
                 // ***** SDK_Ctrl.MltAnsSearch *****
-
                 // Reached the limit of multiple solution searches.
                 if( pChild_GPs.Count>=(int)GNPX_App.GMthdOption["MSlvrMaxAllAlgorithm"] ){
                     GNPX_App.GMthdOption["abortResult"] = pRes.msgUpperLimitBreak; // Reached the limit of multiple solution searches.
@@ -252,7 +250,7 @@ namespace GNPXcore{
 
                 // Unique solution
                 if( pChild_GPs.Any(P=>(P.__SolResultKey==__SolResultKey)) ){  //Excluding the same solution
-                    WriteLine( $"---- error{__SolResultKey}" );
+                    WriteLine( $"*** System error SnapSaveGP / Unique solution : {__SolResultKey}" );
                     return true;
                 }   
 
@@ -263,9 +261,9 @@ namespace GNPXcore{
                     int IDm = pChild_GPs.Count;
                     pChild_GPs.Add(GPX0);
 
-                    UPuzzle GPXnext = GPX0.Copy( 0, GPX0.IDm+1);      // Reserving [new GPX0(copy)] for alternative analysis
-                    GPXnext.__SolResultKey = __SolResultKey;
-                    pGNPX_Eng.pGP = GPXnext;
+                    UPuzzle GPXcpy = GPX0.Copy( stageNo_Increments:0, GPX0.ID_obj ); //Copy at the same stage
+                    GPXcpy.__SolResultKey = __SolResultKey;
+                    pGNPX_Eng.pGP = GPXcpy;
                 }
             }
             catch(Exception e){ WriteLine( $"{e.Message}\r{e.StackTrace}"); }
@@ -287,38 +285,37 @@ namespace GNPXcore{
 
 
         //==========================================================
-        public (bool,int,int,int) Aggregate_CellsPZM( List<UCell> argBDL ){
+        public (bool,int,int,int) Aggregate_CellsPZM( List<UCell> BDLarg ){
             int P=0, Z=0, M=0;
-            if( argBDL==null )  return (false,P,Z,M);
-            argBDL.ForEach( q =>{
+            if( BDLarg==null )  return (false,P,Z,M);
+            BDLarg.ForEach( q =>{
                 if(q.No>0)      P++;
                 else if(q.No<0) M++;
                 else            Z++;
             } );
 
-            bool AnyZero = argBDL.Any(q=>q.FreeB>0);
-            return  (AnyZero,P,Z,M);
+            return  (Z==0,P,Z,M);
         }
 
 
 
-        public (int,int[]) Execute_Fix_Eliminate( List<UCell> argBDL ){//Confirmation process
+        public (int,int[]) Execute_Fix_Eliminate( List<UCell> BDLarg ){//Confirmation process
             // return code = 0 : Complete. Go to the next stage.
             //               1 : Solved. 
             //              -1 : Error. Conditions are broken.
 
-            if( argBDL.All(p=> p.No!=0) )  return (1,null);     //1: Solved. 
+            if( BDLarg.All(p=> p.No!=0) )  return (1,null);     //1: Solved. 
 
-            if( argBDL.Any(p=>p.CancelB>0) ){                         // ..... CancelB .....
-                foreach( var P in argBDL.Where(p=>p.CancelB>0) ){
+            if( BDLarg.Any(p=>p.CancelB>0) ){                         // ..... CancelB .....
+                foreach( var P in BDLarg.Where(p=>p.CancelB>0) ){
                     int CancelB_ = P.CancelB^0x1FF;
                     P.FreeB &= CancelB_; P.CancelB=0;       
                     P.CellBgCr=_Black_;
                 }
             }
 
-            if( argBDL.Any(p=>p.FixedNo>0) ){                         // ..... FixedNo .....
-                foreach( var P in argBDL.Where(p=>p.FixedNo>0) ){
+            if( BDLarg.Any(p=>p.FixedNo>0) ){                         // ..... FixedNo .....
+                foreach( var P in BDLarg.Where(p=>p.FixedNo>0) ){
                     int No = P.FixedNo;
                     if( No<1 || No>9 ) continue;
                     P.No=-No; P.FixedNo=0; P.FreeB=0;
@@ -327,11 +324,11 @@ namespace GNPXcore{
             }
 
             {   // ..... Check Error .....
-                Update_CellsState( argBDL, false );
-                foreach( var P in argBDL.Where(p=>(p.No==0 && p.FreeBC==0)) )  P.ErrorState=9; // ..... Error .....
+                Update_CellsState( BDLarg, false );
+                foreach( var P in BDLarg.Where(p=>(p.No==0 && p.FreeBC==0)) )  P.ErrorState=9; // ..... Error .....
                 int[] NChk=new int[27];
                 for(int h=0; h<27; h++ ) NChk[h]=0;
-                foreach( var P in argBDL ){
+                foreach( var P in BDLarg ){
                     int no = (P.No<0)? -P.No: P.No;
                     int B = (no>0)? (1<<(no-1)): P.FreeB;
                     NChk[P.r]|=B; NChk[P.c+9]|=B; NChk[P.b+18]|=B;
@@ -348,17 +345,17 @@ namespace GNPXcore{
             foreach(var P in pBDL.IEGetCellInHouse(h)) P.Set_CellBKGColor(Colors.Violet);
         }
 
-        public void Update_CellsState( List<UCell> argBDL, bool setAllCandidates=true ){
+        public void Update_CellsState( List<UCell> BDLarg, bool setAllCandidates=true ){
                                                                 //Set all candidates : Clear all analysis results.
             //WriteLine( $"...Update_CellsState...");   
 
             improper = false;
-            foreach( var P in argBDL ){
-                P.Reset_SteB81P0Hfo();
+            foreach( var P in BDLarg ){
+                P.Reset_StepInfo();
                 int freeB=0;  
                 if( P.No==0 ){
                     foreach( var rc in pConnectedCells[P.rc].IEGetRC() ){
-                        if( argBDL[rc].No != 0 )  freeB |= 1<<(Abs(argBDL[rc].No)); //bit representation of  fixed cells
+                        if( BDLarg[rc].No != 0 )  freeB |= 1<<(Abs(BDLarg[rc].No)); //bit representation of  fixed cells
                     }
 
                     freeB = (freeB>>=1)^0x1FF;      //internal expression with 1 right bit shift, and EOR.
@@ -394,12 +391,12 @@ namespace GNPXcore{
 
         public void ResetAnalysisResult( bool clear0 ){
             if(clear0){   // true:Initial State
-                foreach(var P in pBDL.Where(Q=>Q.No<=0)){ P.Reset_SteB81P0Hfo(); P.FreeB=0x1FF; P.No=0; }
+                foreach(var P in pBDL.Where(Q=>Q.No<=0)){ P.Reset_StepInfo(); P.FreeB=0x1FF; P.No=0; }
             }
             else{
-                foreach(var P in pBDL.Where(Q=>Q.No==0)){ P.Reset_SteB81P0Hfo(); P.FreeB=0x1FF; }
+                foreach(var P in pBDL.Where(Q=>Q.No==0)){ P.Reset_StepInfo(); P.FreeB=0x1FF; }
             }
-            Update_CellsState( argBDL:pBDL );
+            Update_CellsState( BDLarg:pBDL );
 			pGP.extResult="";
         }
     }

@@ -81,10 +81,10 @@ namespace GNPXcore{
         public  GNPX_App        GNPX_000;
 
         public SDK_Ctrl         pSDKCntrl => GNPX_000.SDKCntrl;
-        private GNPX_AnalyzerMan pAnMan   => pGNPX_Eng.AnMan;   //pAnMan
+        private GNPX_AnalyzerMan pAnMan   => pGNPX_Eng.AnMan;
         private GNPZ_Engin      pGNPX_Eng => GNPX_000.pGNPX_Eng;
         private UPuzzleMan      pGPMan    => pGNPX_Eng.GPMan;
-        private UPuzzle         pGP       => pGNPX_Eng.pGP;      // current board
+        private UPuzzle         pGP       => pGPMan.pGP;      // current board
         private int  stageNo => (pGPMan is null)? 0: pGPMan.stageNo;
 
     // *==*==*==*==*==*==*==*==*==*==*==*==*==*==*==*==*==*==*==
@@ -417,7 +417,7 @@ namespace GNPXcore{
         }  
    
     #region ShortMessage
-        public void shortMessage(string st, sysWin.Point pt, Color cr, int tm ){
+        public void shortMessage( string st, sysWin.Point pt, Color cr, int tm ){
             lblShortMessage.Content = st;
             lblShortMessage.Foreground = new SolidColorBrush(Colors.White);
             lblShortMessage.Background = new SolidColorBrush(cr);

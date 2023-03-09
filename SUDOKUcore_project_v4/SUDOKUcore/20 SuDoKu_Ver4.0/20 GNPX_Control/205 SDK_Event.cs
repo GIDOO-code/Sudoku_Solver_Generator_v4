@@ -3,7 +3,7 @@ using static System.Diagnostics.Debug;
 
 namespace GNPXcore{
     public delegate void SDKEventHandler( object sender, SDKEventArgs args );
-    public delegate void SDKSolutionEventHandler( object sender, SDKSolutionEventArgs args );
+//    public delegate void SDKSolutionEventHandler( object sender, SDKSolutionEventArgs args );  20230307
 
     public class SDKEventArgs: EventArgs{
 	    public string eName;
@@ -29,6 +29,7 @@ namespace GNPXcore{
         }
     }
 
+#if false
     public class SDKSolutionEventArgs: EventArgs{
         public UProbS   UPB;
         public UPuzzle  GPX;
@@ -37,4 +38,5 @@ namespace GNPXcore{
             this.GPX = GPX;
 	    }
     }
+#endif
 }

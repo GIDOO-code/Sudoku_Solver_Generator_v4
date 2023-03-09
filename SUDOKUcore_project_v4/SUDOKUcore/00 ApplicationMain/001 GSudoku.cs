@@ -168,7 +168,7 @@ namespace GNPXcore{
         }
             
         public void SDK_Save( UPuzzle UP ){
-            UP.ID=SDKProbLst.Count;
+            UP.ID = SDKProbLst.Count;
             SDKProbLst.Add(UP);
         }
         public void SDK_Save_EngGP(){
@@ -176,7 +176,7 @@ namespace GNPXcore{
         }   
         public void CreateNewPrb( UPuzzle UP=null ){
             if(UP==null) UP = new UPuzzle("New Problem");
-            UP.ID=SDKProbLst.Count;
+            UP.ID=SDKProbLst.Count; 
             pGNPX_Eng.Set_NewPuzzle(UP);
             SDK_Save(UP);
             CurrentPrbNo=999999999;
@@ -192,7 +192,7 @@ namespace GNPXcore{
             if( PnoMemo==SDKProbLst.Count-1 ) PnoMemo--;
             if( Contain(pGP) ) SDKProbLst.Remove(pGP);
             int id=0;
-            SDKProbLst.ForEach(P=>P.ID=(id++));
+         //   SDKProbLst.ForEach(P=>P.ID=(id++)); //
             CurrentPrbNo=PnoMemo;
         }
 
@@ -243,12 +243,13 @@ namespace GNPXcore{
 
                             string st = eLst[0].Replace(".", "0").Replace("-", "0").Replace(" ", "");
                             List<UCell> BDLa = _stringToBDL(st);
-                            int ID = SDKProbLst.Count; 
+
 
                             TimeStamp="";
                             foreach(var e in eLst){
                                 if(e.Contains("/") && e.Contains(":")){ TimeStamp=e; break; }
                             }
+                            int ID = SDKProbLst.Count;
                             SDKProbLst.Add( new UPuzzle(ID,BDLa,name,difLvl,TimeStamp) );  
                         }
                         catch{ continue; }                   
@@ -268,7 +269,7 @@ namespace GNPXcore{
                                     BDLa.Add(new UCell(r*9+c,n));
                                 }
                             }
-                            int ID = SDKProbLst.Count;
+                            int ID = SDKProbLst.Count+1;
                             SDKProbLst.Add( new UPuzzle(ID,BDLa,name,difLvl) );
                         }
                         catch{ continue; }
@@ -338,7 +339,7 @@ namespace GNPXcore{
                 pGNPX_Eng.AnalyzerCounterReset();
 
                 var tokSrc = new CancellationTokenSource();　        //for suspension
-                pGNPX_Eng.sudokAnalyzerAuto_simple(tokSrc.Token);                      
+                pGNPX_Eng.sudokAnalyzer_Simple(tokSrc.Token);                      
                 if( GNPZ_Engin.eng_retCode<0 ){
                     pGNPX_Eng.pGP.DifLevel = -999;
                     pGNPX_Eng.pGP.Name = "unsolvable";
@@ -371,7 +372,7 @@ namespace GNPXcore{
             var tokSrc = new CancellationTokenSource();　        //for suspension
 
             int m=0;
-            SDKProbLst.ForEach( p=>p.ID=(m++) );                 //▼▼▼ToDo Make problem management class
+            SDKProbLst.ForEach( p=>p.ID=(m++) );
             IEnumerable<UPuzzle> qry;
             if(SolSort) qry = from p in SDKProbLst orderby p.DifLevel ascending select p;
             else qry = from p in SDKProbLst select p;
@@ -422,7 +423,7 @@ namespace GNPXcore{
 
             UPuzzle pGP=pGNPX_Eng.pGP;
             pGNPX_Eng.AnMan.Update_CellsState( pGNPX_Eng.pBDL );
-            pGNPX_Eng.sudokAnalyzerAuto_simple(tokSrc.Token);
+            pGNPX_Eng.sudokAnalyzer_Simple(tokSrc.Token);
             string prbMessage;
             int difLvl = pGNPX_Eng.Get_DifficultyLevel(out prbMessage);
 
@@ -454,10 +455,7 @@ namespace GNPXcore{
             GNPX_App.SlvMtdCList[0] = false;//use selected methods
         }
 
-        public void SDK_ProblemListSet( UPuzzle GParg ){
-  
-            if( GParg.BDL.Any(p=>p.No==0) )  return;
-
+        public void save_created_PUZZLE( UPuzzle GParg ){
             GParg.ID = SDKProbLst.Count;
             GParg.BDL.ForEach(p=>p.Reset_All() );
 

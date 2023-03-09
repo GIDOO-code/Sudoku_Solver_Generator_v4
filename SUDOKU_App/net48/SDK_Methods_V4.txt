@@ -1,0 +1,78 @@
+﻿LastDigit
+NakedSingle
+HiddenSingle
+GeneralLogicEx
+LockedCandidate
+LockedSet(2D)
+LockedSet(2D)Hidden
+LockedSet(3D)
+LockedSet(3D)Hidden
+LockedSet(4D)
+LockedSet(4D)Hidden
+LockedSet(5D)
+LockedSet(5D)Hidden
+LockedSet(6D)
+LockedSet(6D)Hidden
+LockedSet(7D)
+LockedSet(7D)Hidden
+XWing
+SwordFish
+JellyFish
+Squirmbag
+Whale
+Leviathan
+Finned XWing
+Finned SwordFish
+Finned JellyFish
+Finned Squirmbag
+Finned Whale
+Finned Leviathan
+Skyscraper
+EmptyRectangle
+XY-Wing
+W-Wing
+RemotePair
+XChain
+XYChain
+SueDeCoq
+Color-Trap
+Color-Wrap
+MultiColor-Type1
+MultiColor-Type2
+XYZ-WingALS
+ALS_Wing
+ALS-XZ
+ALS-XY-Wing
+ALS-Chain
+ALS-DeathBlossom
+ALS-DeathBlossomEx
+Franken/MutantFish
+Finned Franken/Mutant Fish
+NiceLoop
+GroupedNiceLoopEx
+EndoFinned F/M Fish
+Finned EndoFinned F/M Fish
+Cannibalistic F/M Fish
+FinnedCannibalistic F/M Fish
+Kraken FishEx
+Kraken FinnedFishEx
+ForceChain_CellEx
+ForceChain_HouseEx
+ForceChain_ContradictionEx
+*MSlvrMaxLevel 13
+*MSlvrMaxAlgorithm 100
+*MSlvrMaxAllAlgorithm 400
+*MSlvrMaxTime 1200
+*StartTime 2023/03/09 0:00:00
+*NiceLoopMax 10
+*ALSSizeMax 5
+*ALSChainSizeMax 5
+*Cell True
+*GroupedCells True
+*ALS True
+*ForceLx ForceL2
+*ShowProofMultiPaths False
+*GeneralLogic_on False
+*GenLogMaxSize 3
+*GenLogMaxRank 1
+*ForceChain_on True

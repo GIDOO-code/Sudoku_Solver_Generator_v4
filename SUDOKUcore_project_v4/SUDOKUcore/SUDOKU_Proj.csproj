@@ -16,6 +16,8 @@
 	 <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
 	  <!-- existing property declarations are here -->
 	  <IntermediateOutputPath>path</IntermediateOutputPath>
+	  <AssemblyVersion>4.1.0.0</AssemblyVersion>
+	  <FileVersion>4.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -56,22 +58,22 @@
 
   <ItemGroup>
     <Compile Remove="00Ex ApplicationMain\**" />
-    <Compile Remove="20 SuDoKu_Ver4.0\21 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
+    <Compile Remove="20 SuDoKu_Ver4.0\22 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
     <Compile Remove="20 SuDoKu_Ver4.0\21Ex GNPX_AnalyzerSubClass\**" />
     <Compile Remove="20 SuDoKu_Ver4.0\23Ex GNPX_Analyzer_SuperLink\**" />
     <Compile Remove="20 SuDoKu_Ver4.0\25Ex GNPX_analyzer\**" />
     <EmbeddedResource Remove="00Ex ApplicationMain\**" />
-    <EmbeddedResource Remove="20 SuDoKu_Ver4.0\21 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
+    <EmbeddedResource Remove="20 SuDoKu_Ver4.0\22 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
     <EmbeddedResource Remove="20 SuDoKu_Ver4.0\21Ex GNPX_AnalyzerSubClass\**" />
     <EmbeddedResource Remove="20 SuDoKu_Ver4.0\23Ex GNPX_Analyzer_SuperLink\**" />
     <EmbeddedResource Remove="20 SuDoKu_Ver4.0\25Ex GNPX_analyzer\**" />
     <None Remove="00Ex ApplicationMain\**" />
-    <None Remove="20 SuDoKu_Ver4.0\21 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
+    <None Remove="20 SuDoKu_Ver4.0\22 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
     <None Remove="20 SuDoKu_Ver4.0\21Ex GNPX_AnalyzerSubClass\**" />
     <None Remove="20 SuDoKu_Ver4.0\23Ex GNPX_Analyzer_SuperLink\**" />
     <None Remove="20 SuDoKu_Ver4.0\25Ex GNPX_analyzer\**" />
     <Page Remove="00Ex ApplicationMain\**" />
-    <Page Remove="20 SuDoKu_Ver4.0\21 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
+    <Page Remove="20 SuDoKu_Ver4.0\22 GNPX_AnalyzerSubClass\23Ex GNPX_Analyzer_SuperLink\**" />
     <Page Remove="20 SuDoKu_Ver4.0\21Ex GNPX_AnalyzerSubClass\**" />
     <Page Remove="20 SuDoKu_Ver4.0\23Ex GNPX_Analyzer_SuperLink\**" />
     <Page Remove="20 SuDoKu_Ver4.0\25Ex GNPX_analyzer\**" />

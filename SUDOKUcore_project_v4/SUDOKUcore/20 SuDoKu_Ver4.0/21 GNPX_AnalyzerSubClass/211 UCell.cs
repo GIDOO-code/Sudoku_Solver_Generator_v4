@@ -42,7 +42,7 @@ namespace GNPXcore{
             this.ECrLst=null;
         }
 
-        public void Reset_SteB81P0Hfo(){
+        public void Reset_StepInfo(){
             ErrorState = 0;
             CancelB    = 0;
             FixedNo    = 0;

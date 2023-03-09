@@ -7,14 +7,16 @@ using System.Text;
 namespace GNPXcore{
     public partial class SDK_Ctrl{
         private const int ParaSolsNo=65536;
-        public LatinSqureGen LSP;
+        public LatinSquareGen LSP;
         private int s1=0, s2=0;
         static public int rxCTRL=-1;      //=0:
         static public int solLevel_notFixedCells=0;
         static public int solLevel_freeDigits=0;
         static public string MethodName;
 
-
+    // *==*==*==*==*==*==*==*==*==*==*==*==*==*==*
+    //   Latin Squre Management
+    // *==*==*==*==*==*==*==*==*==*==*==*==*==*==*
 
 #if DEBUG 
         private bool __check__ = false;
@@ -136,7 +138,7 @@ namespace GNPXcore{
 
 
         //　1) Generate latinSol99
-        //　2) Overlay windows and convert to problems
+        //　2) Overlay windows and convert to puzzles
         //　3) Randomize problem numbers
 
         public IEnumerable<_LSpattern> GenerateLatinSqure0A( bool RandF){
@@ -324,7 +326,8 @@ namespace GNPXcore{
             yield break;
         }
 
-      #region inspection
+      #region Generate LatinSqure 2
+        // exhaustive search option ... development ... next consideration
         private LatSqrRow[] LSR;
         public bool GenerateLatinSqure2(ref int RX, int[,] LS){
             if(RX<0 || LSR==null){
@@ -354,7 +357,7 @@ namespace GNPXcore{
             pGNPX_Eng.Set_NewPuzzle(gp);
         }
 
-        public class LatSqrRow{
+        private class LatSqrRow{
             static int rowH7=7;    //7=1+2+4
             static int colH147=73; //73=1+8+64
             private patternGenerator PatGen;
@@ -419,8 +422,9 @@ namespace GNPXcore{
                 return null;
             }
         }
-      #endregion inspection
- 
+      
+        #endregion Generate LatinSqure 2
+
       #region Latin Squares ID code generation for Standadization
         public string Get_SDKNumPattern(int[] TrPara, int[] AnsNum){
         //Standadization(Number)
@@ -434,18 +438,20 @@ namespace GNPXcore{
                 int n=Abs(AnsNum[rc]);
                 AnsN2[rc/9,rc%9]=ChgNum[n];
             }
+#if DEBUG
                       __DBUGprint2(AnsNum,true,"Before");
                       __DBUGprint2(AnsN2,"After");
+#endif
 
         //Block 2347
             int[] PTop=new int[8];
             int[] PLft=new int[8];
             
             for(int s=0; s<8; s++) PTop[s]=-1;
-            LSP._LatinSqureSub_01R(AnsN2, PTop);
+            LSP._LatinSquareSub_01R(AnsN2, PTop);
 
             for(int s=0; s<8; s++) PLft[s]=-1;
-            LSP._LatinSqureSub_11R(AnsN2, PLft);
+            LSP._LatinSquareSub_11R(AnsN2, PLft);
 
                       string st2="PTop";
                       Array.ForEach(PTop,P=>st2+=" "+P);

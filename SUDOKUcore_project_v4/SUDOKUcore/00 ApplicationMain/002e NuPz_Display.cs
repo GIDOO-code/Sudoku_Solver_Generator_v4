@@ -118,7 +118,7 @@ namespace GNPXcore{
 
         private (bool,int,int,int) __Set_CellsPZMCount( ){
             if( txbPuzzle==null || GNPX_000.pGNPX_Eng==null )  return (false,-1,-1,-1);
-            var (sAssist,nP,nZ,nM) = pAnMan.Aggregate_CellsPZM( pGP.BDL );
+            var (confirmedAll,nP,nZ,nM) = pAnMan.Aggregate_CellsPZM( pGP.BDL );
 
             if( nP+nZ+nM>0 ){
                 txbPuzzle.Text   = nP.ToString();
@@ -133,7 +133,7 @@ namespace GNPXcore{
                 }
                 else{ lblSolutionLevel.Visibility=Visibility.Hidden; }
             }
-            return ((nP+nM>0)&sAssist,nP,nZ,nM);
+            return ((nP+nM>0)&confirmedAll,nP,nZ,nM);
         }
 
         private void chbAnalyze00_Checked( object sender, RoutedEventArgs e ){
@@ -267,14 +267,15 @@ namespace GNPXcore{
                 if( msgST.LastIndexOf("anti-rule")>=0 || msgST.LastIndexOf("Unparsable")>=0 ){ }
 
                 var tmpGPMan = pGNPX_Eng.GPMan;
-                List<UProbS> USolLst2 = tmpGPMan.child_GPs.ConvertAll( G => new UProbS(G) );
+                int mpCC=0;
+                List<UProbS> USolLst2 = tmpGPMan.child_GPs.ConvertAll( G => new UProbS(G,++mpCC) );
                 if(  USolLst2!=null && USolLst2.Count>0 ){
                     LstBxMltSolutions.ItemsSource = USolLst2;
                     LstBxMltSolutions.SelectedIndex = tmpGPMan.selectedIX;
                     LstBxMltSolutions.ScrollIntoView( USolLst2.First() );
 
                     var Q = (UProbS)LstBxMltSolutions.SelectedItem;
-                    if( Q != null )  lblAnalyzerResultM.Text= $"[{Q.IDmp1}] {Q.Sol_ResultLong}";
+                    if( Q != null )  lblAnalyzerResultM.Text= $"[{Q.__ID+1}] {Q.Sol_ResultLong}";
                 }
  
                 displayTimer.Stop();
