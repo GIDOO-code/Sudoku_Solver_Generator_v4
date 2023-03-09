@@ -1,6 +1,6 @@
 # GNPX マニュアル
 - プログラムは SUDOKU_App/GNPX.exe です。
-- SDK_Methods_V2.txt は、実行時の定義データ。 GNPXが生成・管理します。通常、ユーザーは編集する必要はありません。もしも失敗したときは、削除してください。後のことはシステムが対処します。
+- SDK_Methods_V4.txt は、実行時の定義データ。 GNPXが生成・管理します。通常、ユーザーは編集する必要はありません。もしも失敗したときは、削除してください。後のことはシステムが対処します。
 - VisualStudioプロジェクトをコンパイルするときは、GNPX.exe を SUDOKU_App フォルダーに配置して下さい。
 
 # 1. File
@@ -136,7 +136,7 @@
 
 ![](images/Manual/Manual_51TransposeStandardization.png)
 
-# 6 Hompage
+# 6 Homepage
 Jump to HP from the application.
 
 ![](images/Manual/Manual_60HomePage.png)
