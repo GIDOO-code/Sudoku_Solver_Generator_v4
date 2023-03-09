@@ -136,7 +136,7 @@
 
 ![](images/Manual/Manual_51TransposeStandardization.png)
 
-# 6 Hompage
+# 6 Homepage
 Jump to HP from the application.
 
 ![](images/Manual/Manual_60HomePage.png)
