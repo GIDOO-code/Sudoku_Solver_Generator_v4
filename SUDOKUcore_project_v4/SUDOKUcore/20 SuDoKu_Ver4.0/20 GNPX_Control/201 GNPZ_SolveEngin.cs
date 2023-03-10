@@ -33,19 +33,15 @@ namespace GNPXcore{
         public  GNPX_AnalyzerMan AnMan;                     // analyzer(methods)
 
 
+        //    { get; set; } ... Techniques used for debugging.
+        //                      Find out where unexpected assignments are made.
+        //
 
-
-        // 1) Set_NewPuzzle : Register the analysis Puzzle with the engine -> pGP_Initial.
-        // 2) 
-        public UPuzzle           pGP_Initial{ get; set; }
-
-
-
-#if DEBUG
-        public  UPuzzleMan       GPMan{ get; set; }         // property to find out where set is executed
-#else
+      //public UPuzzle           pGP_Initial{ get; set; }
+      //public  UPuzzleMan       GPMan{ get; set; }         // property to find out where set is executed
+        public UPuzzle           pGP_Initial;
         public  UPuzzleMan       GPMan;
-#endif
+
         public  UPuzzle          pGP{   get=>GPMan.pGP; set=>GPMan.pGP=value; }// =null;                  // Problem to analyze
         public List<UCell>       pBDL{  get=>pGP.BDL; }
         public  int              selectedIX;
@@ -165,7 +161,7 @@ namespace GNPXcore{
         public void MethodLst_Run_Reset(){
             MethodLst_Run.ForEach(P=>P.UsedCC=0);
             var Q = GPMan.GPManPre;
-            while( Q != null ){ GPMan=Q; Q=Q.GPManPre; Thread.Sleep(5); }
+            while( Q != null ){ GPMan=Q; Q=Q.GPManPre; Thread.Sleep(1); }
         } 
 
         public string DGViewMethodCounterToString(){
@@ -190,10 +186,10 @@ namespace GNPXcore{
 
       #region Analyzer
         // simply solve puzzles
-        public void sudokAnalyzer_Simple( CancellationToken ct ){
+        public void sudoku_Solver_Simple( CancellationToken ct ){
             try{
                 eng_retCode=0;
-                    // WriteLine( "@@@@@@@@@@@@@@@@@@@@@@@@ sudokAnalyzer_Simple  ----" );  202303-beta
+                    // WriteLine( "@@@@@@@@@@@@@@@@@@@@@@@@ sudoku_Solver_Simple  ----" );  202303-beta
 
                 AnMan.Update_CellsState( pBDL, setAllCandidates:true );  // allFlag:true : set all candidates
                 Stopwatch AnalyzerLap = new Stopwatch();
@@ -213,7 +209,7 @@ namespace GNPXcore{
                     }
 
                     // ================================================
-                    var (ret,ret2) = sudokAnalyzer_SolveStage( ct, false );  // <-- 1-step solver
+                    var (ret,ret2) = sudoku_Solver_SingleStage( ct, false );  // <-- 1-step solver
                     if( !ret ){ eng_retCode=-999; break; }
 
                     SdkExecTime = AnalyzerLap.Elapsed;
@@ -235,7 +231,7 @@ namespace GNPXcore{
         }
        
         // Solve up
-        public void sudokAnalyzer_SolveAll( CancellationToken ct ){  //202303-beta
+        public void sudoku_Solver_Complete( CancellationToken ct ){  //202303-beta
             try{
                 eng_retCode=0;
 
@@ -251,7 +247,7 @@ namespace GNPXcore{
                     if( !retB )  return;                    // go to the next stage
 
                     // ================================================
-                    var (ret,ret2) = sudokAnalyzer_SolveStage( ct, false ); // <-- 1-step solver
+                    var (ret,ret2) = sudoku_Solver_SingleStage( ct, false ); // <-- 1-step solver
                     if( !ret ){ eng_retCode=-999; break; }
                     // -------------------------------------------------
 
@@ -273,7 +269,7 @@ namespace GNPXcore{
         }
 
         // 1-step solver
-        public (bool,string) sudokAnalyzer_SolveStage( CancellationToken ct, /*ref int ret2,*/ bool SolInfoB ){
+        public (bool,string) sudoku_Solver_SingleStage( CancellationToken ct, /*ref int ret2,*/ bool SolInfoB ){
             if(__ChkPrint__) WriteLine( $"\n### stageNo:{stageNo}" );
         
             Stopwatch AnalyzerLap = new Stopwatch();

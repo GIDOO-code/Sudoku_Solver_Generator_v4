@@ -85,8 +85,6 @@ namespace GNPXcore{
 
 
 
-        // Pattern capture
-        // Extract patterns from Sudoku problem.
         public int patternImport( UPuzzle pGP ){
             int nc=0;
             foreach( var P in pGP.BDL ){

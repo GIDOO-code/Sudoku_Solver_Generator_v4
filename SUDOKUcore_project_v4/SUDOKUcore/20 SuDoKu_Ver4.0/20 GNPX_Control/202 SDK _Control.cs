@@ -151,7 +151,7 @@ namespace GNPXcore{
 
                     // =================================================== Solving
                     if( !__SimpleAnalyzerB__ )  pGNPX_Eng.AnalyzerCounterReset();
-                    pGNPX_Eng.sudokAnalyzer_Simple(ct);         // Apply algorithms to candidate and try to solve them.
+                    pGNPX_Eng.sudoku_Solver_Simple(ct);         // Apply algorithms to candidate and try to solve them.
                     // ---------------------------------------------------    
 
                     if( GNPZ_Engin.eng_retCode==0 ){
@@ -168,7 +168,7 @@ namespace GNPXcore{
                         qGP.solMessage = pGNPX_Eng.DGViewMethodCounterToString();
                         pGNP00.save_created_PUZZLE(qGP);
 
-                        SDKEventArgs se = new SDKEventArgs( eCode:MltProblem, ProgressPer:(--mlt));
+                        SDKEventArgs se = new SDKEventArgs( ePara0:MltProblem, ePara1:(--mlt));
                         Send_Progress( this, se );             //(can send information in the same way as LoopCC.)
                         if( CbxNextLSpattern ) rxCTRL=0;      //Change LS pattern at next problem generation
                     }
@@ -185,7 +185,7 @@ namespace GNPXcore{
             try{
                 retNZ=-1; LoopCC++; TLoopCC++;
                 if( pGNPX_Eng.Set_Methods_for_Solving(false) < 0 )  return;      // Run every analysis
-                pGNPX_Eng.sudokAnalyzer_SolveStage( ct, true );
+                pGNPX_Eng.sudoku_Solver_SingleStage( ct, true );
               //  SDKEventArgs se = new SDKEventArgs(ProgressPer:retNZ);
               //  Send_Progress(this,se);
             }
@@ -202,7 +202,7 @@ namespace GNPXcore{
                 LoopCC++; TLoopCC++;
                 bool chbConfirmMultipleCells = GNPX_App.chbConfirmMultipleCells;
                 if( pGNPX_Eng.Set_Methods_for_Solving(false) < 0 )  return;      // Run every analysis
-                pGNPX_Eng.sudokAnalyzer_SolveAll(ct);
+                pGNPX_Eng.sudoku_Solver_Complete(ct);
               //  SDKEventArgs se = new SDKEventArgs(ProgressPer:(GNPZ_Engin.eng_retCode));
               //  Send_Progress(this,se);
             }

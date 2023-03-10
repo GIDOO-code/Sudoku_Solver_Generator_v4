@@ -35,8 +35,7 @@ using GIDOO_space;
         For simple version:
 
             For consistency with the regular version, there are some unnecessary but unchanged parts.
-
-     
+ 
 
         How to change the version ( Regular version -> Simple version )
 
@@ -359,7 +358,6 @@ namespace GNPXcore{
             WOpacityCC=0;
             endingTimer.IsEnabled = true;
             endingTimer.Start();
-//            if(capture!=null) capture.Release();
         }
         private void startingTimer_Tick( object sender, EventArgs e){
             WOpacityCC++;
@@ -493,6 +491,7 @@ namespace GNPXcore{
 
 
         private string preTabName="";
+
         private void tabSolver_SelectionChanged( object sender, SelectionChangedEventArgs e ){
             TabItem tabItm = tabSolver.SelectedItem as TabItem;
             if( tabItm!=null ){

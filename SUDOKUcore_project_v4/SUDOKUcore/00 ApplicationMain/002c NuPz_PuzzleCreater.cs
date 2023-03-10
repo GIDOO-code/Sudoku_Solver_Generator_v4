@@ -283,10 +283,10 @@ namespace GNPXcore{
 
         //Progress display
         public void BWGenPrb_ProgressChanged( object sender, SDKEventArgs e ){ 
-            _ProgressPer = e.ProgressPer; 
-            int solCC = e.eCode - _ProgressPer;
+            _ProgressPer = e.ePara1; 
+            int solCC = e.ePara0 - _ProgressPer;
             this.Dispatcher.Invoke(() => {
-                shortMessage( $"{solCC} found", new sysWin.Point(500,90), Colors.Navy, 1000 ); } );
+                shortMessage( $"{solCC} found", new sysWin.Point(500,90), Colors.DarkOrange, 1000 ); } );
         }
         //Done
         private void btnP13Start2Complated( ){

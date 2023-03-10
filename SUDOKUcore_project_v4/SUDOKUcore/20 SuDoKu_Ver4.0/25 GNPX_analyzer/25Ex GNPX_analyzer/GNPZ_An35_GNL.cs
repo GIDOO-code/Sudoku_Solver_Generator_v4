@@ -117,7 +117,7 @@ namespace GNPXcore{
 
                                 if( __SimpleAnalyzerB__ )  return true;
                                 if( !pAnMan.SnapSaveGP(pGP) ){ break_GroupedNiceLoop=true; return false; }
-                                Thread.Sleep(10);
+                                Thread.Sleep(1);
                                 if((++SolLimBrk)>(int)GNPX_App.GMthdOption["MSlvrMaxAlgorithm"]){
                                     SolLimBrk=int.MaxValue;
                                     return false;

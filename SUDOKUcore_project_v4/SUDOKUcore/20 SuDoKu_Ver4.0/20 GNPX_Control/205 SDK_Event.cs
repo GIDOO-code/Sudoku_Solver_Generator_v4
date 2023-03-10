@@ -7,16 +7,16 @@ namespace GNPXcore{
 
     public class SDKEventArgs: EventArgs{
 	    public string eName;
-	    public int    eCode;
-        public int    ProgressPer;
+	    public int    ePara0;
+        public int    ePara1;
         public bool   Cancelled;
         public int[]  SDK81;
 
-	    public SDKEventArgs( string eName=null, int eCode=-1, int ProgressPer=-1, bool Cancelled=false ){
+	    public SDKEventArgs( string eName=null, int ePara0=-1, int ePara1=-1, bool Cancelled=false ){
             try{
 		        this.eName = eName;
-		        this.eCode = eCode;
-                this.ProgressPer = ProgressPer;
+		        this.ePara0 = ePara0;
+                this.ePara1 = ePara1;
                 this.Cancelled = Cancelled;
             }
             catch(Exception e ){

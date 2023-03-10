@@ -16,8 +16,8 @@
 	 <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
 	  <!-- existing property declarations are here -->
 	  <IntermediateOutputPath>path</IntermediateOutputPath>
-	  <AssemblyVersion>4.1.0.0</AssemblyVersion>
-	  <FileVersion>4.1.0.0</FileVersion>
+	  <AssemblyVersion>4.1.0.1</AssemblyVersion>
+	  <FileVersion>4.1.0.1</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

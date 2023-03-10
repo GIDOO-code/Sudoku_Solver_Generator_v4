@@ -324,7 +324,7 @@ namespace GNPXcore{
             catch( Exception ex ){ WriteLine( $"{ex.Message}\r{ex.StackTrace}" ); }
         } 
 
-        private void task_SDKsolver_ProgressChanged( object sender, SDKEventArgs e ){ _ProgressPer=e.ProgressPer; }
+        private void task_SDKsolver_ProgressChanged( object sender, SDKEventArgs e ){ _ProgressPer=e.ePara1; }
 
       #endregion  analysis[Step] 
     

@@ -189,16 +189,18 @@
                               Foreground="White" Height="20" Margin="54,200,0,0"  VerticalAlignment="Top" IsChecked="True" HorizontalAlignment="Left" Width="201" FontSize="12" VerticalContentAlignment="Center" />
                     <CheckBox x:Name="chbFile81Nocsv"
                               Content="{Binding Resources.chbFormatLine, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                             
-                              Foreground="White" Margin="54,214,0,0" IsChecked="True" VerticalAlignment="Top" FontSize="12" VerticalContentAlignment="Center" Height="23" Width="185" HorizontalAlignment="Left" />
+                              Foreground="White" Margin="54,214,0,0" IsChecked="True" VerticalAlignment="Top" FontSize="12" VerticalContentAlignment="Center" Height="23" Width="185" HorizontalAlignment="Left" Checked="chbFile81Nocsv_Checked" Unchecked="chbFile81Nocsv_Checked" />
+                    <CheckBox x:Name="chbFile81Plus"                             
+                        Foreground="White" Margin="66,234,0,0" IsChecked="False" VerticalAlignment="Top" FontSize="12" VerticalContentAlignment="Center" Width="185" HorizontalAlignment="Left" Content="+ Blank" FontFamily="MS Gothic" IsEnabled="{Binding IsChecked, ElementName=chbFile81Nocsv}" />
                     <CheckBox x:Name="chbSolutionSort"
                               Content="{Binding Resources.chbSortByDiffOrder, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                             
-                              Foreground="White" Height="16" Margin="54,232,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="176" FontSize="12" VerticalContentAlignment="Center" />
+                              Foreground="White" Height="16" Margin="54,250,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="176" FontSize="12" VerticalContentAlignment="Bottom" />
                     <CheckBox x:Name="cbxProbSolSetOutput" 
                               Content="{Binding Resources.chbSaveWithAnswer, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                  
-                              Foreground="White" Margin="54,243,0,0" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153" Checked="cbxProbSolSetOutput_Checked" Unchecked="cbxProbSolSetOutput_Checked" FontSize="12" VerticalContentAlignment="Center" />
+                              Foreground="White" Margin="54,267,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="153" Checked="cbxProbSolSetOutput_Checked" Unchecked="cbxProbSolSetOutput_Checked" FontSize="12" VerticalContentAlignment="Bottom" />
                     <CheckBox x:Name="chbAddAlgorithmList"
                               Content="{Binding Resources.chbAddAlgorithmList, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
-                              Foreground="Gray" Height="17" HorizontalAlignment="Left" Margin="66,263,0,0" VerticalAlignment="Top" Width="150" IsEnabled="False" FontSize="12" VerticalContentAlignment="Center" />
+                              Foreground="Gray" Height="17" HorizontalAlignment="Left" Margin="66,281,0,0" VerticalAlignment="Top" Width="150" FontSize="12" VerticalContentAlignment="Bottom" IsEnabled="False" />
                     <Button x:Name="btnSaveToFavorites" Click="btnSaveToFavorites_Click" 
                             Content="{Binding Resources.btnSaveToFavorites, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"           
                             Foreground="White" Height="25" HorizontalAlignment="Left" Margin="264,156,0,0"  VerticalAlignment="Top" Width="119" FontSize="12">
@@ -413,7 +415,7 @@
                                 <Button x:Name="btnMultiSolve" 
                                         Content="{Binding Resources.btnMultiSolve, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"                                              
                                         FontSize="12" Foreground="White" 
-                        			    Margin="396,27,0,0" VerticalAlignment="Top" Width="109" Height="24" HorizontalAlignment="Left"
+                        			    Margin="390,27,0,0" VerticalAlignment="Top" Width="109" Height="24" HorizontalAlignment="Left"
                         			    Click="btnMultiSolve_Click">
                                     <Button.Background>
                                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -439,15 +441,15 @@
                                             FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="-32,-1,79,0" BorderThickness="0" Width="80" Height="22" HorizontalContentAlignment="Right" />
                                         <Label x:Name="lblMSlvrMaxLevel" 
                                                Content="{Binding Resources.lblMSlvrMaxLevel, Mode=OneWay, Source={x:Static app:ResourceService.Current}}" 
-                                               FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,19,53,0" BorderThickness="0" Width="85" Height="22" HorizontalContentAlignment="Right" />
+                                               FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,19,54,0" BorderThickness="0" Width="85" Height="22" HorizontalContentAlignment="Right" />
                                         <GIDOO_space:NumericUpDown Background="#FF202040" FontSize="12" Foreground="White" HorizontalAlignment="Right" MaxValue="20" MinValue="1" x:Name="MSlvrMaxLevel" Value="13" VerticalAlignment="Top" Width="50" Height="19" Margin="0,20,6,0" NumUDValueChanged="MSlvrMaxLevel_NumUDValueChanged" />
                                         <Label x:Name="lblMSlvrMaxAlgorithm"  
                                                Content="{Binding Resources.lblMSlvrMaxAlgorithm, Mode=OneWay, Source={x:Static app:ResourceService.Current}}" 
-                                               FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,41,53,0" BorderThickness="0" Width="85" Height="22" HorizontalContentAlignment="Right" />
+                                               FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,41,54,0" BorderThickness="0" Width="85" Height="22" HorizontalContentAlignment="Right" />
                                         <GIDOO_space:NumericUpDown Background="#FF202040" FontSize="12" Foreground="White" HorizontalAlignment="Right"  MaxValue="1000" MinValue="1" x:Name="MSlvrMaxAlgorithm" Value="100" VerticalAlignment="Top" Width="50" Height="19" Margin="0,41,6,0" NumUDValueChanged="MSlvrMaxAlgorithm_NumUDValueChanged" />
                                         <Label x:Name="lblMSlvrMaxAllAlgorithm"  
                                                Content="{Binding Resources.lblMSlvrMaxAllAlgorithm, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"         
-                                               FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,62,53,0" BorderThickness="0" Width="85" Height="22" HorizontalContentAlignment="Right" />
+                                               FontFamily="MS Gothic" FontSize="12" Foreground="#FFFEFFFF" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,62,54,0" BorderThickness="0" Width="85" Height="22" HorizontalContentAlignment="Right" />
                                         <GIDOO_space:NumericUpDown Background="#FF202040" FontSize="12" Foreground="White" HorizontalAlignment="Right"  MaxValue="1000" MinValue="1" x:Name="MSlvrMaxAllAlgorithm" Value="400" VerticalAlignment="Top" Width="50" Height="19" Margin="0,62,6,0" Increment="50" NumUDValueChanged="MSlvrMaxAllAlgorithm_NumUDValueChanged" />
                                         <Label x:Name="lblMSlvrMaxTime"
                                                Content="{Binding Resources.lblMSlvrMaxTime, Mode=OneWay, Source={x:Static app:ResourceService.Current}}" 

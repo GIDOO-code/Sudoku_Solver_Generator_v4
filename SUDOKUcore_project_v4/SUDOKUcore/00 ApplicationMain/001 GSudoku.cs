@@ -218,7 +218,15 @@ namespace GNPXcore{
                 while( (LRecord=SDKfile.ReadLine()) !=null ){
                     if( LRecord=="" ) continue;
                     
-                 // string[] eLst = LRecord.Split(sep,StringSplitOptions.RemoveEmptyEntries);
+                    // Supports the format "Contain a blank every 9 digits"
+                    if( LRecord.Length > 90 ){
+                        string st = LRecord.Substring(0,90).Replace(" ","").Replace(".","0");
+                        if( st.Length==81 && st.All(char.IsDigit) ){
+                            LRecord = st + LRecord.Substring(90);
+                        }
+                    }
+
+                    // string[] eLst = LRecord.Split(sep,StringSplitOptions.RemoveEmptyEntries);
                     string[] eLst = LRecord.SplitEx(sep);
 
                     if( LRecord[0]=='#' ){ pName=LRecord.Substring(1); continue; }
@@ -339,7 +347,7 @@ namespace GNPXcore{
                 pGNPX_Eng.AnalyzerCounterReset();
 
                 var tokSrc = new CancellationTokenSource();　        //for suspension
-                pGNPX_Eng.sudokAnalyzer_Simple(tokSrc.Token);                      
+                pGNPX_Eng.sudoku_Solver_Simple(tokSrc.Token);                      
                 if( GNPZ_Engin.eng_retCode<0 ){
                     pGNPX_Eng.pGP.DifLevel = -999;
                     pGNPX_Eng.pGP.Name = "unsolvable";
@@ -359,7 +367,7 @@ namespace GNPXcore{
             return solMessage;
         }
 
-        public void SDK_FileOutput( string fName, bool append, bool fType81, bool SolSort, bool SolSet, bool SolSet2 ){
+        public void SDK_FileOutput( string fName, bool append, bool fType81, bool SolSort, bool SolSet, bool SolSet2, bool blank9 ){
             if( SDKProbLst.Count==0 )  return;
 
             SDK_Ctrl.MltProblem = 1;
@@ -386,8 +394,13 @@ namespace GNPXcore{
                     
                     if(fType81){　//Solution(tytpe:line)
                         LRecord = "";
-                        P.BDL.ForEach( q =>{ LRecord += Max(q.No,0).ToString(); } );
-                        LRecord=LRecord.Replace("0",".");
+
+                        //Supports the format "Contain a blank every 9 digits"
+                        P.BDL.ForEach( q => {
+                            LRecord += Max(q.No,0).ToString();
+                            if( q.c==8 )  LRecord += " ";
+                        } );
+                        LRecord = LRecord.Replace("0",".");
 
                         LRecord += $" {(P.ID+1)} {P.DifLevel} \"{P.Name}\"";
                         if(SolSet&&SolSet2) LRecord += $" \"{SetSolution(P,SolSet2:true,SolAll:true)}\"";//解出力
@@ -423,7 +436,7 @@ namespace GNPXcore{
 
             UPuzzle pGP=pGNPX_Eng.pGP;
             pGNPX_Eng.AnMan.Update_CellsState( pGNPX_Eng.pBDL );
-            pGNPX_Eng.sudokAnalyzer_Simple(tokSrc.Token);
+            pGNPX_Eng.sudoku_Solver_Simple(tokSrc.Token);
             string prbMessage;
             int difLvl = pGNPX_Eng.Get_DifficultyLevel(out prbMessage);
 

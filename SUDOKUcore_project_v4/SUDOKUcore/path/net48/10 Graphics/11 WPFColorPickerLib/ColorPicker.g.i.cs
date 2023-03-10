@@ -195,7 +195,7 @@ namespace WPFColorPickerLib {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SUDOKU_Regular;V4.1.0.0;component/10%20graphics/11%20wpfcolorpickerlib/colorpick" +
+            System.Uri resourceLocater = new System.Uri("/SUDOKU_Regular;V4.1.0.1;component/10%20graphics/11%20wpfcolorpickerlib/colorpick" +
                     "er.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\10 Graphics\11 WPFColorPickerLib\ColorPicker.xaml"

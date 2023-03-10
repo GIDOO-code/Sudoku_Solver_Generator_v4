@@ -68,6 +68,7 @@ namespace GNPXcore{
             fNameSDK = SaveFDlog.FileName;
             bool append  = (bool)chbAdditionalSave.IsChecked;
             bool fType81 = (bool)chbFile81Nocsv.IsChecked;
+            bool blank9  = (bool)chbFile81Plus.IsChecked;
             bool SolSort = (bool)chbSolutionSort.IsChecked;
             bool SolSet  = (bool)cbxProbSolSetOutput.IsChecked;
             bool SolSet2 = (bool)chbAddAlgorithmList.IsChecked;
@@ -80,7 +81,7 @@ namespace GNPXcore{
                 _SetScreenProblem();
             }
             GNPX_000.pGNPX_Eng.Set_Methods_for_Solving(AllMthd:false);  //true:All Method 
-            GNPX_000.SDK_FileOutput( fNameSDK, append, fType81, SolSort, SolSet, SolSet2 );
+            GNPX_000.SDK_FileOutput( fNameSDK, append, fType81, SolSort, SolSet, SolSet2, blank9 );
         }
 
 
@@ -100,8 +101,11 @@ namespace GNPXcore{
             chbAddAlgorithmList.Foreground = new SolidColorBrush(cr); 
         }
 
-
-
+        private void chbFile81Nocsv_Checked(object sender, RoutedEventArgs e) {
+            if( chbFile81Plus is null )  return;
+            Color cr = (bool)chbFile81Nocsv.IsChecked? Colors.White: Colors.Gray;
+            chbFile81Plus.Foreground = new SolidColorBrush(cr); 
+        }
 
 
         //Copy/Paste Puzzle(board<-->clipboard)
