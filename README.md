@@ -1,5 +1,6 @@
 # Sudoku_Solver_Generator_v4 beta (3/May/2023)
-  This is a beta version. Please download again around May.
+  This is a beta version. i will continue to modify the code for some time.
+  Please download again around May.
 
 
 # Reconfigured
