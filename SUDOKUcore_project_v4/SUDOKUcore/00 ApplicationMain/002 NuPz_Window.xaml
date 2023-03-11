@@ -107,7 +107,7 @@
         <!-- DataContext="{Binding}" -->
         <Image x:Name="PB_GBoard" Width="338" Height="338" Margin="18,108,0,0" Stretch="Fill" VerticalAlignment="Top"
                  HorizontalAlignment="Left" 
-               Source="/00 ApplicationMain/LockedSet3D.png" MouseEnter="PB_GBoard_MouseEnter" MouseLeave="PB_GBoard_MouseLeave" ToolTip="copy / paste is possible" />
+               Source="/00 ApplicationMain/images/LockedSet3D.png" MouseEnter="PB_GBoard_MouseEnter" MouseLeave="PB_GBoard_MouseLeave" ToolTip="copy / paste is possible" />
         <Grid x:Name="gridOverlap" HorizontalAlignment="Left" Margin="50,100,0,50" VerticalAlignment="Bottom">
             <Ellipse HorizontalAlignment="Left" Height="8" Margin="2,2,0,0" Stroke="DarkOrange" VerticalAlignment="Center" Width="8" Fill="#FFED1A1A" Panel.ZIndex="10"/>
             <Label Content="overlap" FontFamily="MS Gothic" Foreground="White" Margin="8,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>

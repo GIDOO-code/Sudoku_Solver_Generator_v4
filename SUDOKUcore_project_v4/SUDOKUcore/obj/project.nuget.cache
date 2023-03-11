@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "RZgoSHNlrYcw+FuFlvLieu0zpFEG0xQixXNHzNHVB/w2C+nptDDMUJr2dkRZTlbCgj6a90kk0cnH1nvUjC1AQg==",
+  "success": true,
+  "projectFilePath": "E:\\◆◆数独集合体\\■■　SUDOKU 2023\\SuDoKu23 EnglishCore\\20230311 SUDOKUcore2_project\\SUDOKUcore\\SUDOKU_Proj.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gkats\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\gkats\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\gkats\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\gkats\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\gkats\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\gkats\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\gkats\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

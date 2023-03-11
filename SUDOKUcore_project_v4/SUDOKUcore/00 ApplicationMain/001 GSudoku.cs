@@ -158,7 +158,7 @@ namespace GNPXcore{
 			pGNPX_Eng.pGP.extResult="";
         }
 
-    #region Problem Management
+    #region Puzzle Management
         public UPuzzle GetCurrentProble( ){
             UPuzzle P=null;
             if( CurrentPrbNo>=0 && CurrentPrbNo<=SDKProbLst.Count-1 ){
@@ -205,7 +205,7 @@ namespace GNPXcore{
 //        }
 
 
-    #endregion Problem management
+    #endregion Puzzle management
 
     #region file I/O
         public int SDK_FileInput( string fName, bool prbIniFlag ){
@@ -218,11 +218,12 @@ namespace GNPXcore{
                 while( (LRecord=SDKfile.ReadLine()) !=null ){
                     if( LRecord=="" ) continue;
                     
-                    // Supports the format "Contain a blank every 9 digits"
-                    if( LRecord.Length > 90 ){
-                        string st = LRecord.Substring(0,90).Replace(" ","").Replace(".","0");
+                    // Supports the format "Contain a blank every 9 digits" and similar type.
+                    int n81 = Find_81Digits(LRecord);
+                    if( n81 > 81 ){
+                        string st = LRecord.Substring(0,n81).Replace(" ","").Replace(".","0");
                         if( st.Length==81 && st.All(char.IsDigit) ){
-                            LRecord = st + LRecord.Substring(90);
+                            LRecord = st + LRecord.Substring(n81);
                         }
                     }
 
@@ -269,7 +270,6 @@ namespace GNPXcore{
                             List<UCell> BDLa = new List<UCell>();
                             for(int r=0; r<9; r++ ){
                                 LRecord = SDKfile.ReadLine();
-                              //string[] eLst = LRecord.Split(sep,StringSplitOptions.RemoveEmptyEntries);
                                 eLst = LRecord.SplitEx(sep);
                                 for(int c=0; c<9; c++ ){
                                     int n = Convert.ToInt32(eLst[c]);
@@ -286,8 +286,19 @@ namespace GNPXcore{
 
                 CurrentPrbNo = 0;
                 return CurrentPrbNo;
+
+                // ----- inner function -----
+                int Find_81Digits( string st ){
+                    int n=0, m=0;
+                    foreach( var p in st ){
+                        m++;
+                        if( (char.IsDigit(p) || p=='.') && (++n)>= 81 )  break;                
+                    }
+                    return (n==81)? m: 0;
+                }   
             }   
         }
+/*
         public void SDK_StringInput( string st ){
             st = st.Replace(".", "0");
             List<UCell> BDLa=_stringToBDL(st);
@@ -296,6 +307,7 @@ namespace GNPXcore{
             SDKProbLst.ForEach(P=>P.ID=(ID++));
             CurrentPrbNo=(ID-1);
         }
+*/
         public UPuzzle SDK_ToUPuzzle( int[] SDK81, string name="", int difLvl=0, bool saveF=false ){
             if(SDK81==null) return null;
             string st="";
