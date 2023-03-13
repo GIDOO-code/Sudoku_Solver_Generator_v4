@@ -5,7 +5,8 @@
 
 # Reconfigured
 1) The GNPX project/C# code has been reconfigured.
-2) Added and corrected HP.
+2) Change target framework to .NET7.0
+3) Added and corrected HP.
 
 
 
