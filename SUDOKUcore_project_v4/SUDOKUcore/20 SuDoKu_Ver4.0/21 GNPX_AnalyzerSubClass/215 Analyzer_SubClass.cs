@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using static System.Diagnostics.Debug;
-
+using static System.Math;
 using GIDOO_space;
 using System.Windows.Media.Animation;
 //using Accessibility;
@@ -11,14 +11,12 @@ using System.Runtime.Serialization;
 
 namespace GNPXcore{
     static public class G0{
-        static private int _NSZ=128; //8192
+        static private int _NSZ = 8192;
         static public long[] hashBase = new long[_NSZ];  
         static Random rnd = new Random(314);
         static G0(){
-            // for(int k=0; k<hashBase.Length; k++ ) hashBase[k] = (long)rnd.NextInt64();
-            long FNextInt64() => ((long)rnd.Next() << 32) | (long)rnd.Next();
-
-            for( int k=0; k<hashBase.Length; k++ ) hashBase[k] = FNextInt64();
+            Random rnd = new Random(314);
+            for( int k=0; k<hashBase.Length; k++ ) hashBase[k] = rnd.NextInt64();
         }
     }
 

@@ -110,6 +110,20 @@
 		 "SuDoKu Problem Creation Program" by connecting with this routine.
 		</p>
 		<img src="images/img14/latin4.jpg" width="400px">
+
+		<h2>Tips for embedding in a Sudoku generator app</h2>
+			<p>A Latin square with block constraints can be generated in steps 1-4.
+				By masking this, the following Sudoku problem candidates are obtained.
+				However, sometimes the underlying Latin squares are different, but the masks are the same.
+				If there are two or more underlying Latin squares, it is not a Sudoku puzzle.
+				The percentage of identical Latin squares is higher for fewer masks (20-50%)<br>
+				The Sudoku analysis and generation application "GNPX" only targets candidates made from the only Latin square.
+			</p>
+			<img src="images/img14/img14d.png" width="500">
+			<p newline>Applying a mask (middle) to a Latin square (left) results in a Sudoku problem (right). <br>
+				In this example, the digits circled in red are different.</p>
+			<p class="newLine">
+
         </article>    
     </section>
 

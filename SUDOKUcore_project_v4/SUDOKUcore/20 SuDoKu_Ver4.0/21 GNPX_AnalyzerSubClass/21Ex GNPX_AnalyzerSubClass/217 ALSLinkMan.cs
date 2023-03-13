@@ -192,7 +192,7 @@ namespace GNPXcore {
             }
             for(int rc=0; rc<81; rc++ ){
                 if( LinkCeAlsLst[rc]!=null ){
-                    LinkCeAlsLst[rc] = LinkCeAlsLst[rc].DistinctBy( P=> P.ALS.ID).ToList();
+                    LinkCeAlsLst[rc] = LinkCeAlsLst[rc].DistinctBy( p => p.ALS.ID ).ToList();
                     LinkCeAlsLst[rc].Sort();
                 }
             }

@@ -207,9 +207,13 @@ namespace GNPXcore {
             var A = obj as LinkCellALS;
             return (this.ALS.ID==A.ALS.ID);
         }
+
         public int CompareTo( object obj ){
             LinkCellALS A = obj as LinkCellALS;
             return (this.ALS.ID-A.ALS.ID);
+        }
+        public int CompareTo( ){
+            return (this.ALS.ID);
         }
 
         public override string ToString(){

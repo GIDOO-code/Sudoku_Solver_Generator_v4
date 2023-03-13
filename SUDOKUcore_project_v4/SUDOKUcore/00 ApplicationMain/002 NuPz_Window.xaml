@@ -1103,7 +1103,7 @@
                     <CheckBox x:Name="GenLS_turbo" 
                         Content="{Binding Resources.GenLS_turbo, Mode=OneWay, Source={x:Static app:ResourceService.Current}}"
                         Background="White" Foreground="White" 
-                        IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MS Mincho" VerticalContentAlignment="Center" Margin="163,128,0,263" Height="20" />
+                        IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MS Mincho" VerticalContentAlignment="Center" Margin="163,128,0,263" Height="20" IsEnabled="False" />
 
                     <Label BorderBrush="#FF5C62A0" 
                            Content="In development" 

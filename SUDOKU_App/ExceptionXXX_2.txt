@@ -1,0 +1,1 @@
+﻿---2023/03/13 14:59:15 Object reference not set to an instance of an object.    at GNPXcore.GNPZ_Engin.sudoku_Solver_SingleStage(CancellationToken ct, Boolean SolInfoB) in E:\◆◆数独集合体\■■ SUDOKU V4\20230312 SUDOKUcore2_project LS Explanation\SUDOKUcore\20 SuDoKu_Ver4.0\20 GNPX_Control_Engin\201 GNPZ_SolveEngin.cs:line 355

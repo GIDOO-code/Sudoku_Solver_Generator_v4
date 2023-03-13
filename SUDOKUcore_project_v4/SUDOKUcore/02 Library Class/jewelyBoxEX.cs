@@ -160,8 +160,9 @@ namespace GIDOO_space{
 
 
         //DistinctBy is feature in .Net7. don't need the code below.
-        static public IEnumerable<T> DistinctBy<T, TKey>(this IEnumerable<T> items, Func<T, TKey> property ){
-            return items.GroupBy(property).Select(x => x.First());
-        }
+        //static public IEnumerable<T> DistinctBy<T, TKey>(this IEnumerable<T> items, Func<T, TKey> property ){
+        //    return items.GroupBy(property).Select(x => x.First());
+        // }
+
     }
 }

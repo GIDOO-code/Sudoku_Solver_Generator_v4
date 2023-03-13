@@ -59,22 +59,20 @@ Kraken FinnedFishEx
 ForceChain_CellEx
 ForceChain_HouseEx
 ForceChain_ContradictionEx
-*MSlvrMaxLevel 14
-*MSlvrMaxAlgorithm 3
-*MSlvrMaxAllAlgorithm 200
-*MSlvrMaxTime 200
-*StartTime 2023/01/23 0:00:00
+*MSlvrMaxLevel 13
+*MSlvrMaxAlgorithm 5
+*MSlvrMaxAllAlgorithm 100
+*MSlvrMaxTime 1200
+*StartTime 2023/03/12 0:00:00
 *NiceLoopMax 10
 *ALSSizeMax 5
 *ALSChainSizeMax 5
 *Cell True
 *GroupedCells True
 *ALS True
-*ForceLx ForceL1
+*ForceLx ForceL2
 *ShowProofMultiPaths False
 *GeneralLogic_on False
 *GenLogMaxSize 3
 *GenLogMaxRank 1
 *ForceChain_on True
-*GeneralLogicOn False
-*ForceChainCellHouseOn True

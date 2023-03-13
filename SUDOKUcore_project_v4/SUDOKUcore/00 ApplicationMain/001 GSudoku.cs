@@ -17,6 +17,7 @@ using System.Text.RegularExpressions;
 //using System.Drawing;
 //using System.Drawing;
 
+
 namespace GNPXcore{
 
     // For simple version:
@@ -33,6 +34,7 @@ namespace GNPXcore{
         static public Dictionary<string,Color> ColorDic=new Dictionary<string,Color>();  
         static public DateTime  MultiSolve_StartTime = DateTime.Now;
         static public string    fNamePara;
+
 //X        static public bool      _Loading_ = true;
 
         public int              cellSize = 36;

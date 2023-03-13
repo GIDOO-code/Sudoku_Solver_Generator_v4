@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "SUDOKU_Regular/1.0.0": {
+        "runtime": {
+          "SUDOKU_Regular.dll": {}
+        },
+        "resources": {
+          "ja-JP/SUDOKU_Regular.resources.dll": {
+            "locale": "ja-JP"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SUDOKU_Regular/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
