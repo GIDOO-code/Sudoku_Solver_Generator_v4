@@ -248,7 +248,8 @@ namespace GNPXcore{
                     Lbl_onAnalyzingM.Content = pRes.msgAnalysisComplate;
                     Lbl_onAnalyzingM.Foreground = Brushes.LightBlue;  
 
-					if( (bool)chbSetDifficulty.IsChecked ){
+					if( (bool)chbSetDifficulty.IsChecked &&
+                        (GNPX_000.AnalyzerMode=="Solve" || GNPX_000.AnalyzerMode=="SolveUp") ){
 						string prbMessage;
 						int DifLevel = GNPX_000.pGNPX_Eng.Get_DifficultyLevel( out prbMessage );
 						pGP.DifLevel = DifLevel;
@@ -269,7 +270,7 @@ namespace GNPXcore{
                 var tmpGPMan = pGNPX_Eng.GPMan;
                 int mpCC=0;
                 List<UProbS> USolLst2 = tmpGPMan.child_GPs.ConvertAll( G => new UProbS(G,++mpCC) );
-                if(  USolLst2!=null && USolLst2.Count>0 ){
+                if( USolLst2!=null && USolLst2.Count>0 ){
                     LstBxMltSolutions.ItemsSource = USolLst2;
                     LstBxMltSolutions.SelectedIndex = tmpGPMan.selectedIX;
                     LstBxMltSolutions.ScrollIntoView( USolLst2.First() );
@@ -277,9 +278,18 @@ namespace GNPXcore{
                     var Q = (UProbS)LstBxMltSolutions.SelectedItem;
                     if( Q != null )  lblAnalyzerResultM.Text= $"[{Q.__ID+1}] {Q.Sol_ResultLong}";
                 }
+                else{ 
+                    LstBxMltSolutions.ItemsSource = null;
+                }
  
                 displayTimer.Stop();
             }
+
+        //    else if( GNPX_000.AnalyzerMode == "StepBack" ){   ...
+        //        Lbl_onAnalyzingM.Content = "";
+        //        Lbl_onAnalyzing.Content  = "";
+        //    }
+
             else{
                 if(!ErrorStopB)  lblAnalyzerResult.Text = GNPZ_Engin.AnalyzingMethodName;
                 Lbl_onAnalyzingM.Content = pRes.Lbl_onAnalyzing+" : "+GNPZ_Engin.AnalyzingMethodName;

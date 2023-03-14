@@ -61,10 +61,11 @@ namespace GNPXcore{
             return UCcpy;
         }
 
-        public void Reset_result(){
+        public void Reset_result( bool resetAll=false ){
             CancelB=FixedNo=0; ECrLst=null;
+            if( resetAll ) FreeB=0;
         }
-         public void Reset_All(){
+        public void Reset_All(){
             CancelB=FixedNo=FreeB=0; ECrLst=null;
             if( No < 0 )  No = 0;
         }

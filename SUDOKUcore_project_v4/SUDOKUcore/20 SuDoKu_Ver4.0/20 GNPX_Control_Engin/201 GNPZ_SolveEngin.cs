@@ -64,7 +64,10 @@ namespace GNPXcore{
 
 
       #region Puzzle management
-        public void Clear_0() => pGP.ToInitial();
+        public void Clear_0(){
+            pGP.ToInitial( ); // Clear all.
+            AnMan.Update_CellsState( pGP.BDL, setAllCandidates:true );
+        }
         public bool IsSolved() => pBDL.All(p=> p.No!=0);
         // Set_NewPuzzle : Set the analysis Puzzle to the engine -> pGP_Initial.        
         public void Set_NewPuzzle( UPuzzle GParg ){   
@@ -137,7 +140,7 @@ namespace GNPXcore{
             
             this.pGP = pGP_Initial.Copy();
             this.GPMan.stageNo = 0;
-            this.GPMan.pGP.ToInitial();
+            this.GPMan.pGP.ToInitial( ); //to initial stage
         }
       #endregion Puzzle management
 
@@ -161,7 +164,7 @@ namespace GNPXcore{
         public void MethodLst_Run_Reset(){
             MethodLst_Run.ForEach(P=>P.UsedCC=0);
             var Q = GPMan.GPManPre;
-            while( Q != null ){ GPMan=Q; Q=Q.GPManPre; Thread.Sleep(1); }
+            while( Q != null ){ GPMan=Q; Q=Q.GPManPre; /*Thread.Sleep(1);*/ }
         } 
 
         public string DGViewMethodCounterToString(){
@@ -325,11 +328,13 @@ namespace GNPXcore{
 
                                 // --- analysis is successful!  save the method and difficulty.
                                 if( P.DifLevel<=2 )  L1SolFound=true;
-                                P.UsedCC++;            // Counter for the number of times the algorithm has been applied
+                                P.UsedCC++;                  // Counter for the number of times the algorithm has been applied
                                 pGP.pMethod = P;     
-                                pGP.DifLevel = Max( pGP.DifLevel, P.DifLevel ); // Set the maximum level of the algorithm to the problem level
+         // 202303                       pGP.DifLevel = P.DifLevel;   // Set the maximum level of the algorithm to the problem level
 
-                                if( !mltAnsSearcB )  goto LBreak_Analyzing;  // Abort if single search
+                                if( !mltAnsSearcB )  goto LBreak_Analyzing;     // Abort if single search
+                                else{
+                                                                    }
                                 // -------------------------------------------
 
                                 if( (string)GNPX_App.GMthdOption["abortResult"]!="" ){
@@ -348,7 +353,7 @@ namespace GNPXcore{
                         #endregion  Algorithm execution
                     } 
                     //----------------------------------------------------------------------------
-
+/*
                     if( mltAnsSearcB ){
                         if( child_GPs.Count > 0 ){
                             pGP = child_GPs.First();
@@ -357,7 +362,7 @@ namespace GNPXcore{
                             goto LBreak_Analyzing;
                         }
                     }
-
+*/
                                     if(__ChkPrint__) WriteLine( "========================> can not solve");
                     if( SolInfoB )  pGP.Sol_ResultLong = "no solution";
                     return (false,"no solution");
@@ -406,7 +411,7 @@ namespace GNPXcore{
                 }
                 else if( AnalyzerMode == "MultiSolve" ){
                     _lvlLow = 1;
-                    _lvlHgh = (int)GNPX_App.GMthdOption["MSlvrMaxAlgorithm"];
+                    _lvlHgh = (int)GNPX_App.GMthdOption["MSlvrMaxLevel"];
                 }
                 return (_lvlLow,_lvlHgh);
             }

@@ -484,7 +484,7 @@ namespace GNPXcore{
 
         public void save_created_PUZZLE( UPuzzle GParg ){
             GParg.ID = SDKProbLst.Count;
-            GParg.BDL.ForEach(p=>p.Reset_All() );
+            GParg.BDL.ForEach( p=>p.Reset_All() );
 
             SDKProbLst.Add(GParg);
             if( SDK_Ctrl.FilePut_GenPrb){

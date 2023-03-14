@@ -25,7 +25,7 @@ namespace GNPXcore{
         public int           selectedIX = -1;
         public int           _objectKey;          // for debug ... solved
 
-        public UAlgMethod    method_maxDif;
+        public UAlgMethod    method_maxDif = new UAlgMethod();
         public string IsNull(object X) => (X is null)? "--null": "++object";
 
         public UPuzzleMan( ){
@@ -131,14 +131,16 @@ namespace GNPXcore{
         public string      Name;                    // Name
         public string      TimeStamp;               // TimeStamp
 
-        public int         DifLevel{ get; set; }    // -1:InitialState　0:Manual
+        private int         DifLevel_13;
+        public int         DifLevel;    //{ get; set; }    // -1:InitialState　0:Manual
+      //public int         DifLevel{ get{ return DifLevel_13; } set{ DifLevel_13=value; } }    // -1:InitialState　0:Manual
         public bool        improper;                // No solution (depending on the method used)
                 // Stage No.
         public UAlgMethod  pMethod = null;          // Analytical method
         public string      solMessage;              // Message of how to solve
-        public string      Sol_Result{ get; set; }  // Solution description
+        public string      Sol_Result;  //{ get; set; }  // Solution description
         public string      Sol_ResultLong;          // Solution description(Long)
-        public string      extResult{ get; set; }   // Solution description(ext.)
+        public string      extResult;   //{ get; set; }   // Solution description(ext.)
 
         public string      __SolResultKey;          // key for identity confirmation
         public string      AnalyzingMethodName;
@@ -183,8 +185,10 @@ namespace GNPXcore{
             GPtmp.HTicks = DateTime.Now.Ticks;;
             return GPtmp;
         }
-        public void ToInitial(){
-            this.BDL.ForEach( p => p.Reset_result() );
+
+        public void ToPreStage( ) => ToInitial( resetAll:false );
+        public void ToInitial( bool resetAll=true ){
+            this.BDL.ForEach( p => p.Reset_result(resetAll:resetAll) );
             this.AnsNum     = null;     // used in PuzzleTrans
          // this.DifLevel   = -1;       // -1:InitialState　0:Manual
             this.improper   = false;    // No solution (depending on the method used)
@@ -255,8 +259,10 @@ namespace GNPXcore{
         }
 */
         public UProbS( UPuzzle P, int __ID ){
-            this.__ID=__ID; this.DifLevel=P.DifLevel;
-            this.Sol_Result=P.Sol_Result; this.Sol_ResultLong=P.Sol_ResultLong;
+            this.__ID           = __ID;
+            this.DifLevel       = P.DifLevel;
+            this.Sol_Result     = P.Sol_Result;
+            this.Sol_ResultLong = P.Sol_ResultLong;
         }
 
         public override string ToString(){

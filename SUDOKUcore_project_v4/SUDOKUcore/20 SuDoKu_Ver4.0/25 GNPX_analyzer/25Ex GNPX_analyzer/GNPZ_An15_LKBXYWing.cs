@@ -60,7 +60,7 @@ namespace GNPXcore{
                         UCeB2.Set_CellBKGColor(Cr);
 
                         string msg0= $" Pivot: {_XYwingResSub(UCeStart)}";
-                        string msg1= $" B81P0H: {_XYwingResSub(UCeB2)} ,{_XYwingResSub(UCeA2)}";
+                        string msg1= $" Pin: {_XYwingResSub(UCeB2)} ,{_XYwingResSub(UCeA2)}";
                         Result="XY Wing"+msg0;
                         if( SolInfoB ) ResultLong=$"XY Wing\r     {msg0}\r       {msg1}\r Eliminated:{msg2}";
 

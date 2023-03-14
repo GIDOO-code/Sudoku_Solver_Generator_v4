@@ -20,16 +20,16 @@
         WindowStartupLocation="Manual" >
 
     <!--
-    ** For simple version:
-    **   For consistency with the regular version, there are some unnecessary but unchanged parts.
--->
+        ** For simple version:
+        **   For consistency with the regular version, there are some unnecessary but unchanged parts.
+    -->
 
 
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Styles/DataGridStyle.xaml"></ResourceDictionary>
-                <!--            <ResourceDictionary Source="/Styles/ComboBoxStyle.xaml"></ResourceDictionary>   -->
+                <!-- <ResourceDictionary Source="/Styles/ComboBoxStyle.xaml"></ResourceDictionary> -->
                 <ResourceDictionary Source="/Styles/ListBoxStyle1.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="/Styles/TabControlStyle.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="/Styles/TextBlockStyle.xaml"></ResourceDictionary>

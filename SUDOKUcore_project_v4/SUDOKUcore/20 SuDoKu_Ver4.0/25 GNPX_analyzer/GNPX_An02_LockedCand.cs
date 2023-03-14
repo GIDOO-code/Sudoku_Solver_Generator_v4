@@ -59,7 +59,10 @@ namespace GNPXcore{
                 int[] BRCs2 = new int[18];
 
                 // aggregate blocks with #no for each rows or columns.
-                foreach(var P in pBDL.Where(Q=>(Q.FreeB&noB)>0)){ BRCs2[P.r] |= (1<<P.b); BRCs2[P.c+9] |= (1<<P.b); }
+                foreach(var P in pBDL.Where(Q=>(Q.FreeB&noB)>0)){
+                    BRCs2[P.r]   |= (1<<P.b);
+                    BRCs2[P.c+9] |= (1<<P.b);
+                }
 
                 for( int hs=0; hs<18; hs++ ){   //   0-8:row 9-17:column
                     int HRC = BRCs2[hs];
@@ -69,7 +72,7 @@ namespace GNPXcore{
                     if( hs<9 ){ //row house
                         if( pBDL.IEGetCellInHouse(b0+18,noB).All(Q=>Q.r==hs) )  continue;
                         //Conditions with a solution: Block b0 has digits(#no) other than row #hs.
-                        b1=b0/3*3+(b0+1)%3; b2=b0/3*3+(b0+2)%3;    // b1,b2:block(row direction)
+                        b1=(b0+1)%3+(b0/3*3); b2=(b0+2)%3+(b0/3*3);    // b1,b2:block(row direction)
                     }
                     else{       //column house
                         if( pBDL.IEGetCellInHouse(b0+18,noB).All(Q=>Q.c==(hs-9)) )  continue;

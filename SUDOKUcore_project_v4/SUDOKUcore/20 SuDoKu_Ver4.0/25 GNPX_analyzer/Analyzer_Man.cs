@@ -29,6 +29,7 @@ namespace GNPXcore{
         public int        UsedCC=0;         // Counter applied to solve one problem.
         public bool       IsChecked=true;   // Algorithm valid
 
+        public UAlgMethod( ){ }
         public UAlgMethod( int pid, string MethodName, int DifLevel, dSolver Method, bool GenLogB=false ){
 
             this.ID         = pid*100+(ID0++); //System default order.
@@ -220,61 +221,61 @@ namespace GNPXcore{
             if( pGNPX_Eng.GPMan is null )  return false;
             if( GPX0.Sol_ResultLong is null )  return false;
             var pChild_GPs = pGNPX_Eng.GPMan.child_GPs; //?? (pGNPX_Eng.GPMan.child_GPs=new List<UPuzzle>());
-            string __SolResultKey = GPX0.Sol_ResultLong.Replace("\r"," ");
 
             try{
-                // ***** not SDK_Ctrl.MltAnsSearch *****
+                // changed the policy[v4.1.2] ... became clear!
+                
+                pGNPX_Eng.GPMan.selectedIX = 0;
+                // *************** Single ***************
                 if( !SDK_Ctrl.MltAnsSearch ){           
                     //In one-solution search, save the same Puzzle-object without copying
                     pChild_GPs.Add( GPX0 );
-                    pGNPX_Eng.GPMan.selectedIX = 0;
+
                         //GPMan.UPuzzleMan_stack_history(pGNPX_Eng.GPMan, "one-solution search. SnapSaveGP" );
                     return false;
                 }
 
         
-                // ***** SDK_Ctrl.MltAnsSearch *****
-                // Reached the limit of multiple solution searches.
-                if( pChild_GPs.Count>=(int)GNPX_App.GMthdOption["MSlvrMaxAllAlgorithm"] ){
-                    GNPX_App.GMthdOption["abortResult"] = pRes.msgUpperLimitBreak; // Reached the limit of multiple solution searches.
-                    return false;
-                }    
-
-
-                // Method-specific counter initialization
-                var Stage_Method = ( stageNo, GNPZ_Engin.AnalyzingMethodName ); // tuple:(stage,name)
-                if( stageNo_MethodName != Stage_Method ){
-                    stageNo_MethodName = Stage_Method; 
-                    methodCC = 0;       // Initialization of number of solutions per algorithm
-                 }    
-
-                // Unique solution
+                // *************** Multiple ***************
+                // is unique solution?
+                string __SolResultKey = GPX0.Sol_ResultLong.Replace("\r"," ");
                 if( pChild_GPs.Any(P=>(P.__SolResultKey==__SolResultKey)) ){  //Excluding the same solution
                     WriteLine( $"*** System error SnapSaveGP / Unique solution : {__SolResultKey}" );
                     return true;
                 }   
+                else{   // Save the copy of the solution
+                    int memo = GPX0.BDL[0].No;
+                    UPuzzle GPXcpy = GPX0.Copy( stageNo_Increments:0, IDm:pChild_GPs.Count ); //Copy at the same stage
+                    GPXcpy.__SolResultKey = __SolResultKey;    
+                    pChild_GPs.Add(GPXcpy);     // Save a copy.
+        
+                    GPX0.ToPreStage( );           // Return the original to the state before analysis.
+                }
 
-                // Saving alternative solutions 
-                else{
-                    Thread.Sleep(1);
 
-                    int IDm = pChild_GPs.Count;
-                    pChild_GPs.Add(GPX0);
 
-                    UPuzzle GPXcpy = GPX0.Copy( stageNo_Increments:0, GPX0.ID_obj ); //Copy at the same stage
-                    GPXcpy.__SolResultKey = __SolResultKey;
-                    pGNPX_Eng.pGP = GPXcpy;
+                {// *************** Termination by number of solutions ***************
+                    // Reached the limit of multiple solutions searches.
+                    if( pChild_GPs.Count>=(int)GNPX_App.GMthdOption["MSlvrMaxAllAlgorithm"] ){
+                        GNPX_App.GMthdOption["abortResult"] = pRes.msgUpperLimitBreak; // Reached the limit of multiple solution searches.
+                        return false;
+                    }  
+
+                    // Method-specific counter initialization
+                    var Stage_Method = ( stageNo, GNPZ_Engin.AnalyzingMethodName ); // tuple:(stage,name)
+                    if( stageNo_MethodName != Stage_Method ){
+                        stageNo_MethodName = Stage_Method; 
+                        methodCC = 0;       // Initialization of number of solutions per algorithm
+                    }
+                    bool ContinueAnalysisB = (++methodCC < (int)GNPX_App.GMthdOption["MSlvrMaxAlgorithm"] );
+                    return ContinueAnalysisB;  
                 }
             }
             catch(Exception e){ WriteLine( $"{e.Message}\r{e.StackTrace}"); }
-
-
-            pBDL.ForEach(p=>p.ResetAnalysisResult());
-            pGP.SolCode=-1;
-
-            bool ContinueAnalysisB = (++methodCC < (int)GNPX_App.GMthdOption["MSlvrMaxAlgorithm"] );
-            return ContinueAnalysisB;
+            return false;
         }
+
+
         public bool Check_TimeLimit(){ // Use only time-consuming SuDoKu Algorithm
             if( !SDK_Ctrl.MltAnsSearch )  return false;
             TimeSpan ts =  DateTime.Now - GNPX_App.MultiSolve_StartTime;

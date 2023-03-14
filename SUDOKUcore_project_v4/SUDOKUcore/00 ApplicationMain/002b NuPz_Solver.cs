@@ -167,6 +167,7 @@ namespace GNPXcore{
 
 
         private void btnMPre_Click( object sender, RoutedEventArgs e ){
+            GNPX_000.AnalyzerMode = "StepBack";
             if( !pGNPX_Eng.Restore_PreStage( ) ){
                 LstBxMltSolutions.ItemsSource = null;
                 return;  //not run with stage=0
@@ -337,7 +338,7 @@ namespace GNPXcore{
             GNPZ_Engin.SolverBusy=false;
         }
         private void task_SDKsolverAuto_Completed( ){ 
-            __DispMode="Complated";
+            __DispMode = "Complated";
             displayTimer.Start();
         }
 
