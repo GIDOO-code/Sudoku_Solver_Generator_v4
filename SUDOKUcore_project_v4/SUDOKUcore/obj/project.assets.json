@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\◆◆数独集合体\\■■ SUDOKU V4\\GNPX project\\20230327 SUDOKUcore2_projet v4.2.0 uint128 Extra\\SUDOKUcore\\SUDOKU_Proj.csproj",
+      "projectUniqueName": "E:\\◆◆数独集合体\\Git GNPXv4\\Sudoku_Solver_Generator_v4\\SUDOKUcore_project_v4\\SUDOKUcore\\SUDOKU_Proj.csproj",
       "projectName": "SUDOKU_Regular",
-      "projectPath": "E:\\◆◆数独集合体\\■■ SUDOKU V4\\GNPX project\\20230327 SUDOKUcore2_projet v4.2.0 uint128 Extra\\SUDOKUcore\\SUDOKU_Proj.csproj",
+      "projectPath": "E:\\◆◆数独集合体\\Git GNPXv4\\Sudoku_Solver_Generator_v4\\SUDOKUcore_project_v4\\SUDOKUcore\\SUDOKU_Proj.csproj",
       "packagesPath": "C:\\Users\\gkats\\.nuget\\packages\\",
-      "outputPath": "E:\\◆◆数独集合体\\■■ SUDOKU V4\\GNPX project\\20230327 SUDOKUcore2_projet v4.2.0 uint128 Extra\\SUDOKUcore\\obj\\",
+      "outputPath": "E:\\◆◆数独集合体\\Git GNPXv4\\Sudoku_Solver_Generator_v4\\SUDOKUcore_project_v4\\SUDOKUcore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
