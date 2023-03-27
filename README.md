@@ -1,12 +1,13 @@
-# Sudoku_Solver_Generator_v4 beta (3/May/2023)
-  This is a beta version. Code changes will continue for some time.
+# Sudoku_Solver_Generator_v4.2 beta (27/May/2023)
+  This is a beta+ version. Code changes will continue for some time.
   Please download again around May.
 
 
 # Reconfigured
 1) The GNPX project/C# code has been reconfigured.
-2) Change target framework to .NET7.0
+2) Change target framework to .NET7.0 ex) Extended Linq, Int128
 3) Added and corrected HP.
+4) others.
 
 
 
