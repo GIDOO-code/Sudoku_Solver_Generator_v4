@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sudoku XY Chain</title>
+
+	<link href="google-code-prettify/prettify.css" rel="stylesheet" type="text/css" >
+	<script src="google-code-prettify/prettify.js" type="text/javascript"> </script>
+	
+	<script type="text/javascript" src="lib/jquery.js" ></script>
+	<script type="text/javascript" src="lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.treeview.js"></script>
+	<script type="text/javascript" src="js/treeView.js"></script>
+	
+	<script type="text/javascript" src="js/naviHeader.js"> </script>
+	<script type="text/javascript" src="js/naviAlgorithm.js"> </script>
+	
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	<link rel="stylesheet" href="css/screen.css">
+
+	<link rel="stylesheet" href="css/style_StandardEng.css">
+    <link rel="stylesheet" href='css/style_Header.css'>
+	<style type="text/css">
+		.ulNone{ list-style-type:none; }
+	</style>
+</head>
+
+<body id="page" onload="prettyPrint()">
+	<header> <strong><i>Sudoku Algorithm 4</i></strong>	</header>
+    <script type="text/javascript"> writeNaviHeader(); </script>
+	
+<!-- ========================================================================== -->
+<section id="menuList">
+	<aside>	<script type="text/javascript"> writeNaviAlgorithm(); </script>	</aside>
+</section>
+
+<!-- -------------------------------------------------------------------------- -->
+<section id="main">
+	<article><br>
+	<h2>XY Chain</h2>		   
+		<p>XY-Chain is an analysis algorithm using Locked which occurs in the concatenation of bivalues.
+		The following figure shows the image of XY-Chain.
+		Begin with bivalue's cell with a focused number a and concatenate bivalue cells.
+		In the image diagram, they are connected with different numbers, but the same number may appear.
+		It is assumed that a cell at the tip of a chain has the same number a as the starting cell.
+		Candidate number a can be excluded in the cell related to the starting cell / leading cell.</P>
+		<p>
+			<img src="images/img49/img49a.png" alt="XY-Chain" height="250">
+		</p>
+		
+		<p>XY-Chain sample. Two series are overlapped in the right figure.</p>
+		
+		<img src="images/img49/img49_10.png" width="250" style="float:left;  margin-right:8px;">
+            <strong> XY Chain r1c4 #8 is false<br></strong>
+				> r7c4-r4c4-r4c5-r1c5<br>
+            <p style="clear: both" ><br>
+
+		<img src="images/img49/img49_11.png" width="250" style="float:left;  margin-right:8px;">
+			<strong>XY Chain r4c3 #9 is false<br></strong>
+				> r4c6-r1c6-r3c5-r8c5-r5c5-r5c3<br>
+			<p style="clear: both" >
+		<small>
+		<p class="newLine">.5....3...71.43...2..61...9..5....7.7.34..19.1...9.8..3.2.64.5........185.927.4..<br>
+						   ...71...9.14.9.....9....3.72...4.5.186.1.72......8.7....6471..5.......689.25..17.<br></p></small>
+		
+	</article>
+	
+</section>
+	<footer>
+		<p id="copyright">Copyright &copy; 2014- GNPX. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>

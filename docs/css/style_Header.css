@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*
+【入門】レスポンシブWebデザインとは？概要と作り方を丁寧解説
+https://www.kagoya.jp/howto/it-glossary/web/responsive/ 
+*/
+
+header{ 
+    margin: 0px;
+    padding: auto;
+    width:   auto;
+    height:  auto;
+    background-color: #eee;
+    color:rgb(20, 20, 255);
+    font-size: xx-large;
+    text-align: center;
+   /* font-family:'Lucida Grande','Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif; */
+    font-family: 'Segoe Print';
+
+    border-style:solid;
+    border-color: lightgray;
+   /* border-width:5px; */
+    height: 50px;
+
+    background-image:url('../images/Header/npImg01.png');
+    background-color:rgba(255,255,255,0.5);   /* 背景画像を透過させるCSS */
+    background-blend-mode:lighten;              /* 背景画像を透過させるCSS */
+    background-size:  contain; 
+    background-repeat:repeat;
+}

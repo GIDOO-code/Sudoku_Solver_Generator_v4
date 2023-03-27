@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sudoku ALS XZ</title>
+
+	<link href="google-code-prettify/prettify.css" rel="stylesheet" type="text/css" >
+	<script src="google-code-prettify/prettify.js" type="text/javascript"> </script>
+	
+	<script type="text/javascript" src="lib/jquery.js" ></script>
+	<script type="text/javascript" src="lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.treeview.js"></script>
+	<script type="text/javascript" src="js/treeView.js"></script>
+	
+	<script type="text/javascript" src="js/naviHeader.js"> </script>
+	<script type="text/javascript" src="js/naviAlgorithm.js"> </script>
+	
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	<link rel="stylesheet" href="css/screen.css">
+
+	<link rel="stylesheet" href="css/style_StandardEng.css">
+    <link rel="stylesheet" href='css/style_Header.css'>
+	<style type="text/css">
+		.ulNone{ list-style-type:none; }
+	</style>
+</head>
+
+<body id="page" onload="prettyPrint()">
+	<header> <strong><i>Sudoku Algorithm 4</i></strong>	</header>
+    <script type="text/javascript"> writeNaviHeader(); </script>
+	
+	<!-- ========================================================================== -->
+	<section id="menuList">
+		<aside>	<script type="text/javascript"> writeNaviAlgorithm(); </script>	</aside>
+	</section>
+
+
+<!-- -------------------------------------------------------------------------- -->
+	<section id="main">
+		<article>
+			<h2>ALS XZ</h2>		   
+			<p>For analysis algorithms using multiple <a href="page26.html">ALSs</a>, use <a href="page26.html">RCC(Restricted Common Candidate)</a>.<br>
+			Here are two types of ALS XZ (Singly Linked, Doubly linked).<br>
+			As a characteristic of the analysis algorithm using ALS,
+			in many cases, there are many solutions at the same time.
+			There are other analysis algorithms of the ALS system.</P>
+				
+			<h3>ALS XZ(Singly Linked)</h3>
+			<p>Suppose that two ALSs have RCC(digit x). And, let z be the digit contained in both ALS different from RCC.
+				digit z outside the ALS and associated with all z in both ALS can be excluded from the candidate.
+				If z is true, both ALSs are changed to LockedSet, and both ALSs include RCC.<br>
+				<img src="images/img50/img50a.png"  alt="ALS XZ(Singly Linked)">
+			</p>
+			
+			<h3>ALS XZ(Doubly Linked)</h3>
+			<p>Suppose that two ALSs have two RCCs (digit x,y).
+			<ol style="font-size:medium">
+				<li>digits belonging to the same house as RCC outside ALS can be excluded.
+					If this is true for one RCC(eg x), 
+					then the two ALSs will be LockedSet and the other RCC(y) will be excluded from both ALS.<br></li>
+					
+				<li>For a element of ALS digited z(different from RCC),
+					z outside the ALS and related to all z in the ALS can be excluded from the candidate.
+					If this is true, that ALS is a LockedSet and two RCCs belong to this ALS.
+					In the other ALS, there are n-1 candidate digits in n cells, and ALS collapses.</li>
+			</ol>
+			ALS XZ Doubly Linked can exclude many candidate digits with a powerful analysis algorithm,
+			but it seems that it can be applied less frequently.</p>
+			<p">
+				<img src="images/img50/img50b.png" alt="ALS XZ(Doubly Linked)">
+			</p>
+			
+			<h2>Sample of ALS XZ</h2>
+			<p>
+				<img src="images/img50/img50_10.png" width="250" style="float:left;  margin-right:8px;">
+				<strong>ALS-XZ (Singly Linked)</strong><br>
+				ALS1: r2c46  #567<br>
+				ALS2: r3c24  #156<br>
+				RCC: #5<br></p>
+			<p style="clear: both" ><br></p>
+
+			<p>
+				<img src="images/img50/img50_11.png" width="250" style="float:left;  margin-right:8px;">
+				<strong>ALS-XZ (Singly Linked)</strong><br>
+					ALS1: r1c59  #469<br>
+					ALS2: r5c2357  #12369<br>
+					RCC: #6<br></p>
+			<p style="clear: both" ><br></p>
+
+			<p>
+				<img src="images/img50/img50_12.png" width="250" style="float:left;  margin-right:8px;">
+				<strong>ALS-XZ (Doubly Linked)</strong><br>
+					ALS1: r349c3  #1569<br>
+					ALS2: r1c3459  #12356<br>
+					RCC: #15<br></p>
+			<p style="clear: both" ><br></p>
+
+			<p>
+				<img src="images/img50/img50_13.png" width="250" style="float:left;  margin-right:8px;">
+				<strong>ALS-XZ (Doubly Linked)</strong><br>
+					ALS1: r25c7  #289<br>
+					ALS2: r7c89 r89c7 r9c9  #256789<br>
+					RCC: #28<br></p>
+			<p style="clear: both" ><br></p>
+			<p class="newLine"><br>
+				2.548...9.9..3..2...7.923.4..8.....2541...6879.....1..4.961.2...8..7..9.7...584.6<br>
+				.2...783..47.2...13..1....7....38.15...5.4...58.79....6....2..82...8.57..793...6.<br>
+				87........9.81.65....79...8.....67316..5.1..97124.....3...57....57.48.1........74<br>
+				.9..4..6.4..15...2..6..91....4....7.36.....15.8....3....82..4..9...34..1.4..8..3.<br>
+			</p>
+		</article>
+	</section>
+
+<!-- ========================================================================== -->
+	<footer>
+		<p id="copyright">Copyright &copy; 2014- GNPX. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>

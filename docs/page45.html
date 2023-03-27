@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sudoku SueDeCoq</title>
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?  skin=sons-of-obsidian"></script>
+    <link rel="stylesheet" href="themes/atelier-dune-light.min.css" type="text/css">
+	
+	<script type="text/javascript" src="lib/jquery.js" ></script>
+	<script type="text/javascript" src="lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.treeview.js"></script>
+	<script type="text/javascript" src="js/treeView.js"></script>
+	
+	<script type="text/javascript" src="js/naviHeader.js"> </script>
+	<script type="text/javascript" src="js/naviAlgorithm.js"> </script>
+	
+	<link rel="stylesheet" href="css/jquery.treeview.css">
+	<link rel="stylesheet" href="css/screen.css">
+
+	<link rel="stylesheet" href="css/style_StandardEng.css">
+    <link rel="stylesheet" href='css/style_Header.css'>
+	<style type="text/css">
+		.ulNone{ list-style-type:none; }
+	</style>
+</head>
+
+<body id="page" onload="prettyPrint()">
+	<header>
+		<strong><i>Sudoku Algorithm 4</i></strong>
+	</header>
+
+    <script type="text/javascript"> writeNaviHeader(); </script>
+	
+<!-- ========================================================================== -->
+<section id="menuList">
+	<aside>
+		<script type="text/javascript"> writeNaviAlgorithm(); </script>	
+	</aside>
+</section>
+
+<!-- -------------------------------------------------------------------------- -->
+<section id="main">
+	<article><br>
+	<h2>SueDeCoq</h2>
+		<p>SueDeCoq is an analysis algorithm derived from the handle name "SueDeCoq" which first proposed this method.
+		In order to understand SueDeCoq algorithm, some leap is necessary. Explain step by step using examples.
+		<br>Many of the explanations here are based on the following HP.<br>
+			http://hodoku.sourceforge.net/en/tech_misc.php#sdc<br><br>
+			
+		The following example is a basic SueDeCoq. In the left figure,<br>
+
+		(1)Focus on r2c46 in block 2. There are four candidate numbers #1789 in these two cells,
+		and candidate number # 78 is in r1c5 of the same block.
+		Considering these three cells together,
+		#19(78) is entered into the two cells of r2c46 (r2c46 is only one of #78 and not both).<br><br>
+				
+		(2)Considering the second line, since r2c9 has candidate number #19,
+		#(19)78 will be included in 2 cells of r2C46 (r2c46 is only one of #19 and not both ).<br><br>
+		
+		When (1) and (2) are combined, #(19)(78) will be included in r2c46,
+		and r2c46 is Locked of 2 numbers in 2 cells.
+		However, one of the two number pairs is not decided.<br><br>
+				
+		In this state, #1 of r2c3 on the second is false 
+		because it breaks the Locked of the cell R2C46 in relation to r2c9 (the number entering r2c46 is insufficient).
+		Likewise, #8 of r1c4 in block 2 breaks Locked of the cells r2c46 in relation to r1c5, 
+		so it can not be inserted (r1c4=#8 is false).<br><br>
+		
+		In the figure on the right, Focus on r3c123 in block 1.
+		There are five candidate #12456 in these three cells.
+		Considering the same as the left figure, r3c123 is Locked at #6(15)(24) (3 numbers for 3 cells).
+		Therefore #24 of r3c67 breaks this Locked state(not enough numbers to enter r3c123),
+		so it can be excluded from candidate numbers.<br><br></p>
+	
+		<img src="images/img45/img45_10.png" width="250" style="float:left;  margin-right:8px;">
+		<strong>SueDeCoq (ALS Level-1)</strong><br>
+				ALS(block)  : r1c5 r2c46 #1789<br>
+				ALS(row)    : r2c469 #1789)<br>
+		<p style="clear: both" ><br>
+
+		<img src="images/img45/img45_11.png" width="250" style="float:left;  margin-right:8px;">
+            <strong>SueDeCoq (ALS Level-1)</strong><br>
+				ALS(block)  : r13c3 r3c12 #12456<br>
+				ALS(row)    : r3c1238 #12456)<br>
+            <p style="clear: both" ><br>
+	
+		<small>
+		<p class="newLine" width="80%">
+			.2...3..4.4....25.6...243.8256..8....8..9..2....2..4868.463...2.63....4.9..7...6.<br>
+			87........9.81.65....79...8.....67316..5.1..97124.....3...57....57.48.1........74<br></p></small>
+		<p>With reference to the concrete example above, Locked of SueDeCoq is defined.
+		The following figure shows the configuration of the cell group appearing here.<br>
+		
+		(1)There is a cell group(ISPB) in the block and a cell group(ISPR) in the row (or column).<br>
+		(2)The two cell groups are divided into a common part(IS) and other parts(PB and PR).<br>	
+		(3)The candidate digits of the disassembled cell group are IS_FreeB, PB_FreeB, PR_FreeB.<br>		
+		(4)PB_FreeBn, PR_FreeBn are candidate numbers of non-common parts (PB and PR).<br>
+		  (PB_FreeBn = PB_FreeB\IS_FreeB, PR_FreeBn = PR_FreeB\IS_FreeB   \:Difference set)<br>	
+		(5)N is the number of candidate numbers in only the other part. (N=|PB_FreeBn|+|PR_FreeBn|)<br>
+		</p>
+
+		<p>
+			<img src="images/img45/img45a.png" alt="SueDeCoq" width="450px">
+		</p>
+		
+		<br><p>Using these definitions, the analysis algorithm of SueDeCoq is<br><br>
+		[1]In order for SueDeCoq to be established, Locked must be established first.<br>
+		<ol>
+			<li>The number of cells of the common part IS is 2 or 3.</li>
+			<li>The other parts (PB, PR) are not empty.</li>
+			<li>There is no common candidate for common part and other parts (PB and PR).</li>
+			<li>|IS| = |IS_FreeB| - (|PB|+|PR|-N） (|A| is the number of elements of set A）</li>
+		</ol>The last expression indicates that 
+		the number of cells(left side) and candidate number(right side) of the common part are the same, 
+		that is, it is Locked.<br>
+		The preceding example is for N = 0. Candidate numbers in PR and PB are common to IS, 
+		and the number of candidate in IS is equal to the number of cells.<br>
+		When N = 1, one candidate number not included in IS is added to PR (or PB),
+		but at the same time, the number of PR (PB) cells is incremented by one.
+		The number of unique candidates adjusts the number of cells.<br>
+		Likewise, if N increases, the number of cells correspondingly increases, which is the condition of Locked.<br><br>
+		
+		[2]When Locked is established, find the cell/candidate number that breaks Locked.		</p><br>
+		
+		<p>In the first example, it is as follows.<br>
+		・There are 4 candidate numbers for the cells(=2) in the common part.<br>
+		・In the cell outside the block, there are two same candidate numbers as the common part,
+		and one candidate of the common part is restricted.<br>
+		・Similarly, the cells in the block limit one of the candidate numbers of the common part.<br>
+		・Other parts There are no unique candidate numbers for rows and blocks(N=0).<br>
+		Therefore, the condition(&quot;2=4-1-1 + 0&quot;) is established and is Locked.<br>
+		</p>		
+	
+		<p>Here is an example of SueDeCoq with many cells.</p>
+		<img src="images/img45/img45d.png" alt="SueDeCoq" style="width: 271px; height: 271px" >
+		<img src="images/img45/img45e.png" alt="SueDeCoq" style="width: 271px; height: 271px" >
+		<img src="images/img45/img45f.png" alt="SueDeCoq" style="width: 271px; height: 271px" >
+		<img src="images/img45/img45g.png" alt="SueDeCoq" style="width: 271px; height: 271px" >
+
+		<small>
+		<p class="newLine">
+			4....59.32..9..1....8..25...27....3.8.93.62.5.4....71...14..6....4..1..29.25....1<br>
+  			3..5..9...5.2..1.3...3195...8..3.2.45.......19.2.4..8...5423...6.4..1.3...3..8..7<br>
+			342...5.........72.9.....1.1396..785684..9123275183..6.27....5.9532.8.4...19..2..<br>
+			342...5.........72.9.....1.1396..785684..9123275183..6.27....5.9532.8.4...19..2..<br></p></small>
+		<br>
+	</article>
+	
+</section>
+	<footer>
+		<p id="copyright">Copyright &copy; 2014- GNPX. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>
