@@ -1,0 +1,2 @@
+﻿*** Redundant Solution Found in SnapSaveGP...  not unique solution : ALS Chain
+ Stem : r2c4 #8 ->  ALS 1: r8c4 #28 -> #2  ALS 2: r1c4 #26 -> #6  ALS 3: r1c9 r2c78 #3678 -> #6  Excluded cells#no : r2c4 #8

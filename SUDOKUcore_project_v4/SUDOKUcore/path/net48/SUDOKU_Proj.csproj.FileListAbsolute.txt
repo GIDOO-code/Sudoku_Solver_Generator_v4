@@ -1,0 +1,507 @@
+E:\◆◆数独集合体\■■SuDoKu22 EnglishCoreSimple\SUDOKUcore_project\SUDOKU_App\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■SuDoKu22 EnglishCoreSimple\SUDOKUcore_project\SUDOKU_App\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■SuDoKu22 EnglishCoreSimple\SUDOKUcore_project\SUDOKU_App\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■SuDoKu22 EnglishCoreSimple\SUDOKUcore_project\SUDOKU_App\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■SuDoKu22 EnglishCoreSimple\SUDOKUcore_project\SUDOKU_App\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230303 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230306 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230307 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308B SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230308C SUDOKUcore2_project 次はmultiの確認\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230309 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project fix\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230310 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\SUDOKU_App\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\SUDOKU_App\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\SUDOKU_App\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\SUDOKU_App\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\SUDOKU_App\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230311A SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.AssemblyReference.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.SuggestedBindingRedirects.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe.config
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ComboBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\DataGridStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle1.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\ListBoxStyle2.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TabControlStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\Styles\TextBlockStyle.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\017 ExtendResult.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorPicker.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\App.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\GeneratedInternalTypeHelper.g.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular_MarkupCompile.lref
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\00 ApplicationMain\002 NuPz_Window.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\02 Library Class\G_Control\NumericUpDown.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\10 Graphics\11 WPFColorPickerLib\ColorDialog.baml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.g.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.xml
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.pdb
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\GNPXcore.Properties.Resources.ja-JP.resources
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.GenerateResource.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.GeneratedMSBuildEditorConfig.editorconfig
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfoInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.AssemblyInfo.cs
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CoreCompileInputs.cache
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\ja-JP\SUDOKU_Regular.resources.dll
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Proj.csproj.CopyComplete
+E:\◆◆数独集合体\■■　SUDOKU 2023\SuDoKu23 EnglishCore\20230312 SUDOKUcore2_project\SUDOKUcore\path\net48\SUDOKU_Regular.exe

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SUDOKUcore": {
+      "commandName": "Project",
+      "workingDirectory": "..\\..\\SUDOKU_App",
+      "hotReloadEnabled": false,
+      "sqlDebugging": false,
+      "nativeDebugging": false,
+      "jsWebView2Debugging": false
+    }
+  }
+}

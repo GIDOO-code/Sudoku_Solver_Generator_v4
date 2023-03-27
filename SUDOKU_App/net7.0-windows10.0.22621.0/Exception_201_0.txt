@@ -1,0 +1,8 @@
+﻿---2023/03/23 11:12:51 Sequence contains no elements    at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at GNPXcore.GNPZ_Engin.sudoku_Solver_SingleStage(CancellationToken ct, Boolean SolInfoB) in E:\◆◆数独集合体\■■ SUDOKU V4\GNPX project\20230322 SUDOKUcore2_projet\SUDOKUcore\20 SuDoKu_Ver4.0\20 GNPX_Control_Engin\203 GNPZ_SolveEngin.cs:line 288
+   at GNPXcore.GNPZ_Engin.sudoku_Solver_Simple(CancellationToken ct) in E:\◆◆数独集合体\■■ SUDOKU V4\GNPX project\20230322 SUDOKUcore2_projet\SUDOKUcore\20 SuDoKu_Ver4.0\20 GNPX_Control_Engin\203 GNPZ_SolveEngin.cs:line 216
+---2023/03/23 11:12:51 Sequence contains no elements    at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at GNPXcore.GNPZ_Engin.sudoku_Solver_SingleStage(CancellationToken ct, Boolean SolInfoB) in E:\◆◆数独集合体\■■ SUDOKU V4\GNPX project\20230322 SUDOKUcore2_projet\SUDOKUcore\20 SuDoKu_Ver4.0\20 GNPX_Control_Engin\203 GNPZ_SolveEngin.cs:line 288
+   at GNPXcore.GNPZ_Engin.sudoku_Solver_Simple(CancellationToken ct) in E:\◆◆数独集合体\■■ SUDOKU V4\GNPX project\20230322 SUDOKUcore2_projet\SUDOKUcore\20 SuDoKu_Ver4.0\20 GNPX_Control_Engin\203 GNPZ_SolveEngin.cs:line 216
