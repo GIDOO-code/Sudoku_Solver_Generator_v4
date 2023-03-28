@@ -100,13 +100,6 @@ namespace GNPXcore{
           //  UAlgMethod( int pid, string MethodName, int DifLevel, dSolver Method, bool GenLogB=false )
           //================================================================================================
 
-#if Research_
-            var TryApp = new Research_trial(this);
-            SolverLst0.Add( new UAlgMethod( 1, "Research_Trial",    1, TryApp.TrialAndErrorApp ) );
-#endif
-
-
-
             var SSingle=new SimpleSingleGen(this);
             SolverLst0.Add( new UAlgMethod( 1, "LastDigit",    1, SSingle.LastDigit ) );
             SolverLst0.Add( new UAlgMethod( 2, "NakedSingle",  1, SSingle.NakedSingle ) );

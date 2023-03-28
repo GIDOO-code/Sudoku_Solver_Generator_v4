@@ -10,7 +10,29 @@ namespace GNPXcore{
     public class Research_trial: AnalyzerBaseV2{
 
         // This function is for developing new Sudoku algorithms. Not included in standard GNPX applications.
-        // To use this function, set "Research_" to the conditional compilation symbol field.
+        // To use this function, copy the code below, set "Research_" to the conditional compilation symbol field.
+
+
+
+
+/*
+        public  GNPX_AnalyzerMan( GNPZ_Engin pGNPX_Eng ){
+            SolverLst0 = new List<UAlgMethod>();
+            this.pGNPX_Eng = pGNPX_Eng;
+#if RegularVersion
+			SprLKsMan=new SuperLinkMan(this);
+#endif
+          //================================================================================================
+          //  UAlgMethod( int pid, string MethodName, int DifLevel, dSolver Method, bool GenLogB=false )
+          //================================================================================================
+
+#if Research_
+            var TryApp = new Research_trial(this);
+            SolverLst0.Add( new UAlgMethod( 1, "Research_Trial",    1, TryApp.TrialAndErrorApp ) );
+#endif
+*/
+
+
 
         // The world's hardest sudoku
         //  8..........36......7..9.2...5...7.......457.....1...3...1....68..85...1..9....4..
