@@ -9,7 +9,7 @@
     <UseWPF>true</UseWPF>
     <RootNamespace>GNPXcore</RootNamespace>
     <Platforms>AnyCPU;x64</Platforms>
-    <BaseOutputPath>E:\◆◆数独集合体\■■ SUDOKU V4\GNPX project\SUDOKU_App</BaseOutputPath>
+    <BaseOutputPath>..\..\SUDOKU_App\</BaseOutputPath>
     <AssemblyName>SUDOKU_Regular</AssemblyName>
     <IncludeSymbols>True</IncludeSymbols>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
@@ -19,8 +19,8 @@
 	 <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
 	  <!-- existing property declarations are here -->
 	  <IntermediateOutputPath>path</IntermediateOutputPath>
-	  <AssemblyVersion>4.1.2.1</AssemblyVersion>
-	  <FileVersion>4.1.2.1</FileVersion>
+	  <AssemblyVersion>4.2.1.0</AssemblyVersion>
+	  <FileVersion>4.2.1.0</FileVersion>
 	  <SupportedOSPlatformVersion>10.0.22621.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 

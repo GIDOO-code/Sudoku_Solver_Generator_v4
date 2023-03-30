@@ -92,7 +92,7 @@ namespace GNPXcore {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SUDOKU_Regular;V4.1.2.1;component/00%20applicationmain/00ex%20applicationmain/01" +
+            System.Uri resourceLocater = new System.Uri("/SUDOKU_Regular;V4.2.1.0;component/00%20applicationmain/00ex%20applicationmain/01" +
                     "8%20developwin.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\00 ApplicationMain\00Ex ApplicationMain\018 DevelopWin.xaml"

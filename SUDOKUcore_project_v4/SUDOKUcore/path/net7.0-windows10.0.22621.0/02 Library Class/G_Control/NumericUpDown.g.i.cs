@@ -61,7 +61,7 @@ namespace GIDOO_space {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SUDOKU_Regular;V4.1.2.1;component/02%20library%20class/g_control/numericupdown.x" +
+            System.Uri resourceLocater = new System.Uri("/SUDOKU_Regular;V4.2.1.0;component/02%20library%20class/g_control/numericupdown.x" +
                     "aml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\02 Library Class\G_Control\NumericUpDown.xaml"
