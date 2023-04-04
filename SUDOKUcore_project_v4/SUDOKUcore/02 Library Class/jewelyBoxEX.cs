@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using static System.Diagnostics.Debug;
 using System.Globalization;
 
+using System.IO;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Input;
@@ -102,6 +103,33 @@ namespace GIDOO_space{
             int nNullable;
             return int.TryParse( chTarget.ToString(), NumberStyles.Any, null, out nNullable );
         }
+
+
+   //http://stackoverflow.com/questions/677373/generate-random-values-in-c-sharp
+        static public long NextInt64( this Random rnd ){
+            byte[] bytes = new byte[8];
+            rnd.NextBytes(bytes);
+            return BitConverter.ToInt64(bytes,0);
+
+            // Assume rng refers to an instance of System.Random
+            //byte[] bytes = new byte[8];
+            //rng.NextBytes(bytes);
+            //long int64 = BitConverter.ToInt64(bytes, 0);
+            //ulong uint64 = BitConverter.ToUInt64(bytes, 0);
+            //Note that using Random.Next() twice, shifting one value and then ORing/adding doesn't work.
+            //Random.Next() only produces non-negative integers, i.e.
+            //it generates 31 bits, not 32, so the result of two calls only produces 62 random bits
+            //instead of the 64 bits required to cover the complete range of Int64/UInt64.
+            //(Guffa's answer shows how to do it with three calls to Random.Next() though.)
+        }
+
+        static public bool isDirectory( this string path ){
+            return File.GetAttributes(path).HasFlag(FileAttributes.Directory);
+        }
+        public static IEnumerable<(T,int)> WithIndex<T>(this IEnumerable<T> ts){
+            return ts.Select((t,i) => (t,i));
+        }
+
 
         static public string ToRCString_withComp( this Bit81 B81, string stNo="" ){   
             string st = B81.IEGet_rc().Aggregate("",(a,b)=> a+" "+b.ToRCString() );

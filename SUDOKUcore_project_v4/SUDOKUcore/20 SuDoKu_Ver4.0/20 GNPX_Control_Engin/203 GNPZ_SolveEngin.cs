@@ -160,6 +160,13 @@ namespace GNPXcore{
              //  WriteLine( $"#####Set_Methods_for_Solving  MethodLst_Run.Count:{MethodLst_Run.Count}" );  // Find out how it's used       
             return MethodLst_Run.Count;
         }
+        public int Set_Methods_for_Solving_TaE( ){ 
+            MethodLst_Run.Clear(); 
+            var TryApp = new Research_trial(AnMan);
+            var funcTRE = new UAlgMethod( 1, "Research_Trial", 1, TryApp.TrialAndErrorApp );
+            MethodLst_Run.Add( funcTRE );                
+            return MethodLst_Run.Count;
+        }
 
         public void MethodLst_Run_Reset(){
             MethodLst_Run.ForEach(P=>P.UsedCC=0);

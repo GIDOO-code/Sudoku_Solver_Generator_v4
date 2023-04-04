@@ -154,8 +154,6 @@ namespace GNPXcore{
 
             if( pGNPX_Eng.IsSolved() ){ lblAnalyzerResult.Text = "\r solved."; }
             else{
-
-
                 GNPX_000.AnalyzerMode = "Solve";
                 GNPZ_Engin.SolverBusy = true;
 
@@ -192,8 +190,6 @@ namespace GNPXcore{
             displayTimer.Start();           //  Conflict-free display start
         }
 */        
-
-
 
         private void btnMultiSolve_Click( object sender, RoutedEventArgs e ){
 #if !DEBUG

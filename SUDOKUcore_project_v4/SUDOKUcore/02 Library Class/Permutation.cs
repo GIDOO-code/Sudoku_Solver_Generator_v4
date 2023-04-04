@@ -35,10 +35,10 @@ namespace GNPXcore{
             }
             First=true;
         }
-        public bool Successor(int nxtX=-1){
+        public bool Successor( int skip=-1){
             if(N<=0) return false;
             if(First || Pwrk==null){ First=false; return (Pwrk!=null); }
-            int r = (nxtX>=0)? nxtX: R-1;
+            int r = (skip>=0)? skip: R-1;
             r = Min(r,R-1);
             
             do{

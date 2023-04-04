@@ -32,7 +32,8 @@ namespace GNPXcore{
         }
 
         private void Initialize( bool StartF=true ){          
-            pGNPX_Eng.Set_Methods_for_Solving(AllMthd:true,GenLogUse:false);           //True:All Method  
+         //   pGNPX_Eng.Set_Methods_for_Solving(AllMthd:true,GenLogUse:false);           //True:All Method  
+            pGNPX_Eng.Set_Methods_for_Solving_TaE();
             pGNP.SetSolution( pPZL, false, SolAll:true ); //Solver
             pPZL.AnsNum = pPZL.BOARD.ConvertAll(P=>P.No).ToArray();
 
@@ -64,6 +65,9 @@ namespace GNPXcore{
             
         public void SDK_TransProbG( string ctrl, bool DspSolB ){
             if(pPZL.AnsNum==null) Initialize();
+
+
+
 
             int ixM=0, ixR=TrPara[8], ixC=1-ixR, nx, m, n;
             switch(ctrl){   
