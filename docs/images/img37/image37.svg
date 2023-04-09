@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.2938725"
-     inkscape:cx="533.66928"
-     inkscape:cy="983.48177"
+     inkscape:cx="518.98468"
+     inkscape:cy="597.81779"
      inkscape:window-width="1912"
      inkscape:window-height="1466"
-     inkscape:window-x="1427"
-     inkscape:window-y="417"
+     inkscape:window-x="1404"
+     inkscape:window-y="197"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1">
     <inkscape:grid
@@ -38,150 +38,14 @@
        id="grid6155" />
   </sodipodi:namedview>
   <defs
-     id="defs3840"><rect
-   x="130"
-   y="860"
-   width="840"
-   height="600"
-   id="rect7337" />
-
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-			
-			
-		</defs>
+     id="defs3840">
+    <rect
+       x="130"
+       y="860"
+       width="840"
+       height="600"
+       id="rect7337" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -879,22 +743,11 @@
        x2="164.13657"
        y2="133.02272"
        id="line7420" />
-    <line
-       fill="none"
-       stroke-width="0.271439"
-       stroke-linejoin="round"
-       stroke="#000000"
-       stroke-opacity="1"
-       x1="173.90834"
-       y1="142.79449"
-       x2="164.13657"
-       y2="142.79449"
-       id="line7422" />
     <path
        fill="#000000"
        fill-opacity="1"
        stroke-linejoin="round"
-       d="m 172.27958,142.92986 h -0.81432 v -0.27178 h 0.81432 z m -1.62863,0 h -0.81431 v -0.27178 h 0.81431 z m -1.62863,0 H 168.208 v -0.27178 h 0.81432 z m -1.62863,0 h -0.81431 v -0.27178 h 0.81431 z m -1.62863,0 h -0.81432 v -0.27178 h 0.81432 z m -1.62863,0 v -0.27178 z m 9.77178,0 h -0.81431 v -0.27178 h 0.81431 z"
+       d="m 171.36912,142.875 h -0.81432 v -0.27178 h 0.81432 z m -1.62863,0 h -0.81431 v -0.27178 h 0.81431 z m -1.62863,0 h -0.81432 v -0.27178 h 0.81432 z m -1.62863,0 h -0.81431 v -0.27178 h 0.81431 z m -1.62863,0 h -0.81432 v -0.27178 h 0.81432 z m -1.62863,0 v -0.27178 z m 9.77178,0 h -0.81431 v -0.27178 h 0.81431 z"
        id="path7424"
        style="stroke-width:0.101789" />
     <text
@@ -1014,24 +867,22 @@
     <g
        id="g7150"
        transform="matrix(0.09971524,0,0,0.1002316,-2655.128,-61.820429)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27465.3,2982.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7146" />
-
-		<path
-   fill="#000000"
-   fill-opacity="1"
-   stroke-linejoin="round"
-   stroke="#000000"
-   stroke-opacity="1"
-   d="m 27465.3,2995.82 20.9,36.38 h -41.7 z"
-   id="path7148" />
-
-	</g>
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27465.3,2982.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7146" />
+      <path
+         fill="#000000"
+         fill-opacity="1"
+         stroke-linejoin="round"
+         stroke="#000000"
+         stroke-opacity="1"
+         d="m 27465.3,2995.82 20.9,36.38 h -41.7 z"
+         id="path7148" />
+    </g>
     <text
        xml:space="preserve"
        id="text7194"
@@ -1123,24 +974,22 @@
     <g
        id="g7338"
        transform="matrix(0.10178942,0,0,0.10178942,-2714.4827,-67.564326)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28069.3,3206.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7334" />
-
-		<path
-   fill="#000000"
-   fill-opacity="1"
-   stroke-linejoin="round"
-   stroke="#000000"
-   stroke-opacity="1"
-   d="m 28069.3,3219.82 20.9,36.38 h -41.7 z"
-   id="path7336" />
-
-	</g>
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28069.3,3206.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7334" />
+      <path
+         fill="#000000"
+         fill-opacity="1"
+         stroke-linejoin="round"
+         stroke="#000000"
+         stroke-opacity="1"
+         d="m 28069.3,3219.82 20.9,36.38 h -41.7 z"
+         id="path7336" />
+    </g>
     <path
        fill="#000000"
        fill-opacity="1"
@@ -1170,20 +1019,19 @@
        id="g7394"
        transform="matrix(-0.11296283,0,0,0.10178942,3313.3405,-66.852831)"
        style="stroke-width:0.932569;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28069.3,2918.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path7388"
-   style="stroke-width:0.932569;stroke-dasharray:none" />
-
-		<text
-   transform="matrix(-1,0,0,1,28085,2966)"
-   xml:space="preserve"
-   id="text7392"
-   style="stroke-width:0.932569;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28069.3,2918.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path7388"
+         style="stroke-width:0.932569;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,1,28085,2966)"
+         xml:space="preserve"
+         id="text7392"
+         style="stroke-width:0.932569;stroke-dasharray:none"><tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:0.932569;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#00c800"
@@ -1193,28 +1041,26 @@
    stroke="#00c800"
    stroke-opacity="1"
    id="tspan7390">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7402"
        transform="matrix(-0.0771526,0,0,0.10178942,2256.496,-66.981756)"
        style="stroke-width:1.12843;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27781.3,3206.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path7396"
-   style="stroke-width:1.12843;stroke-dasharray:none" />
-
-		<text
-   transform="scale(-1.2521979,0.79859579)"
-   xml:space="preserve"
-   id="text7400"
-   x="-22198.525"
-   y="4070.3987"
-   style="font-size:13.4075px;stroke-width:1.12843;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27781.3,3206.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path7396"
+         style="stroke-width:1.12843;stroke-dasharray:none" />
+      <text
+         transform="scale(-1.2521979,0.79859579)"
+         xml:space="preserve"
+         id="text7400"
+         x="-22198.525"
+         y="4070.3987"
+         style="font-size:13.4075px;stroke-width:1.12843;stroke-dasharray:none"><tspan
    style="font-size:53.6299px;font-family:'メイリオ';stroke-width:1.12843;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#ff0000"
@@ -1224,8 +1070,7 @@
    stroke="#ff0000"
    stroke-opacity="1"
    id="tspan7398">X</tspan>		</text>
-
-	</g>
+    </g>
     <line
        fill="none"
        stroke-width="0.814314"
@@ -1303,20 +1148,19 @@
          id="g7474"
          transform="matrix(0.10178942,0,0,0.10178942,-2712.0263,-67.44648)"
          style="stroke-width:0.98242;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28341.3,3110.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path7468"
-   style="stroke-width:0.98242;stroke-dasharray:none" />
-
-		<text
-   transform="matrix(-1,0,0,1,28357,3158)"
-   xml:space="preserve"
-   id="text7472"
-   style="stroke-width:0.98242;stroke-dasharray:none">			 <tspan
+        <path
+           fill="#ffffff"
+           fill-opacity="1"
+           stroke-width="0.2"
+           stroke-linejoin="round"
+           d="m 28341.3,3110.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+           id="path7468"
+           style="stroke-width:0.98242;stroke-dasharray:none" />
+        <text
+           transform="matrix(-1,0,0,1,28357,3158)"
+           xml:space="preserve"
+           id="text7472"
+           style="stroke-width:0.98242;stroke-dasharray:none">			 <tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:0.98242;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#ff0000"
@@ -1326,27 +1170,25 @@
    stroke="#ff0000"
    stroke-opacity="1"
    id="tspan7470">X</tspan>		</text>
-
-	</g>
+      </g>
     </g>
     <g
        id="g7482"
        transform="matrix(0.10178942,0,0,0.10178942,-2712.0263,-71.679816)"
        style="stroke-width:0.98242;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28341.3,3206.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path7476"
-   style="stroke-width:0.98242;stroke-dasharray:none" />
-
-		<text
-   transform="matrix(-1,0,0,1,28357,3254)"
-   xml:space="preserve"
-   id="text7480"
-   style="stroke-width:0.98242;stroke-dasharray:none">			 <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28341.3,3206.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path7476"
+         style="stroke-width:0.98242;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,1,28357,3254)"
+         xml:space="preserve"
+         id="text7480"
+         style="stroke-width:0.98242;stroke-dasharray:none">			 <tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:0.98242;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#00c800"
@@ -1356,8 +1198,7 @@
    stroke="#00c800"
    stroke-opacity="1"
    id="tspan7478">X</tspan>		</text>
-
-	</g>
+    </g>
     <line
        fill="none"
        stroke-width="0.271439"
@@ -1608,40 +1449,37 @@
     <g
        id="g9148"
        transform="matrix(0.10023041,0,0,0.10023041,-2671.129,-62.371762)">
-			<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28037.3,3686.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path9144" />
-
-			<path
-   fill="#000000"
-   fill-opacity="1"
-   stroke-linejoin="round"
-   stroke="#000000"
-   stroke-opacity="1"
-   d="m 28037.3,3699.82 20.9,36.38 h -41.7 z"
-   id="path9146" />
-
-		</g>
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28037.3,3686.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path9144" />
+      <path
+         fill="#000000"
+         fill-opacity="1"
+         stroke-linejoin="round"
+         stroke="#000000"
+         stroke-opacity="1"
+         d="m 28037.3,3699.82 20.9,36.38 h -41.7 z"
+         id="path9146" />
+    </g>
     <g
        id="g9172"
        transform="matrix(-0.12504,0,0,0.10023041,3661.2705,-61.98727)">
-			<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28101.3,3622.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path9166" />
-
-			<text
-   transform="matrix(-1,0,0,1,28117,3670)"
-   xml:space="preserve"
-   id="text9170"
-   style="stroke-width:0.893256;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28101.3,3622.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path9166" />
+      <text
+         transform="matrix(-1,0,0,1,28117,3670)"
+         xml:space="preserve"
+         id="text9170"
+         style="stroke-width:0.893256;stroke-dasharray:none"><tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:0.893256;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#ff0000"
@@ -1651,8 +1489,7 @@
    stroke="#ff0000"
    stroke-opacity="1"
    id="tspan9168">X</tspan>			</text>
-
-		</g>
+    </g>
     <path
        fill="#ff0000"
        fill-opacity="1"
@@ -1964,24 +1801,22 @@
     <g
        id="g7066"
        transform="matrix(0.10022681,0,0,0.10023039,-2670.8216,-86.250179)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28101.3,2438.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7062" />
-
-		<path
-   fill="#000000"
-   fill-opacity="1"
-   stroke-linejoin="round"
-   stroke="#000000"
-   stroke-opacity="1"
-   d="m 28101.3,2451.82 20.9,36.38 h -41.7 z"
-   id="path7064" />
-
-	</g>
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28101.3,2438.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7062" />
+      <path
+         fill="#000000"
+         fill-opacity="1"
+         stroke-linejoin="round"
+         stroke="#000000"
+         stroke-opacity="1"
+         d="m 28101.3,2451.82 20.9,36.38 h -41.7 z"
+         id="path7064" />
+    </g>
     <path
        fill="#000000"
        fill-opacity="1"
@@ -2007,20 +1842,19 @@
        id="g7418"
        transform="matrix(-0.09362576,0,0,0.10023039,2764.1842,-87.797565)"
        style="stroke-width:1.03229213;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28037.3,2374.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path7412"
-   style="stroke-width:1.03229213;stroke-dasharray:none" />
-
-		<text
-   transform="matrix(-1,0,0,1,28053,2422)"
-   xml:space="preserve"
-   id="text7416"
-   style="stroke-width:1.03229213;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28037.3,2374.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path7412"
+         style="stroke-width:1.03229213;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,1,28053,2422)"
+         xml:space="preserve"
+         id="text7416"
+         style="stroke-width:1.03229213;stroke-dasharray:none"><tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:1.03229213;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#ff0000"
@@ -2030,25 +1864,23 @@
    stroke="#ff0000"
    stroke-opacity="1"
    id="tspan7414">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6788"
        transform="matrix(0.10022681,0,0,0.10023039,-2607.1758,-86.207358)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6782" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6786"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6782" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6786"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2056,25 +1888,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6784">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6796"
        transform="matrix(0.10022681,0,0,0.10023039,-2600.9233,-91.417976)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6790" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6794"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6790" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6794"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2082,25 +1912,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6792">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6804"
        transform="matrix(0.10022681,0,0,0.10023039,-2580.1521,-86.075734)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6798" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6802"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6798" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6802"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2108,25 +1936,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6800">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6812"
        transform="matrix(0.10022681,0,0,0.10023039,-2569.2102,-86.075734)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6806" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6810"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6806" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6810"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2134,25 +1960,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6808">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6820"
        transform="matrix(0.10022681,0,0,0.10023039,-2575.7113,-80.408844)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6814" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6818"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6814" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6818"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2160,25 +1984,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6816">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6828"
        transform="matrix(0.10022681,0,0,0.10023039,-2601.2503,-56.969168)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6822" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6826"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6822" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6826"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2186,25 +2008,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6824">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6836"
        transform="matrix(0.10022681,0,0,0.10023039,-2575.3921,-57.027895)"
        inkscape:transform-center-x="8.7930484"
        inkscape:transform-center-y="-67.890513">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path6830" />
-
-		<text
-   transform="matrix(-1,0,0,1,27107,2199)"
-   xml:space="preserve"
-   id="text6834"> <tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27091.3,2150.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path6830" />
+      <text
+         transform="matrix(-1,0,0,1,27107,2199)"
+         xml:space="preserve"
+         id="text6834"> <tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2212,26 +2032,24 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan6832">X </tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g6852"
        transform="matrix(-0.09508545,0,0,0.10178942,2834.8756,-91.977196)"
        style="stroke-width:1.01646318;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28037.3,2374.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path6846"
-   style="stroke-width:1.01646318;stroke-dasharray:none" />
-
-		<text
-   transform="matrix(-1,0,0,1,28053,2422)"
-   xml:space="preserve"
-   id="text6850"
-   style="stroke-width:1.01646318;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28037.3,2374.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path6846"
+         style="stroke-width:1.01646318;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,1,28053,2422)"
+         xml:space="preserve"
+         id="text6850"
+         style="stroke-width:1.01646318;stroke-dasharray:none"><tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:1.01646318;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#ff0000"
@@ -2241,8 +2059,7 @@
    stroke="#ff0000"
    stroke-opacity="1"
    id="tspan6848">X</tspan>		</text>
-
-	</g>
+    </g>
     <path
        fill="#000000"
        fill-opacity="1"
@@ -2258,20 +2075,19 @@
     <g
        id="g7775"
        transform="matrix(-0.08536467,0,0,0.1002316,2366.8504,-63.641375)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7769" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7773"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7769" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7773"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2279,27 +2095,25 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7771">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7783"
        transform="matrix(-0.08536467,0,0,0.1002316,2387.2826,-58.017062)"
        inkscape:transform-center-x="6.9169378"
        inkscape:transform-center-y="-6.748237">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7777" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7781"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7777" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7781"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2307,25 +2121,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7779">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7791"
        transform="matrix(-0.08536467,0,0,0.1002316,2362.1124,-57.820473)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7785" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7789"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7785" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7789"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2333,25 +2145,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7787">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7799"
        transform="matrix(-0.08536467,0,0,0.1002316,2366.8504,-50.676637)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7793" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7797"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7793" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7797"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2359,25 +2169,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7795">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7807"
        transform="matrix(-0.08536467,0,0,0.1002316,2367.0495,-29.245133)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7801" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7805"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7801" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7805"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2385,27 +2193,25 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7803">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7815"
        transform="matrix(-0.08536467,0,0,0.1002316,2395.5418,-29.044718)"
        inkscape:transform-center-x="16.071697"
        inkscape:transform-center-y="0.3067341">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7809" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7813"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7809" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7813"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2413,25 +2219,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7811">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7823"
        transform="matrix(-0.0858057,0,0,0.10023041,2435.884,-58.158523)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7817" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7821"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7817" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7821"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2439,25 +2243,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7819">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7831"
        transform="matrix(-0.0858057,0,0,0.10023041,2447.7903,-58.158523)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7825" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7829"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7825" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7829"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2465,25 +2267,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7827">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7839"
        transform="matrix(-0.0858057,0,0,0.10023041,2442.5986,-51.511567)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7833" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7837"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7833" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7837"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2491,25 +2291,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7835">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7847"
        transform="matrix(-0.0858057,0,0,0.10023041,2478.3173,-50.9824)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path7841" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text7845"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path7841" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text7845"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2517,26 +2315,24 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan7843">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g7855"
        transform="matrix(-0.11238221,0,0,0.10179063,3232.8749,-66.73732)"
        style="stroke-width:0.932569;stroke-dasharray:none">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28069.3,2918.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path7849"
-   style="stroke-width:0.932569;stroke-dasharray:none" />
-
-		<text
-   transform="matrix(-1,0,0,1,28085,2966)"
-   xml:space="preserve"
-   id="text7853"
-   style="stroke-width:0.932569;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28069.3,2918.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path7849"
+         style="stroke-width:0.932569;stroke-dasharray:none" />
+      <text
+         transform="matrix(-1,0,0,1,28085,2966)"
+         xml:space="preserve"
+         id="text7853"
+         style="stroke-width:0.932569;stroke-dasharray:none"><tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:0.932569;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#00c800"
@@ -2546,25 +2342,23 @@
    stroke="#00c800"
    stroke-opacity="1"
    id="tspan7851">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g9969"
        transform="matrix(-0.08536467,0,0,0.1002316,2366.0918,18.155826)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path9963" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text9967"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path9963" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text9967"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2572,25 +2366,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan9965">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g9977"
        transform="matrix(-0.08536467,0,0,0.1002316,2373.5001,18.155826)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path9971" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text9975"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path9971" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text9975"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2598,25 +2390,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan9973">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g9985"
        transform="matrix(-0.08536467,0,0,0.1002316,2392.5501,12.334992)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path9979" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text9983"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path9979" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text9983"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2624,25 +2414,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan9981">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g9993"
        transform="matrix(-0.08536467,0,0,0.1002316,2398.9,12.334992)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path9987" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text9991"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path9987" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text9991"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2650,25 +2438,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan9989">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g10001"
        transform="matrix(-0.08536467,0,0,0.1002316,2392.4643,39.88407)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path9995" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text9999"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path9995" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text9999"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2676,25 +2462,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan9997">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g10009"
        transform="matrix(-0.08536467,0,0,0.1002316,2398.8142,47.292403)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path10003" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text10007"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path10003" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text10007"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2702,25 +2486,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan10005">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g10017"
        transform="matrix(-0.08536467,0,0,0.1002316,2456.1638,12.367403)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path10011" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text10015"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path10011" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text10015"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2728,25 +2510,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan10013">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g10025"
        transform="matrix(-0.08536467,0,0,0.1002316,2427.1454,38.064148)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path10019" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text10023"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path10019" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text10023"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2754,25 +2534,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan10021">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g10033"
        transform="matrix(-0.08536467,0,0,0.1002316,2427.1454,44.614159)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path10027" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text10031"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path10027" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text10031"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2780,25 +2558,23 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan10029">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g10041"
        transform="matrix(-0.08536467,0,0,0.1002316,2461.9848,44.64657)">
-		<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
-   id="path10035" />
-
-		<text
-   transform="scale(-1,1)"
-   xml:space="preserve"
-   id="text10039"
-   x="-27178.615"
-   y="2926.1221">			<tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 27143.3,2875.01 c -17.6,0 -32,14.32 -32,32 0,17.67 14.4,32 32,32 17.7,0 32,-14.33 32,-32 0,-17.68 -14.3,-32 -32,-32 z"
+         id="path10035" />
+      <text
+         transform="scale(-1,1)"
+         xml:space="preserve"
+         id="text10039"
+         x="-27178.615"
+         y="2926.1221">			<tspan
    style="font-size:48px;font-family:'メイリオ'"
    letter-spacing="0em"
    fill="#000000"
@@ -2806,8 +2582,7 @@
    stroke-width="0.2"
    stroke-linejoin="round"
    id="tspan10037">X</tspan>		</text>
-
-	</g>
+    </g>
     <g
        id="g14051"
        transform="translate(-1.6168671,-12.562808)">
@@ -2873,19 +2648,18 @@
     <g
        id="g14032"
        transform="matrix(-0.12504,0,0,0.10023041,3684.1612,-51.026785)">
-			<path
-   fill="#ffffff"
-   fill-opacity="1"
-   stroke-width="0.2"
-   stroke-linejoin="round"
-   d="m 28101.3,3622.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
-   id="path14026" />
-
-			<text
-   transform="matrix(-1,0,0,1,28117,3670)"
-   xml:space="preserve"
-   id="text14030"
-   style="stroke-width:0.893256;stroke-dasharray:none"><tspan
+      <path
+         fill="#ffffff"
+         fill-opacity="1"
+         stroke-width="0.2"
+         stroke-linejoin="round"
+         d="m 28101.3,3622.01 c 17.7,0 32,14.32 32,32 0,17.67 -14.3,32 -32,32 -17.6,0 -32,-14.33 -32,-32 0,-17.68 14.4,-32 32,-32 z"
+         id="path14026" />
+      <text
+         transform="matrix(-1,0,0,1,28117,3670)"
+         xml:space="preserve"
+         id="text14030"
+         style="stroke-width:0.893256;stroke-dasharray:none"><tspan
    style="font-size:48px;font-family:'メイリオ';stroke-width:0.893256;stroke-dasharray:none"
    letter-spacing="0em"
    fill="#ff0000"
@@ -2895,8 +2669,7 @@
    stroke="#ff0000"
    stroke-opacity="1"
    id="tspan14028">X</tspan>			</text>
-
-		</g>
+    </g>
     <g
        id="g14281"
        transform="translate(-43.80627,-34.594055)">
