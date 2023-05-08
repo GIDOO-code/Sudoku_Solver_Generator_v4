@@ -172,13 +172,6 @@ namespace GNPXcore{
                                 int chk1=++GeneralLogicGen.ChkCov1;
 #endif
 
-
-                if( sz==3 ){
-                    if( HCLst[cmbCov.Index[0]].ID!=7  )  continue;      
-                    if( HCLst[cmbCov.Index[1]].ID!=8  )  continue;
-                    if( HCLst[cmbCov.Index[2]].ID!=15 )  continue;
-                }
-
                 int   usedLK=0;
                 Bit81 CoverB81 = new Bit81();
                 Bit81 CannFinB81 = new Bit81();

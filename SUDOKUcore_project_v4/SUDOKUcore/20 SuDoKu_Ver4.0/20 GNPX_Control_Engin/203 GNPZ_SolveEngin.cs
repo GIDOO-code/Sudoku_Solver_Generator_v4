@@ -162,6 +162,8 @@ namespace GNPXcore{
         }
         public int Set_Methods_for_Solving_TaE( ){ 
             MethodLst_Run.Clear(); 
+
+            //
             var TryApp = new Research_trial(AnMan);
             var funcTRE = new UAlgMethod( 1, "Research_Trial", 1, TryApp.TrialAndErrorApp );
             MethodLst_Run.Add( funcTRE );                

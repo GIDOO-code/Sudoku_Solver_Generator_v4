@@ -5,6 +5,7 @@ using static System.Math;
 using static System.Diagnostics.Debug;
 
 using GIDOO_space;
+using System.Security.Cryptography;
 
 namespace GNPXcore{
     public class Research_trial: AnalyzerBaseV2{
@@ -13,6 +14,13 @@ namespace GNPXcore{
         // To use this function,
         //    1) copy the code below,
         //    2) set "Research_" to the conditional compilation symbol field.
+
+        // To change the puzzle's appearance, need to solve the puzzle.
+        // There are puzzles that the implemented algorithm cannot solve.
+        // Solve the puzzle by "trial and error".
+
+        // The world's hardest sudoku
+        //  8..........36......7..9.2...5...7.......457.....1...3...1....68..85...1..9....4..
 
 
 /*
@@ -35,11 +43,6 @@ namespace GNPXcore{
 */
 
 
-
-
-
-        // The world's hardest sudoku
-        //  8..........36......7..9.2...5...7.......457.....1...3...1....68..85...1..9....4..
 
         public Research_trial( GNPX_AnalyzerMan AnMan ): base(AnMan){ }
 
@@ -67,7 +70,7 @@ namespace GNPXcore{
             }
 
             for( int k=0; k<9; k++ ){
-                foreach( var p in RowF[k].IEGet_BtoNo() )  RowNumLst[k].Add(p);
+                foreach( var p in RowF[k].IEGet_BtoNo() )  RowNumLst[k].Add(p); //Undetermined numbers in row
             }
         
             SolLst.Clear();
