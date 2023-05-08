@@ -158,7 +158,7 @@ namespace GNPXcore{
                                         string SolMsg = $"ALS_Wing[{szSearch}D] Stem Cell: {P0.rc.ToRCString()} Eliminated #{noX+1}";
                                         Result = SolMsg;
                                         SolMsg = $"ALS_Wing";
-                                        SolMsg += (ConnectedB? " Connected": "") + (overlapB? " overlapB81P0Hg": "") ;
+                                        SolMsg += (ConnectedB? " Connected": "") + (overlapB? " overlap": "") ;
                                         SolMsg += $"\n  Stem Cell: {P0.rc.ToRCString()}";
                                         ResultLong = SolMsg + ALS_Wing_SolResult( P0, LK_CeALSs, noX, elmB );
                                     }
@@ -235,7 +235,7 @@ namespace GNPXcore{
             if( overlapB.IsNotZero() ){
                 string stT = "";
                 foreach( var rc in overlapB.IEGetRC() ) stT += " " + rc.ToRCString();
-                msg += $"\n   (ALS overlapB81P0Hg cells: {stT.ToString_SameHouseComp()})";
+                msg += $"\n   (ALS overlap cells: {stT.ToString_SameHouseComp()})";
             }
 
             string st = $"   {msg}\r  Eliminated: {elmB.ToString_SameHouseComp()} #{noX+1}"; 
