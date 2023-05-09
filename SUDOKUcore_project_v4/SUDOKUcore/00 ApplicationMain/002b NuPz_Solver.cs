@@ -302,21 +302,21 @@ namespace GNPXcore{
                         displayTimer.Start();           //  Conflict-free display start
                         //--------------------------------------------------------------         
                     }
-                    else{
-                        try{
-                            tokSrc.Cancel();
-                            taskSDK.Wait();
-                            btnSolve.Content=pRes.btnSolve;
-                        }
-                        catch(AggregateException e2){ 
-                            WriteLine($"{e2.Message}");
-                            __DispMode="Canceled";
-                        }
-                    }
- 
-                AnalyzerEnd:
-                    return;
                 }
+                else{
+                    try{
+                        tokSrc.Cancel();
+                        taskSDK.Wait();
+                        btnSolve.Content=pRes.btnSolve;
+                    }
+                    catch(AggregateException e2){ 
+                        WriteLine($"{e2.Message}");
+                        __DispMode="Canceled";
+                    }
+                }
+ 
+            AnalyzerEnd:
+                return;
             }
             catch( Exception ex ){ WriteLine( $"{ex.Message}\r{ex.StackTrace}" ); }
         } 
